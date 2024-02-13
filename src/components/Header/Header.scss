@@ -1,0 +1,24 @@
+.header {
+	.header-row {
+		max-height: 103px;
+		overflow: hidden;
+		justify-content: space-between;
+		align-items: center;
+		.header-logo {
+			position: relative;
+			top: 18px;
+			> img {
+				width: 100%;
+			}
+		}
+		.header-menu {
+			gap: 40px;
+			.header-menu-item {
+				text-decoration: none;
+				color: white;
+				font-weight: 700;
+				line-height: 37px;
+			}
+		}
+	}
+}

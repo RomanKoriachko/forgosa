@@ -1,0 +1,21 @@
+@use 'reset';
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #070707;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1920px;
+	padding: 0px 75px;
+}
+
+.row {
+	display: flex;
+}
