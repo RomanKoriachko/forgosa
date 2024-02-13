@@ -1,5 +1,11 @@
 import React from 'react';
-import { IntroduceSection, Marquee, OfferSection } from './components';
+import {
+	ExperienceSection,
+	IntroduceSection,
+	MapSection,
+	Marquee,
+	OfferSection,
+} from './components';
 
 type Props = {};
 
@@ -9,6 +15,8 @@ const Main = (props: Props) => {
 			<Marquee />
 			<IntroduceSection />
 			<OfferSection />
+			<ExperienceSection />
+			<MapSection />
 		</main>
 	);
 };

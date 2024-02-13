@@ -14,10 +14,26 @@
 		.header-menu {
 			gap: 40px;
 			.header-menu-item {
+				display: block;
 				text-decoration: none;
 				color: white;
 				font-weight: 700;
 				line-height: 37px;
+			}
+		}
+	}
+}
+
+@media (hover: hover) {
+	.header {
+		.header-row {
+			.header-menu {
+				.header-menu-item {
+					transition: transform 0.5s;
+					&:hover {
+						transform: translateY(10%);
+					}
+				}
 			}
 		}
 	}

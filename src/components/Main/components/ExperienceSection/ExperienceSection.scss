@@ -1,0 +1,27 @@
+.experience-section {
+	padding-bottom: 140px;
+	background: url(../../../../assets/experiense-bg-1.png),
+		url(../../../../assets/experiense-bg-2.png);
+	background-repeat: no-repeat;
+	background-position: left, right 100%;
+	.experience-title-wrapper {
+		margin-left: 105px;
+		.experience-title {
+			font-size: 64px;
+			font-weight: 700;
+			line-height: 77px;
+			margin-bottom: 24px;
+			text-transform: uppercase;
+		}
+		.experience-subtitle {
+			line-height: 27px;
+		}
+	}
+	.experience-content-wrapper {
+		margin-top: 55px;
+		margin-left: 280px;
+		.experience-text {
+			margin-bottom: 24px;
+		}
+	}
+}

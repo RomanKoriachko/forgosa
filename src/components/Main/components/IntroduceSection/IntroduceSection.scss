@@ -71,3 +71,24 @@
 		}
 	}
 }
+
+@media (hover: hover) {
+	.introduce-section {
+		.introduce-button-wrapper {
+			.introduce-btn-info {
+				transition: background 0.3s;
+				&:hover {
+					background-color: rgba(255, 255, 255, 0.2);
+				}
+			}
+			.introduce-btn-meet {
+				&:hover .introduce-btn-meet-img {
+					transform: translateX(-30%);
+				}
+				.introduce-btn-meet-img {
+					transition: transform 0.3s;
+				}
+			}
+		}
+	}
+}
