@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+	ArticlesSection,
 	ExperienceSection,
 	IntroduceSection,
 	MapSection,
@@ -17,6 +18,7 @@ const Main = (props: Props) => {
 			<OfferSection />
 			<ExperienceSection />
 			<MapSection />
+			<ArticlesSection />
 		</main>
 	);
 };

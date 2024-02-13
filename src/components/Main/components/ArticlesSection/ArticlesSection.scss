@@ -1,0 +1,64 @@
+.articles-section {
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 120px;
+	.articles-subtitle {
+		font-size: 19px;
+		font-weight: 700;
+		line-height: 23px;
+		color: #fe6700;
+	}
+	.articles-title {
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 59px;
+		margin-top: 12px;
+		margin-bottom: 24px;
+	}
+	.articles-wrapper {
+		gap: 30px;
+		.article-item {
+			border: 1px solid #bdbabac7;
+			background-color: #bdbaba24;
+			text-align: left;
+			cursor: pointer;
+			.article-image-wrapper {
+				width: 100%;
+				height: 300px;
+				overflow: hidden;
+				> img {
+					object-fit: cover;
+					transition: transform 0.3s;
+				}
+			}
+			.article-text-wrapper {
+				padding: 21px;
+				.article-title {
+					font-size: 20px;
+					font-weight: 700;
+					line-height: 30px;
+					margin-bottom: 83px;
+				}
+				.article-link {
+					margin-top: 16px;
+					color: #fe6700;
+					font-size: 16px;
+					font-weight: 700;
+					line-height: 16px;
+					align-items: center;
+					gap: 16px;
+					.article-link-img {
+						background-image: url(../../../../assets/orange-plus-img.svg);
+						background-position: center;
+						background-repeat: no-repeat;
+						width: 12px;
+						height: 8px;
+					}
+				}
+			}
+			&:hover .article-image-wrapper > img {
+				transform: scale(110%);
+			}
+		}
+	}
+}
