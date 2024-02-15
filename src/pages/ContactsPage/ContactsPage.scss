@@ -1,0 +1,82 @@
+.contacts-page-section {
+	.contacts-row {
+		padding-top: 60px;
+		padding-bottom: 100px;
+		gap: 30px;
+		.contacts-content {
+			width: 50%;
+			.contact-item-phone {
+				padding: 32px 0px;
+			}
+			.contacts-item-mail {
+				padding-top: 11px;
+				padding-bottom: 32px;
+			}
+			.contacts-title {
+				font-size: 35px;
+				font-weight: 700;
+				line-height: 43px;
+				margin-bottom: 20px;
+			}
+			.contacts-subtitle {
+				font-size: 24px;
+				font-weight: 800;
+				line-height: 36px;
+			}
+			.contacts-text {
+				line-height: 29px;
+				> span {
+					font-weight: 700;
+				}
+			}
+			.contacts-item-row {
+				gap: 11px;
+				.item-img {
+					width: 16px;
+					height: 16px;
+					margin-top: 6px;
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+				.item-img-phone {
+					background-image: url(../../assets/phone-img.svg);
+				}
+				.item-img-location {
+					background-image: url(../../assets/location-img.svg);
+				}
+				.item-img-uae {
+					background-image: url(../../assets/uae-img.svg);
+				}
+				.item-img-oman {
+					background-image: url(../../assets/oman-img.svg);
+				}
+				.item-img-mexico {
+					background-image: url(../../assets/mexico-img.svg);
+				}
+				.item-img-mail {
+					background-image: url(../../assets/mail-img.svg);
+				}
+			}
+			.contacts-item-list-row {
+				font-size: 19px;
+				font-weight: 700;
+				line-height: 19px;
+				color: #fe6700;
+				text-decoration: underline;
+				align-items: center;
+				gap: 9px;
+				margin-left: 42px;
+				.contacts-item-list {
+					width: 24px;
+					height: 24px;
+					background-image: url('../../assets/contacts-list-img.svg');
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+			}
+		}
+		.form-container {
+			width: 50%;
+		}
+	}
+}
