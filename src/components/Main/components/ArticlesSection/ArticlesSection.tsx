@@ -35,7 +35,7 @@ const ArticlesSection = (props: Props) => {
 					Interesting information about our field
 				</p>
 				<p className='articles-title'>What's the Latest?</p>
-				<div className='articles-wrapper row'>
+				<div className='articles-wrapper'>
 					{articlesArr.map((article, i) => (
 						<div key={i} className='article-item'>
 							<div className='article-image-wrapper'>

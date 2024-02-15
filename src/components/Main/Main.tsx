@@ -6,6 +6,7 @@ import {
 	MapSection,
 	Marquee,
 	OfferSection,
+	VideoSection,
 } from './components';
 
 type Props = {};
@@ -19,6 +20,7 @@ const Main = (props: Props) => {
 			<ExperienceSection />
 			<MapSection />
 			<ArticlesSection />
+			<VideoSection />
 		</main>
 	);
 };

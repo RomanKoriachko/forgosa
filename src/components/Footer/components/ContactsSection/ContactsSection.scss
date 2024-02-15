@@ -1,0 +1,213 @@
+.footer-content {
+	background-color: #22241a;
+	position: relative;
+	padding-top: 47px;
+	padding-bottom: 34px;
+	background-image: url(../../../../assets/footer-bg.png);
+	background-position: 110% 300%;
+	background-repeat: no-repeat;
+	background-size: 464px;
+	border-top-left-radius: 60px;
+	border-top-right-radius: 60px;
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	.footer-row {
+		border-top-left-radius: 60px;
+		border-top-right-radius: 60px;
+		display: flex;
+		gap: 70px;
+		.footer-row-logo-wrapper {
+			width: 33%;
+			.footer-logo {
+				background-image: url(../../../../assets/footer-logo.png);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 87px;
+				width: 311px;
+			}
+			.footer-logo-wrapper-subtitle {
+				font-family: 'Roboto', sans-serif;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 27px;
+				color: #fe6700;
+				margin-top: 11px;
+				margin-bottom: 7px;
+			}
+			.footer-logo-wrapper-title {
+				font-size: 48px;
+				font-weight: 600;
+				line-height: 58px;
+			}
+		}
+		.footer-btn {
+			margin-top: 32px;
+			background: linear-gradient(114.92deg, #fd4360 -43.3%, #d743be 132.23%);
+			box-shadow: 0px 7px 32px 0px #fe670099;
+		}
+		.footer-row-title {
+			font-size: 18px;
+			font-weight: 600;
+			line-height: 27px;
+			margin-bottom: 16px;
+		}
+		.footer-row-subtitle {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 32px;
+		}
+		.footer-row-item {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24px;
+			margin-bottom: 16px;
+		}
+		.footer-row-navigation {
+			min-width: 160px;
+		}
+		.footer-row-contacts {
+			.footer-row-addresses {
+				display: flex;
+				margin-top: 24px;
+				.footer-row-address {
+					display: flex;
+					align-items: flex-start;
+					gap: 16px;
+					max-width: 225px;
+					.footer-row-address-img {
+						background-position: center;
+						background-repeat: no-repeat;
+						min-width: 12px;
+						min-height: 12px;
+					}
+					.footer-row-address-item {
+						font-family: 'Plus Jakarta Sans', sans-serif;
+						font-size: 12px;
+						font-weight: 400;
+						line-height: 18px;
+					}
+					.footer-row-address-item-bold {
+						font-family: 'Plus Jakarta Sans', sans-serif;
+						font-size: 12px;
+						font-weight: 700;
+						line-height: 18px;
+					}
+				}
+				.footer-row-address-1 {
+					.footer-row-address-img {
+						background-image: url(../../../../assets/uae-img.svg);
+					}
+				}
+				.footer-row-address-2 {
+					.footer-row-address-img {
+						background-image: url(../../../../assets/oman-img.svg);
+					}
+				}
+				.footer-row-address-3 {
+					.footer-row-address-img {
+						background-image: url(../../../../assets/mexico-img.svg);
+					}
+				}
+			}
+		}
+	}
+	.footer-copyright {
+		text-align: center;
+		margin-top: 46px;
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		> span {
+			font-weight: 700;
+		}
+	}
+}
+
+@media (hover: hover) {
+	.footer {
+		.footer-content {
+			.footer-row {
+				.footer-btn {
+					transition: box-shadow 0.5s;
+					&:hover {
+						box-shadow: 0px 7px 46px 10px #fe670099;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Adaptive
+
+// ------------- laptop -------------
+@media (max-width: 1200px) {
+	.footer-content {
+		background-position: 110% 120%;
+		.footer-row {
+			flex-wrap: wrap;
+			.footer-row-logo-wrapper {
+				width: 60%;
+			}
+		}
+	}
+}
+
+// ------------- Tablet -------------
+@media (max-width: 992px) {
+	.footer-content {
+		.footer-row {
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			gap: 26px 50px;
+			.footer-row-logo-wrapper {
+				grid-column-start: 1;
+				grid-column-end: 3;
+			}
+			.footer-row-contacts {
+				.footer-row-addresses {
+					flex-direction: column;
+					gap: 26px;
+				}
+			}
+			.footer-row-logo-wrapper {
+				width: 100%;
+				.footer-logo-wrapper-title {
+					font-size: 32px;
+					line-height: 44px;
+				}
+			}
+		}
+	}
+}
+
+// ------------- Mobile -------------
+@media (max-width: 576px) {
+	.footer-content {
+		background-position: right -185px bottom 65%;
+		.footer-row {
+			grid-template-columns: 1fr;
+			.footer-row-logo-wrapper {
+				grid-column-start: 1;
+				grid-column-end: 2;
+				.footer-logo {
+					width: 280px;
+					height: 78px;
+				}
+				.footer-logo-wrapper-title {
+					font-size: 28px;
+					line-height: 40px;
+				}
+			}
+		}
+		.footer-copyright {
+			margin-top: 55px;
+		}
+	}
+}

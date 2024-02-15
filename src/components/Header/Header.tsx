@@ -13,24 +13,12 @@ const Header = (props: Props) => {
 						<img src='../../images/header-logo.png' alt='logo' />
 					</div>
 					<div className='header-menu row'>
-						<a href='' className='header-menu-item'>
-							Home
-						</a>
-						<a href='' className='header-menu-item'>
-							Products
-						</a>
-						<a href='' className='header-menu-item'>
-							Services
-						</a>
-						<a href='' className='header-menu-item'>
-							Deposit Map
-						</a>
-						<a href='' className='header-menu-item'>
-							Contact Us
-						</a>
-						<a href='' className='header-menu-item'>
-							FAQ
-						</a>
+						<p className='header-menu-item'>Home</p>
+						<p className='header-menu-item'>Products</p>
+						<p className='header-menu-item'>Services</p>
+						<p className='header-menu-item'>Deposit Map</p>
+						<p className='header-menu-item'>Contact Us</p>
+						<p className='header-menu-item'>FAQ</p>
 					</div>
 					<HeaderButton />
 				</div>
