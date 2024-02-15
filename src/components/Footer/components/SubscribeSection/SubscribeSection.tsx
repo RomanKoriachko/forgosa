@@ -23,8 +23,8 @@ const SubscribeSection = (props: Props) => {
 						/>
 						<button className='form-btn'>Submit</button>
 					</form>
-					<div className='form-glowing'></div>
 				</div>
+				<div className='form-glowing'></div>
 			</div>
 		</section>
 	);

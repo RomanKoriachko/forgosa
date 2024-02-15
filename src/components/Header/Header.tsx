@@ -7,7 +7,7 @@ type Props = {};
 const Header = (props: Props) => {
 	return (
 		<header className='header'>
-			<div className='container'>
+			<div className='header-container'>
 				<div className='row header-row'>
 					<div className='header-logo'>
 						<img src='../../images/header-logo.png' alt='logo' />

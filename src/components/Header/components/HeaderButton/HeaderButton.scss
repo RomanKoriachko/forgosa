@@ -11,11 +11,22 @@
 	cursor: pointer;
 }
 
+// ---------------------- hover ----------------------
+
 @media (hover: hover) {
 	.header-btn {
 		transition: border 0.3s;
 		&:hover {
 			border: 2px solid white;
 		}
+	}
+}
+
+// ---------------------- Adaptive ----------------------
+
+// ------------- Large Desktop -------------
+@media (max-width: 1500px) {
+	.header-btn {
+		padding: 20px 30px;
 	}
 }
