@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 
-import './MapSection.scss';
 import { ButtonComponent } from '../../../../common';
+import { Element, Link } from 'react-scroll';
+
+import './MapSection.scss';
 
 type Props = {};
 
@@ -36,6 +38,7 @@ const MapSection = (props: Props) => {
 
 	return (
 		<section className='map-section'>
+			<Element name='map'></Element>
 			{/* <button
 				className={`close-map-btn ${showMapState}`}
 				onClick={() => closeMap()}

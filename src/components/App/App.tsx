@@ -1,16 +1,16 @@
 import React from 'react';
 
 import { Header } from '../Header';
-import { Main } from '../Main';
 import { Footer } from '../Footer';
 
 import './App.scss';
+import { Outlet } from 'react-router-dom';
 
 function App() {
 	return (
 		<div className='App'>
 			<Header />
-			<Main />
+			<Outlet />
 			<Footer />
 		</div>
 	);
