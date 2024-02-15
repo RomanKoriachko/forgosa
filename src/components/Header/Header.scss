@@ -18,7 +18,7 @@
 			}
 		}
 		.header-menu {
-			gap: 40px;
+			gap: 80px;
 			.header-menu-item {
 				display: block;
 				text-decoration: none;
@@ -49,6 +49,16 @@
 }
 
 // ---------------------- Adaptive ----------------------
+
+@media (max-width: 1600px) {
+	.header {
+		.header-row {
+			.header-menu {
+				gap: 40px;
+			}
+		}
+	}
+}
 
 // ------------- Large Desktop -------------
 @media (max-width: 1500px) {

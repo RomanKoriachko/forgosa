@@ -12,7 +12,8 @@ const Footer = (props: Props) => {
 	return (
 		<footer className='footer'>
 			{location.pathname === '/contacts' ||
-			location.pathname === '/products' ? undefined : (
+			location.pathname === '/products' ||
+			location.pathname === '/services' ? undefined : (
 				<SubscribeSection />
 			)}
 			<ContactsSection />
