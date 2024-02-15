@@ -2,6 +2,7 @@ import React from 'react';
 
 import './ContactsSection.scss';
 import { ButtonComponent } from '../../../../common';
+import { Link } from 'react-router-dom';
 
 type Props = {};
 
@@ -26,10 +27,18 @@ const ContactsSection = (props: Props) => {
 					</div>
 					<div className='footer-row-navigation'>
 						<p className='footer-row-title'>Company</p>
-						<p className='footer-row-item'>Home</p>
-						<p className='footer-row-item'>Products</p>
-						<p className='footer-row-item'>Sevice</p>
-						<p className='footer-row-item'>Contact Us</p>
+						<Link to='/'>
+							<p className='footer-row-item'>Home</p>
+						</Link>
+						<Link to='/products'>
+							<p className='footer-row-item'>Products</p>
+						</Link>
+						<Link to='/services'>
+							<p className='footer-row-item'>Sevice</p>
+						</Link>
+						<Link to='/contacts'>
+							<p className='footer-row-item'>Contact Us</p>
+						</Link>
 					</div>
 					<div className='footer-row-contacts'>
 						<p className='footer-row-title'>Contact</p>

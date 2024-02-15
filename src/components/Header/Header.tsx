@@ -25,11 +25,7 @@ const Header = (props: Props) => {
 						<Link to='/services'>
 							<p className='header-menu-item'>Services</p>
 						</Link>
-						{location.pathname !== '/' ? (
-							<Link to='/'>
-								<p className='header-menu-item'>Deposit Map</p>
-							</Link>
-						) : (
+						{location.pathname !== '/' ? undefined : (
 							<NavLink to='map' smooth={true} duration={700}>
 								<p className='header-menu-item'>Deposit Map</p>
 							</NavLink>
