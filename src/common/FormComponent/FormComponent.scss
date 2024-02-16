@@ -5,6 +5,7 @@
 		font-weight: 700;
 		line-height: 23px;
 		color: #fe6700;
+		text-align: center;
 	}
 	.title {
 		font-size: 48px;
@@ -12,6 +13,7 @@
 		line-height: 59px;
 		margin-top: 16px;
 		margin-bottom: 24px;
+		text-align: center;
 	}
 	.form {
 		.input-row {
@@ -62,6 +64,18 @@
 		.btn-container {
 			text-align: center;
 			margin-top: 16px;
+		}
+	}
+}
+
+.contacts-page-section {
+	.form-component {
+		width: 100%;
+		.subtitle {
+			text-align: left;
+		}
+		.title {
+			text-align: left;
 		}
 	}
 }

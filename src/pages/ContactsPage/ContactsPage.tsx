@@ -86,7 +86,7 @@ const ContactsPage = (props: Props) => {
 						</div>
 					</div>
 					<div className='form-container'>
-						<FormComponent />
+						<FormComponent title='More about you' />
 					</div>
 				</div>
 			</div>

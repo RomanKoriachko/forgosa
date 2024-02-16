@@ -1,8 +1,9 @@
 import React from 'react';
 
-import './ErrorPage.scss';
-import { Footer, Header } from '../../components';
+import { Header } from '../../components';
 import { ContactsSection } from '../../components/Footer/components';
+
+import './ErrorPage.scss';
 
 type Props = {};
 

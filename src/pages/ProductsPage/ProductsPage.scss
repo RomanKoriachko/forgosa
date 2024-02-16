@@ -1,0 +1,18 @@
+.products-page {
+	.products-links-row {
+		padding-top: 60px;
+		padding-bottom: 100px;
+		gap: 26px;
+	}
+	.form-bg {
+		background: url(../../assets/experiense-bg-1.png),
+			url(../../assets/experiense-bg-2.png);
+		background-repeat: no-repeat;
+		background-position: left, right 100%;
+		margin-bottom: 60px;
+		.form-container {
+			margin: 0 auto;
+			width: 700px;
+		}
+	}
+}

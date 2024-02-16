@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { ButtonComponent } from '../../../../common';
-import { Element, Link } from 'react-scroll';
+import { Element } from 'react-scroll';
 
 import './MapSection.scss';
 

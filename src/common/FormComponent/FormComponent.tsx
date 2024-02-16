@@ -3,14 +3,20 @@ import React from 'react';
 import './FormComponent.scss';
 import { ButtonComponent } from '../ButtonComponent';
 
-type Props = {};
+type Props = {
+	title: string;
+};
 
-const FormComponent = (props: Props) => {
+const FormComponent = ({ title }: Props) => {
 	return (
 		<div className='form-component'>
 			<p className='subtitle'>Contact</p>
-			<p className='title'>More about you</p>
-			<form action='' className='form'>
+			<p className='title'>{title}</p>
+			<form
+				action='https://formsubmit.co/mazaxaka.tyt@gmail.com'
+				method='POST'
+				className='form'
+			>
 				<div className='row input-row'>
 					<div className='input-item-row'>
 						<label className='label' htmlFor='name'>
