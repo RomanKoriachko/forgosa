@@ -32,6 +32,19 @@
 	}
 }
 
+.services-page {
+	.page-item {
+		.page-item-text {
+			color: #ffffff;
+			margin-top: 60px;
+			margin-bottom: 16px;
+		}
+		a {
+			color: #fe6700;
+		}
+	}
+}
+
 @media (hover: hover) {
 	.page-item {
 		transition: box-shadow 0.5s;

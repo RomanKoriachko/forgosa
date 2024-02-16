@@ -28,6 +28,7 @@ const ProductsPage = (props: Props) => {
 			link: 'products/diesel_fuel',
 		},
 	];
+
 	return (
 		<div className='products-page'>
 			<PageTitle image='products-bg-img.png' title='Products' />
