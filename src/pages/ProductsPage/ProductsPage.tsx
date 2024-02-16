@@ -10,22 +10,22 @@ const ProductsPage = (props: Props) => {
 		{
 			title: 'GASOLINE',
 			text: 'Gasoline, a hydrocarbon-based fuel derived primarily from crude oil, has been a cornerstone of the global energy landscape for over a century...',
-			link: 'products/gasoline',
+			link: 'gasoline',
 		},
 		{
 			title: 'Petroleum',
 			text: 'Petroleum fuel, a cornerstone of the modern energy landscape, encompasses a diverse range of fuels derived from crude oil—a fossil fuel extracted from...',
-			link: 'products/petroleum',
+			link: 'petroleum',
 		},
 		{
 			title: 'JET FUEL',
 			text: 'Jet fuel, a specialized form of aviation fuel, is the lifeblood of the aviation industry, powering aircraft that connect distant corners of the globe...',
-			link: 'products/jet_fuel',
+			link: 'jet_fuel',
 		},
 		{
 			title: 'DIESEL FUEL',
 			text: 'Diesel fuel, a vital component of the global energy mix, plays a pivotal role in powering a wide array of transportation and industrial applications...',
-			link: 'products/diesel_fuel',
+			link: 'diesel_fuel',
 		},
 	];
 

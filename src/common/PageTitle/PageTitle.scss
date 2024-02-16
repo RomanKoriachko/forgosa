@@ -24,4 +24,26 @@
 		line-height: 195px;
 		z-index: 10;
 	}
+	.page-title-link {
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 16px;
+		text-decoration: none;
+		color: white;
+		width: fit-content;
+		.page-link-row {
+			align-items: center;
+			justify-content: center;
+			gap: 8px;
+			margin-top: 24px;
+		}
+		.arrow-img {
+			background-image: url(../../assets/small-arrow-right.svg);
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 24px;
+			height: 24px;
+			transform: rotate(180deg);
+		}
+	}
 }

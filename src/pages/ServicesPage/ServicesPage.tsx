@@ -10,22 +10,22 @@ const ServicesPage = (props: Props) => {
 		{
 			title: 'Fuel supplies',
 			text: 'Our company offers coal supplies for various industries that require this fossil fuel as an energy source We provide...',
-			link: 'services/fuel_supplies',
+			link: 'fuel_supplies',
 		},
 		{
 			title: 'FREIGHT SERVICES',
 			text: 'We offer logistic solutions to facilitate the movement of goods from one place to another. Our logistic solutions include...',
-			link: 'services/freight_services',
+			link: 'freight_services',
 		},
 		{
 			title: 'TOLLING',
 			text: 'Fogrosa provides various types of fertilizers to meet the needs of agriculture and other related...',
-			link: 'services/tolling',
+			link: 'tolling',
 		},
 		{
 			title: 'Consulting',
 			text: 'We provide consulting services to help our clients make informed decisions related to their businesses. Our...',
-			link: 'services/consulting',
+			link: 'consulting',
 		},
 	];
 

@@ -12,6 +12,12 @@ import {
 	ServicesPage,
 	ErrorPage,
 } from './pages';
+import {
+	DieselFuelPage,
+	GasolinePage,
+	JetFuelPage,
+	PetroleumPage,
+} from './pages/ProductsPage/pages';
 
 const router = createBrowserRouter([
 	{
@@ -26,6 +32,22 @@ const router = createBrowserRouter([
 			{
 				element: <ProductsPage />,
 				path: '/products',
+			},
+			{
+				element: <GasolinePage />,
+				path: 'products/gasoline',
+			},
+			{
+				element: <PetroleumPage />,
+				path: 'products/petroleum',
+			},
+			{
+				element: <JetFuelPage />,
+				path: 'products/jet_fuel',
+			},
+			{
+				element: <DieselFuelPage />,
+				path: 'products/diesel_fuel',
 			},
 			{
 				element: <ServicesPage />,
