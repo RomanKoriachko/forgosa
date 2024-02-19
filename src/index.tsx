@@ -46,19 +46,19 @@ const router = createBrowserRouter([
 			},
 			{
 				element: <GasolinePage />,
-				path: 'products/gasoline',
+				path: '/products/gasoline',
 			},
 			{
 				element: <PetroleumPage />,
-				path: 'products/petroleum',
+				path: '/products/petroleum',
 			},
 			{
 				element: <JetFuelPage />,
-				path: 'products/jet_fuel',
+				path: '/products/jet_fuel',
 			},
 			{
 				element: <DieselFuelPage />,
-				path: 'products/diesel_fuel',
+				path: '/products/diesel_fuel',
 			},
 
 			{

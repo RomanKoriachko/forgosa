@@ -17,11 +17,18 @@ const PageTitle = ({ image, title, link }: Props) => {
 		>
 			<div className='page-title'>
 				<p>{title}</p>
-				{link ? (
+				{link && link !== '/' ? (
 					<Link to={`/${link}`} className='page-title-link'>
 						<div className='row page-link-row'>
 							<div className='arrow-img'></div>
 							<p className='page-link-text'>all {link}</p>
+						</div>
+					</Link>
+				) : link === '/' ? (
+					<Link to='/' className='page-title-link'>
+						<div className='row page-link-row'>
+							<div className='arrow-img'></div>
+							<p className='page-link-text'>HOME</p>
 						</div>
 					</Link>
 				) : undefined}

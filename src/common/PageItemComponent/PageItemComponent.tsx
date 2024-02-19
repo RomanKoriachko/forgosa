@@ -12,9 +12,9 @@ type Props = {
 const PageItemComponent = ({ title, text, link }: Props) => {
 	return (
 		<div className='page-item'>
-			<p className='page-item-title'>{title}</p>
-			<p className='page-item-text'>{text}</p>
 			<Link to={`./${link}`}>
+				<p className='page-item-title'>{title}</p>
+				<p className='page-item-text'>{text}</p>
 				<div className='row page-item-link'>
 					<div>View info</div>
 					<div className='arrow-img'></div>

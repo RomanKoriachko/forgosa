@@ -59,6 +59,29 @@ const PageSidebar = (props: Props) => {
 		},
 	];
 
+	const postsData = [
+		{
+			title: 'Supply Chain Resilience and Geopolitical Risks',
+			link: '/supply_chain_resilience_and_geopolitical_risks',
+			text: 'Gasoline, a hydrocarbon-based fuel derived primarily from crude oil, has been a cornerstone of the global energy landscape for over a century. Its significance stems from its role...',
+		},
+		{
+			title: 'Price Volatility and Forecasting',
+			link: '/price_volatility_and_forecasting',
+			text: 'Jet fuel, a specialized form of aviation fuel, is the lifeblood of the aviation industry, powering aircraft that connect distant corners of the globe...',
+		},
+		{
+			title: 'Environmental Regulations and Sustainable Practices',
+			link: '/environmental_regulations_and_sustainable_practices',
+			text: 'Gasoline, a hydrocarbon-based fuel derived primarily from crude oil, has been a cornerstone of the global energy landscape for over a century. Its significance stems from its role...',
+		},
+		{
+			title: 'Global Energy Market Trends and Analysis',
+			link: '/global_energy_market_trends_and_analysis',
+			text: 'Gasoline, a hydrocarbon-based fuel derived primarily from crude oil, has been a cornerstone of the global energy landscape for over a century. Its significance stems from its role...',
+		},
+	];
+
 	const location = useLocation();
 	let currentArr: ArrDataType[] = [];
 
@@ -71,6 +94,9 @@ const PageSidebar = (props: Props) => {
 			return !location.pathname.includes(element.link.toLowerCase());
 		});
 	} else {
+		currentArr = postsData.filter((element) => {
+			return !location.pathname.includes(element.link.toLowerCase());
+		});
 	}
 
 	// console.log(location);
