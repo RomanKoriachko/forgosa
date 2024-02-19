@@ -63,7 +63,7 @@ const SidebarWidget: React.FC = () => {
 					},
 				],
 				showSymbolLogo: true,
-				isTransparent: false,
+				isTransparent: true,
 				colorTheme: 'dark',
 				locale: 'en',
 			});

@@ -6,6 +6,12 @@ import SidebarWidget from '../SidebarWidget/SidebarWidget';
 
 type Props = {};
 
+type ArrDataType = {
+	title: string;
+	link: string;
+	text: string;
+};
+
 const PageSidebar = (props: Props) => {
 	const productsData = [
 		{
@@ -30,11 +36,42 @@ const PageSidebar = (props: Props) => {
 		},
 	];
 
-	const location = useLocation();
+	const servicesData = [
+		{
+			title: 'Fuel supplies',
+			link: '/services/fuel_supplies',
+			text: 'Gasoline, a hydrocarbon-based fuel derived primarily from crude oil, has been a cornerstone of the global energy landscape for over a century. Its significance stems from its role...',
+		},
+		{
+			title: 'TOLLING',
+			link: '/services/tolling',
+			text: 'Jet fuel, a specialized form of aviation fuel, is the lifeblood of the aviation industry, powering aircraft that connect distant corners of the globe...',
+		},
+		{
+			title: 'Freight Services',
+			link: '/services/freight_services',
+			text: 'Gasoline, a hydrocarbon-based fuel derived primarily from crude oil, has been a cornerstone of the global energy landscape for over a century. Its significance stems from its role...',
+		},
+		{
+			title: 'Consulting',
+			link: '/services/consulting',
+			text: 'Gasoline, a hydrocarbon-based fuel derived primarily from crude oil, has been a cornerstone of the global energy landscape for over a century. Its significance stems from its role...',
+		},
+	];
 
-	const currentProductsArr = productsData.filter((element) => {
-		return !location.pathname.includes(element.link.toLowerCase());
-	});
+	const location = useLocation();
+	let currentArr: ArrDataType[] = [];
+
+	if (location.pathname.includes('products')) {
+		currentArr = productsData.filter((element) => {
+			return !location.pathname.includes(element.link.toLowerCase());
+		});
+	} else if (location.pathname.includes('services')) {
+		currentArr = servicesData.filter((element) => {
+			return !location.pathname.includes(element.link.toLowerCase());
+		});
+	} else {
+	}
 
 	// console.log(location);
 	// console.log(currentProductsArr);
@@ -51,7 +88,7 @@ const PageSidebar = (props: Props) => {
 					</p>
 				</div>
 				<div className='page-sidebar-nav-links'>
-					{currentProductsArr.map((element) => (
+					{currentArr.map((element) => (
 						<div key={element.title} className='nav-link-item'>
 							<Link to={element.link}>
 								<p>{element.title}</p>
