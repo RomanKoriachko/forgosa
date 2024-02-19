@@ -1,0 +1,55 @@
+.page-sidebar {
+	.page-sidebar-nav {
+		padding: 40px 90px 40px 50px;
+		background: #bdbaba24;
+		.page-sidebar-nav-about {
+			margin-bottom: 130px;
+			> p:nth-child(1) {
+				font-size: 24px;
+				font-weight: 700;
+				line-height: 29px;
+				margin-bottom: 16px;
+			}
+			> p:nth-child(2) {
+				line-height: 26px;
+			}
+		}
+		.page-sidebar-nav-links {
+			.nav-link-item {
+				margin-bottom: 32px;
+				a {
+					text-decoration: none;
+					color: #fe6700;
+					font-size: 20px;
+					font-weight: 700;
+					line-height: 20px;
+					text-transform: uppercase;
+					> p {
+						margin-bottom: 16px;
+					}
+				}
+				.nav-link-item-description {
+					font-family: 'Roboto', sans-serif;
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 26px;
+					color: #bdbabac7;
+				}
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	.page-sidebar-widjet {
+		margin-top: 32px;
+		height: 780px;
+		background: #bdbaba24;
+		.tradingview-widget-container__widget {
+			height: 780px;
+		}
+		.tradingview-widget-copyright {
+			display: none;
+		}
+	}
+}

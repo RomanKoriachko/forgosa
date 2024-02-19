@@ -11,6 +11,10 @@ import {
 	ProductsPage,
 	ServicesPage,
 	ErrorPage,
+	SupplyChainPostPage,
+	PriceVolatillityPostPage,
+	EnvironmentalPostPage,
+	GlobalEnergyPostPage,
 } from './pages';
 import {
 	DieselFuelPage,
@@ -18,6 +22,12 @@ import {
 	JetFuelPage,
 	PetroleumPage,
 } from './pages/ProductsPage/pages';
+import {
+	ConsultingPage,
+	FreightServisesPage,
+	FuelSuppliesPage,
+	TollingPage,
+} from './pages/ServicesPage/pages';
 
 const router = createBrowserRouter([
 	{
@@ -29,6 +39,7 @@ const router = createBrowserRouter([
 				index: true,
 				element: <Main />,
 			},
+
 			{
 				element: <ProductsPage />,
 				path: '/products',
@@ -49,10 +60,45 @@ const router = createBrowserRouter([
 				element: <DieselFuelPage />,
 				path: 'products/diesel_fuel',
 			},
+
 			{
 				element: <ServicesPage />,
 				path: '/services',
 			},
+			{
+				element: <FreightServisesPage />,
+				path: '/services/freight_services',
+			},
+			{
+				element: <FuelSuppliesPage />,
+				path: '/services/fuel_supplies',
+			},
+			{
+				element: <TollingPage />,
+				path: '/services/tolling',
+			},
+			{
+				element: <ConsultingPage />,
+				path: '/services/consulting',
+			},
+
+			{
+				element: <SupplyChainPostPage />,
+				path: '/supply_chain_resilience_and_geopolitical_risks',
+			},
+			{
+				element: <PriceVolatillityPostPage />,
+				path: '/price_volatility_and_forecasting',
+			},
+			{
+				element: <EnvironmentalPostPage />,
+				path: '/environmental_regulations_and_sustainable_practices',
+			},
+			{
+				element: <GlobalEnergyPostPage />,
+				path: '/global_energy_market_trends_and_analysis',
+			},
+
 			{
 				element: <ContactsPage />,
 				path: '/contacts',

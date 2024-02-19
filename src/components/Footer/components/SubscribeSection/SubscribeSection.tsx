@@ -11,6 +11,7 @@ const SubscribeSection = (props: Props) => {
 			<div className='subscribe-bg-2'></div>
 			<div className='small-container'>
 				<div className='subscribe-form row'>
+					<div className='page-logo-transparent'></div>
 					<div className='subscribe-form-text'>
 						<p>We encourage you to subscribe to us. </p>
 						<p>We will send you only up-to-date quotes.</p>

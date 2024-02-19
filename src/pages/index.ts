@@ -3,3 +3,7 @@ export { ProductsPage } from './ProductsPage';
 export { ServicesPage } from './ServicesPage';
 export { FaqPage } from './FaqPage';
 export { ErrorPage } from './ErrorPage';
+export { SupplyChainPostPage } from './SupplyChainPostPage';
+export { PriceVolatillityPostPage } from './PriceVolatillityPostPage';
+export { EnvironmentalPostPage } from './EnvironmentalPostPage';
+export { GlobalEnergyPostPage } from './GlobalEnergyPostPage';

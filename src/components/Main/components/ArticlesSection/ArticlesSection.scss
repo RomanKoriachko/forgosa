@@ -19,6 +19,11 @@
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		gap: 30px;
+		a {
+			text-decoration: none;
+			color: #ffffff;
+			display: block;
+		}
 		.article-item {
 			border: 1px solid #bdbabac7;
 			background-color: #bdbaba24;

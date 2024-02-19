@@ -84,6 +84,20 @@
 	}
 }
 
+.footer-page {
+	.subscribe-section {
+		margin-top: 300px;
+		.page-logo-transparent {
+			position: absolute;
+			top: -140px;
+			right: 0px;
+			width: 450px;
+			height: 126px;
+			background-image: url(../../../../assets/footer-logo-transparent.png);
+		}
+	}
+}
+
 @media (hover: hover) {
 	.subscribe-section {
 		.subscribe-form {

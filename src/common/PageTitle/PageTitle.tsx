@@ -18,10 +18,10 @@ const PageTitle = ({ image, title, link }: Props) => {
 			<div className='page-title'>
 				<p>{title}</p>
 				{link ? (
-					<Link to={link} className='page-title-link'>
+					<Link to={`/${link}`} className='page-title-link'>
 						<div className='row page-link-row'>
 							<div className='arrow-img'></div>
-							<p className='page-link-text'>all products</p>
+							<p className='page-link-text'>all {link}</p>
 						</div>
 					</Link>
 				) : undefined}

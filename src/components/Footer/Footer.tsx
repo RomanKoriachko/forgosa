@@ -13,7 +13,12 @@ const Footer = (props: Props) => {
 		<footer className='footer'>
 			{location.pathname === '/contacts' ||
 			location.pathname === '/products' ||
-			location.pathname === '/services' ? undefined : (
+			location.pathname === '/services' ? undefined : location.pathname !==
+			  '/' ? (
+				<div className='footer-page'>
+					<SubscribeSection />
+				</div>
+			) : (
 				<SubscribeSection />
 			)}
 			<ContactsSection />
