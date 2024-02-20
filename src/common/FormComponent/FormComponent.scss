@@ -1,5 +1,7 @@
 .form-component {
 	width: 100%;
+	z-index: 500;
+	position: relative;
 	.subtitle {
 		font-size: 19px;
 		font-weight: 700;

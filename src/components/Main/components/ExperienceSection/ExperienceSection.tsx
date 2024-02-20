@@ -1,11 +1,31 @@
 import React from 'react';
 import './ExperienceSection.scss';
+import { useParallax } from 'react-scroll-parallax';
 
 type Props = {};
 
 const ExperienceSection = (props: Props) => {
+	const parallaxLeft = useParallax<HTMLDivElement>({
+		// speed: -10,
+		translateX: [-20, 0],
+		scale: [0.7, 1.2, 'easeInQuad'],
+	});
+	const parallaxRight = useParallax<HTMLDivElement>({
+		// speed: -10,
+		translateX: [20, 0],
+		scale: [0.7, 1.2, 'easeInQuad'],
+	});
+
 	return (
 		<section className='experience-section'>
+			<div
+				ref={parallaxLeft.ref}
+				className='experience-section-bg experience-section-bg-1'
+			></div>
+			<div
+				ref={parallaxRight.ref}
+				className='experience-section-bg experience-section-bg-2'
+			></div>
 			<div className='small-container'>
 				<div className='experience-title-wrapper'>
 					<p className='experience-title'>our team's experience</p>

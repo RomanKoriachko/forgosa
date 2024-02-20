@@ -35,25 +35,35 @@
 		}
 	}
 	.form-bg {
-		background: url(../../assets/experiense-bg-1.png);
-		background-repeat: no-repeat;
-		background-position: left, right 100%;
-		padding-bottom: 290px;
+		// background: url(../../assets/experiense-bg-1.png);
+		// background-repeat: no-repeat;
+		// background-position: left, right 100%;
+		padding-bottom: 200px;
 		position: relative;
+		overflow: hidden;
+		.form-bg-img {
+			position: absolute;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+		.form-bg-img-1 {
+			background-image: url(../../assets/experiense-bg-1.png);
+			top: 0px;
+			left: -200px;
+			width: 530px;
+			height: 530px;
+		}
+		.form-bg-img-2 {
+			bottom: -100px;
+			right: -100px;
+			width: 630px;
+			height: 630px;
+			background-image: url(../../../public/images/subscribe-section-img-2.png);
+		}
 		.form-container {
 			margin: 0 auto;
 			width: 700px;
-		}
-		.form-bg-img {
-			width: 640px;
-			position: absolute;
-			bottom: -200px;
-			right: 120px;
-			transform: rotate(-25deg);
-			z-index: 300;
-			> img {
-				width: 100%;
-			}
 		}
 	}
 }

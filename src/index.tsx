@@ -28,6 +28,7 @@ import {
 	FuelSuppliesPage,
 	TollingPage,
 } from './pages/ServicesPage/pages';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const router = createBrowserRouter([
 	{
@@ -116,6 +117,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
 	<React.StrictMode>
-		<RouterProvider router={router} />
+		<ParallaxProvider>
+			<RouterProvider router={router} />
+		</ParallaxProvider>
 	</React.StrictMode>
 );

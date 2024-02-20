@@ -1,9 +1,11 @@
 .experience-section {
 	padding-bottom: 140px;
-	background: url(../../../../assets/experiense-bg-1.png),
-		url(../../../../assets/experiense-bg-2.png);
-	background-repeat: no-repeat;
-	background-position: left, right 100%;
+	position: relative;
+	overflow-x: hidden;
+	// background: url(../../../../assets/experiense-bg-1.png),
+	// 	url(../../../../assets/experiense-bg-2.png);
+	// background-repeat: no-repeat;
+	// background-position: left, right 100%;
 	.experience-title-wrapper {
 		margin-left: 105px;
 		.experience-title {
@@ -23,5 +25,25 @@
 		.experience-text {
 			margin-bottom: 24px;
 		}
+	}
+	.experience-section-bg {
+		position: absolute;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	.experience-section-bg-1 {
+		top: 0px;
+		left: -200px;
+		width: 530px;
+		height: 530px;
+		background-image: url(../../../../assets/experiense-bg-1.png);
+	}
+	.experience-section-bg-2 {
+		bottom: 0px;
+		right: -100px;
+		width: 370px;
+		height: 370px;
+		background-image: url(../../../../assets/experiense-bg-2.png);
 	}
 }

@@ -2,6 +2,7 @@ import React from 'react';
 
 import './ServicesPage.scss';
 import { FormComponent, PageItemComponent, PageTitle } from '../../common';
+import { useParallax } from 'react-scroll-parallax';
 
 type Props = {};
 
@@ -28,6 +29,18 @@ const ServicesPage = (props: Props) => {
 			link: 'consulting',
 		},
 	];
+
+	const parallaxLeft = useParallax<HTMLDivElement>({
+		translateX: [-20, 20],
+		scale: [0.8, 1.2, 'easeInQuad'],
+		opacity: [0.3, 2],
+	});
+	const parallaxRight = useParallax<HTMLDivElement>({
+		translateX: [20, -20],
+		rotate: [-25, -25],
+		scale: [0.8, 1.2, 'easeInQuad'],
+		opacity: [0.3, 2],
+	});
 
 	return (
 		<div className='services-page'>
@@ -56,11 +69,13 @@ const ServicesPage = (props: Props) => {
 				</div>
 			</div>
 			<div className='form-bg'>
+				<div ref={parallaxLeft.ref} className='form-bg-img form-bg-img-1'></div>
+				<div
+					ref={parallaxRight.ref}
+					className='form-bg-img form-bg-img-2'
+				></div>
 				<div className='form-container'>
 					<FormComponent title='Send us a Message​' />
-				</div>
-				<div className='form-bg-img'>
-					<img src='../../images/subscribe-section-img-2.png' alt='' />
 				</div>
 			</div>
 		</div>
