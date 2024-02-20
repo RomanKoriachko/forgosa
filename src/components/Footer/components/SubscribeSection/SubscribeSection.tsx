@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './SubscribeSection.scss';
-import { Parallax, useParallax } from 'react-scroll-parallax';
+import { useParallax } from 'react-scroll-parallax';
 
 type Props = {};
 
