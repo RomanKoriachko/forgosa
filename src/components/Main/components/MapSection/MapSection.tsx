@@ -38,7 +38,7 @@ const MapSection = (props: Props) => {
 
 	return (
 		<section className='map-section'>
-			<Element name='map'></Element>
+			<Element className='anchor-element' name='map'></Element>
 			{/* <button
 				className={`close-map-btn ${showMapState}`}
 				onClick={() => closeMap()}

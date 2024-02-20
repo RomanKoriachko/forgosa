@@ -4,7 +4,6 @@ import {
 	ExperienceSection,
 	IntroduceSection,
 	MapSection,
-	Marquee,
 	OfferSection,
 	VideoSection,
 } from './components';
@@ -14,7 +13,6 @@ type Props = {};
 const Main = (props: Props) => {
 	return (
 		<main className='main'>
-			<Marquee />
 			<IntroduceSection />
 			<OfferSection />
 			<ExperienceSection />

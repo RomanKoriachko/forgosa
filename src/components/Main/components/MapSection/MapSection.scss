@@ -1,11 +1,18 @@
 .map-section {
 	position: relative;
 	overflow: hidden;
+	.anchor-element {
+		position: absolute;
+		top: -100px;
+	}
 	.close-map-btn {
 		position: absolute;
 		bottom: 50px;
 		left: 20px;
 		z-index: 1000;
+		.btn-arrow {
+			transform: rotate(180deg);
+		}
 	}
 	// .tablet-close-map-btn {
 	// 	display: none;

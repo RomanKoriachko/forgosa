@@ -6,14 +6,16 @@ type Props = {};
 
 const ExperienceSection = (props: Props) => {
 	const parallaxLeft = useParallax<HTMLDivElement>({
-		// speed: -10,
-		translateX: [-20, 0],
+		speed: -10,
+		translateX: [-20, 5],
 		scale: [0.7, 1.2, 'easeInQuad'],
+		opacity: [0.3, 2],
 	});
 	const parallaxRight = useParallax<HTMLDivElement>({
-		// speed: -10,
-		translateX: [20, 0],
+		speed: -10,
+		translateX: [20, -5],
 		scale: [0.7, 1.2, 'easeInQuad'],
+		opacity: [0.3, 2],
 	});
 
 	return (

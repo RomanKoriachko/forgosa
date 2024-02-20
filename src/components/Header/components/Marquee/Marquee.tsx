@@ -66,7 +66,7 @@ const Marquee: React.FC = () => {
 	return (
 		<div id='tradingview-widget-container'>
 			<div className='tradingview-widget-container__widget'></div>
-			{/* <div
+			<div
 				className='tradingview-widget-copyright'
 				id='tradingview-widget-copyright'
 			>
@@ -77,7 +77,7 @@ const Marquee: React.FC = () => {
 				>
 					<span className='blue-text'>Track all markets on TradingView</span>
 				</a>
-			</div> */}
+			</div>
 		</div>
 	);
 };

@@ -1,11 +1,12 @@
 .page-title-wrapper {
-	height: 1000px;
+	height: calc(100vh - 60px);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	border-bottom-left-radius: 50px;
 	border-bottom-right-radius: 50px;
+	margin-top: 60px;
 	.page-title-bg {
 		position: absolute;
 		top: 0px;

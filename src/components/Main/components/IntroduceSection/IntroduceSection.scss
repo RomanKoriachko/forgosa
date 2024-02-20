@@ -3,9 +3,10 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 1150px;
+	height: calc(100vh - 106px);
 	border-bottom-left-radius: 50px;
 	border-bottom-right-radius: 50px;
+	margin-top: 106px;
 	position: relative;
 	.introduce-section-bg {
 		position: absolute;

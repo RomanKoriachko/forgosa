@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.scss';
-import { HeaderButton } from './components';
+import { HeaderButton, Marquee } from './components';
 import { Link, useLocation } from 'react-router-dom';
 import { Link as NavLink } from 'react-scroll';
 
@@ -12,9 +12,12 @@ const Header = (props: Props) => {
 		<header className='header'>
 			<div className='header-container'>
 				<div className='row header-row'>
-					<div className='header-logo'>
-						<img src='../../images/header-logo.png' alt='logo' />
-					</div>
+					<Link to='/'>
+						<div className='header-logo'>
+							<img src='../../images/header-logo.png' alt='logo' />
+						</div>
+					</Link>
+
 					<div className='header-menu row'>
 						<Link to='/'>
 							<p className='header-menu-item'>Home</p>
@@ -40,6 +43,7 @@ const Header = (props: Props) => {
 					<HeaderButton />
 				</div>
 			</div>
+			{location.pathname === '/' ? <Marquee /> : undefined}
 		</header>
 	);
 };
