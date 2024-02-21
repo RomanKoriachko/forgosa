@@ -43,20 +43,22 @@ const ArticlesSection = (props: Props) => {
 				<div className='articles-wrapper'>
 					{articlesArr.map((article, i) => (
 						<div key={i} className='article-item'>
-							<Link to={article.link}>
+							<div>
 								<div className='article-image-wrapper'>
 									<img
 										src={`../../../../../images/${article.img}`}
 										alt='article'
 									/>
 								</div>
-								<div className='article-text-wrapper'>
-									<p className='article-title'>{article.title}</p>
-									<p className='article-text'>{article.text}</p>
-									<div className='row article-link'>
-										<p>Read More</p>
-										<div className='article-link-img'></div>
-									</div>
+								<p className='article-title'>{article.title}</p>
+							</div>
+							<div className='article-text-wrapper'>
+								<p className='article-text'>{article.text}</p>
+							</div>
+							<Link to={article.link}>
+								<div className='row article-link'>
+									<p>Read More</p>
+									<div className='article-link-img'></div>
 								</div>
 							</Link>
 						</div>

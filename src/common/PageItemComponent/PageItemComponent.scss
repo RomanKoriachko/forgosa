@@ -1,8 +1,18 @@
+a {
+	text-decoration: none;
+	color: #ffffff;
+	display: block;
+}
 .page-item {
 	padding: 32px 16px;
 	border: 1px solid #ededed;
 	border-radius: 16px;
 	background: #bdbaba24;
+	display: grid;
+	grid-template-rows: 80px 1fr 32px;
+	justify-content: space-between;
+	gap: 10px;
+	height: 100%;
 	.page-item-title {
 		font-size: 32px;
 		font-weight: 700;
@@ -12,23 +22,18 @@
 	.page-item-text {
 		line-height: 24px;
 		color: #7a8085;
-		margin-top: 16px;
 		margin-bottom: 48px;
 	}
-	a {
-		text-decoration: none;
-		color: #ffffff;
-		.page-item-link {
-			align-items: center;
-			gap: 11px;
-		}
-		.arrow-img {
-			background-image: url(../../assets/orange-arrow-righ-img.svg);
-			background-position: center;
-			background-repeat: no-repeat;
-			width: 20px;
-			height: 20px;
-		}
+	.page-item-link {
+		align-items: center;
+		gap: 11px;
+	}
+	.arrow-img {
+		background-image: url(../../assets/orange-arrow-righ-img.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 20px;
+		height: 20px;
 	}
 }
 
@@ -36,7 +41,7 @@
 	.page-item {
 		.page-item-text {
 			color: #ffffff;
-			margin-top: 60px;
+			margin-top: 20px;
 			margin-bottom: 16px;
 		}
 		a {

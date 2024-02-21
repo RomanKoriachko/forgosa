@@ -22,15 +22,20 @@
 		a {
 			text-decoration: none;
 			color: #ffffff;
-			display: block;
+			height: 100%;
 		}
 		.article-item {
 			border: 1px solid #bdbabac7;
 			background-color: #bdbaba24;
 			text-align: left;
+			height: 100%;
+			display: grid;
+			grid-template-rows: minmax(200px, 380px) 1fr 50px;
+			flex-direction: column;
+			justify-content: space-between;
+			gap: 20px;
 			cursor: pointer;
 			.article-image-wrapper {
-				// width: 100%;
 				max-height: 300px;
 				overflow: hidden;
 				> img {
@@ -38,29 +43,34 @@
 					transition: transform 0.3s;
 				}
 			}
+			.article-title {
+				font-size: 20px;
+				font-weight: 700;
+				line-height: 30px;
+				padding-left: 20px;
+				padding-right: 20px;
+				margin-top: 20px;
+				margin-bottom: 83px;
+			}
 			.article-text-wrapper {
-				padding: 21px;
-				.article-title {
-					font-size: 20px;
-					font-weight: 700;
-					line-height: 30px;
-					margin-bottom: 83px;
-				}
-				.article-link {
-					margin-top: 16px;
-					color: #fe6700;
-					font-size: 16px;
-					font-weight: 700;
-					line-height: 16px;
-					align-items: center;
-					gap: 16px;
-					.article-link-img {
-						background-image: url(../../../../assets/orange-plus-img.svg);
-						background-position: center;
-						background-repeat: no-repeat;
-						width: 12px;
-						height: 8px;
-					}
+				padding: 20px;
+				padding-top: 0;
+			}
+			.article-link {
+				padding-left: 20px;
+				padding-right: 20px;
+				color: #fe6700;
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 16px;
+				align-items: center;
+				gap: 16px;
+				.article-link-img {
+					background-image: url(../../../../assets/orange-plus-img.svg);
+					background-position: center;
+					background-repeat: no-repeat;
+					width: 12px;
+					height: 8px;
 				}
 			}
 			&:hover .article-image-wrapper > img {

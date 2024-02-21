@@ -45,7 +45,7 @@ const ProductsPage = (props: Props) => {
 		<div className='products-page'>
 			<PageTitle image='products-bg-img.png' title='Products' />
 			<div className='small-container'>
-				<div className='row products-links-row'>
+				<div className='products-links-row'>
 					{linksArr.map((element, i) => (
 						<PageItemComponent
 							key={i}

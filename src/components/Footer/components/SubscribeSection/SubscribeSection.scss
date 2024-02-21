@@ -10,12 +10,16 @@
 		border-radius: 16px;
 		padding: 55px 58px;
 		position: relative;
+		gap: 20px;
 		z-index: 100;
 		.subscribe-form-text {
 			font-size: 24px;
 			font-weight: 700;
 			line-height: 34px;
 			text-transform: uppercase;
+			span {
+				text-wrap: nowrap;
+			}
 		}
 		.form {
 			gap: 16px;
