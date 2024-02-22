@@ -2,12 +2,30 @@ import React from 'react';
 
 import './ContactsPage.scss';
 import { FormComponent, PageTitle } from '../../common';
+import { Helmet } from 'react-helmet-async';
 
 type Props = {};
 
 const ContactsPage = (props: Props) => {
 	return (
 		<section className='contacts-page-section'>
+			<Helmet>
+				<title>Fogrosa - Contacts</title>
+				<meta property='og:title' content='Fogrosa - Contacts' />
+				<meta property='telegram:title' content='Fogrosa - Contacts' />
+				<meta
+					name='description'
+					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
+				/>
+				<meta
+					property='og:description'
+					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
+				/>
+				<meta
+					property='telegram:description'
+					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
+				/>
+			</Helmet>
 			<PageTitle image='contacts-bg-img.png' title='Contact us' />
 			<div className='small-container'>
 				<div className='row contacts-row'>

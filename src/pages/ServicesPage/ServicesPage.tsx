@@ -3,6 +3,7 @@ import React from 'react';
 import './ServicesPage.scss';
 import { FormComponent, PageItemComponent, PageTitle } from '../../common';
 import { useParallax } from 'react-scroll-parallax';
+import { Helmet } from 'react-helmet-async';
 
 type Props = {};
 
@@ -44,6 +45,23 @@ const ServicesPage = (props: Props) => {
 
 	return (
 		<div className='services-page'>
+			<Helmet>
+				<title>Fogrosa - Services</title>
+				<meta property='og:title' content='Fogrosa - Services' />
+				<meta property='telegram:title' content='Fogrosa - Services' />
+				<meta
+					name='description'
+					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
+				/>
+				<meta
+					property='og:description'
+					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
+				/>
+				<meta
+					property='telegram:description'
+					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
+				/>
+			</Helmet>
 			<PageTitle image='services-bg-img.jpg' title='Services' />
 			<div className='small-container'>
 				<div className='services-links-row'>

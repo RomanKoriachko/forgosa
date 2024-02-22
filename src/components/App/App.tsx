@@ -6,15 +6,18 @@ import { Outlet } from 'react-router-dom';
 import { ScrollToTop } from '../../common';
 
 import './App.scss';
+import { HelmetProvider } from 'react-helmet-async';
 
 function App() {
 	return (
-		<div className='App'>
-			<ScrollToTop />
-			<Header />
-			<Outlet />
-			<Footer />
-		</div>
+		<HelmetProvider>
+			<div className='App'>
+				<ScrollToTop />
+				<Header />
+				<Outlet />
+				<Footer />
+			</div>
+		</HelmetProvider>
 	);
 }
 

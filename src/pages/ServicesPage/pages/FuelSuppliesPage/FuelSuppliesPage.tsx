@@ -2,15 +2,33 @@ import React from 'react';
 
 import './FuelSuppliesPage.scss';
 import { PageSidebar, PageTitle } from '../../../../common';
+import { Helmet } from 'react-helmet-async';
 
 type Props = {};
 
 const FuelSuppliesPage = (props: Props) => {
 	return (
 		<div className='fiel-supplies-page'>
+			<Helmet>
+				<title>Fogrosa - Fuel Supplies</title>
+				<meta property='og:title' content='Fogrosa - Fuel Supplies' />
+				<meta property='telegram:title' content='Fogrosa - Fuel Supplies' />
+				<meta
+					name='description'
+					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
+				/>
+				<meta
+					property='og:description'
+					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
+				/>
+				<meta
+					property='telegram:description'
+					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
+				/>
+			</Helmet>
 			<PageTitle
 				image='fuel-supplies-page-img.png'
-				title='Fuel supplies'
+				title='Fuel Supplies'
 				link='services'
 			/>
 			<div className='small-container'>

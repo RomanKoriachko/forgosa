@@ -2,12 +2,30 @@ import React from 'react';
 
 import './FreightServisesPage.scss';
 import { PageSidebar, PageTitle } from '../../../../common';
+import { Helmet } from 'react-helmet-async';
 
 type Props = {};
 
 const FreightServisesPage = (props: Props) => {
 	return (
 		<div className='freight-sevrices-page'>
+			<Helmet>
+				<title>Fogrosa - Freight Services</title>
+				<meta property='og:title' content='Fogrosa - Freight Services' />
+				<meta property='telegram:title' content='Fogrosa - Freight Services' />
+				<meta
+					name='description'
+					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
+				/>
+				<meta
+					property='og:description'
+					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
+				/>
+				<meta
+					property='telegram:description'
+					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
+				/>
+			</Helmet>
 			<PageTitle
 				image='freight-services-img.png'
 				title='Freight Services'
