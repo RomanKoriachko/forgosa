@@ -23,7 +23,6 @@ import {
 	PetroleumPage,
 } from './pages/ProductsPage/pages';
 import {
-	ConsultingPage,
 	FreightServisesPage,
 	FuelSuppliesPage,
 	TollingPage,
@@ -78,10 +77,10 @@ const router = createBrowserRouter([
 				element: <TollingPage />,
 				path: '/services/tolling',
 			},
-			{
-				element: <ConsultingPage />,
-				path: '/services/consulting',
-			},
+			// {
+			// 	element: <ConsultingPage />,
+			// 	path: '/services/consulting',
+			// },
 
 			{
 				element: <SupplyChainPostPage />,

@@ -15,19 +15,31 @@
 	}
 	.header-row {
 		max-height: 60px;
-		overflow: hidden;
 		justify-content: space-between;
 		align-items: center;
+		.logo-link {
+			height: 60px;
+			width: 280px;
+			background-image: url(../../../public/images/header-logo.png);
+			background-position: 50% 45%;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
 		.header-logo {
 			position: relative;
 			top: 18px;
 			width: 300px;
+			height: 100%;
 			> img {
 				width: 100%;
 			}
 		}
 		.header-menu {
 			gap: 80px;
+			max-height: 60px;
+			.header-menu-item-wrapper {
+				position: relative;
+			}
 			.header-menu-item {
 				display: block;
 				text-decoration: none;
@@ -35,6 +47,42 @@
 				font-weight: 700;
 				line-height: 37px;
 				cursor: pointer;
+			}
+			.header-menu-item-dropdown {
+				position: absolute;
+				top: 28px;
+				left: 0px;
+				z-index: 1500;
+				width: 155px;
+				background-color: #070707;
+				padding: 22px 35px 22px 13px;
+				font-weight: 500;
+				line-height: 37px;
+				.active {
+					.dropdown-link-wrapper {
+						color: #fe6700;
+						.link-circle {
+							background-color: #fe6700;
+						}
+					}
+				}
+				.dropdown-link-wrapper {
+					align-items: center;
+					gap: 8px;
+					.link-circle {
+						width: 6px;
+						height: 6px;
+						border-radius: 50%;
+						background-color: transparent;
+					}
+				}
+			}
+			.header-menu-item-dropdown-products {
+				display: none;
+			}
+			.header-menu-item-dropdown-services {
+				width: 195px;
+				display: none;
 			}
 		}
 	}
@@ -47,9 +95,29 @@
 		.header-row {
 			.header-menu {
 				.header-menu-item {
-					transition: transform 0.5s;
-					&:hover {
-						transform: translateY(10%);
+					transition: color 0.3s;
+				}
+				.header-menu-item-link {
+					&:hover .header-menu-item {
+						color: #fe6700;
+					}
+				}
+				.header-menu-item-products {
+					&:hover .header-menu-item-dropdown-products {
+						display: block;
+					}
+				}
+				.header-menu-item-services {
+					&:hover .header-menu-item-dropdown-services {
+						display: block;
+					}
+				}
+				.header-menu-item-dropdown {
+					.dropdown-link-wrapper {
+						transition: color 0.3s;
+						&:hover {
+							color: #fe6700;
+						}
 					}
 				}
 			}
