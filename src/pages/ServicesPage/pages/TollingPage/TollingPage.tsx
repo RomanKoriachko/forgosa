@@ -30,56 +30,72 @@ const TollingPage = (props: Props) => {
 			<div className='small-container'>
 				<div className='page-container'>
 					<div className='page-content'>
-						<p className='page-content-title'>
-							Fogrosa: Your Partner in the World of Oil Refining
+						<p className='service-title'>
+							Comprehensive Solutions for Optimal Performance
 						</p>
 						<p className='page-content-text'>
-							Fogrosa is not just a company; it's a reliable strategic partner
-							for oil refineries, offering a wide range of services, including
-							crude oil supply and tolling. Our collaboration aims to enhance
-							the efficiency of your production and ensure a steady supply of
-							high-quality raw materials.
+							At FOGROSA, we go beyond being a mere supplier; we are your
+							comprehensive solution provider in the intricate world of oil
+							refining. Our commitment extends beyond delivering raw materials,
+							encompassing a suite of services meticulously designed to elevate
+							your operational efficiency and ensure a consistent stream of
+							top-tier resources.
 						</p>
-						<p className='page-content-subtitle'>
-							High-Quality Supplies: Light, Heavy Crude, and Blends
-						</p>
-						<p className='page-content-text'>
-							We specialize not only in supplying light and heavy crude but also
-							provide a unique opportunity to order blends tailored to your
-							requirements. Our company guarantees a high standard of raw
-							materials, making us the ideal choice for your production needs.
-						</p>
-						<p className='page-content-subtitle'>
-							Flexibility in Tolling: Tailored to You
+						<p className='service-subtitle'>
+							Diverse Crude Options: Precision in Every Blend
 						</p>
 						<p className='page-content-text'>
-							Fogrosa provides flexible tolling conditions, allowing our
-							partners to optimize their production processes. We ensure precise
-							alignment with your technological requirements, supporting
-							efficient resource utilization and maximum productivity.
+							Our specialization extends beyond supplying light and heavy crude;
+							we take pride in offering a diverse array of blends tailored
+							precisely to your specifications. With group of petroleum
+							companies FOGROSA, expect nothing less than a commitment to
+							excellence in the quality of raw materials, making us the
+							preferred choice for all your production requirements.
 						</p>
-						<p className='page-content-subtitle'>
-							Technological Innovation and Environmental Responsibility
-						</p>
-						<p className='page-content-text'>
-							We integrate cutting-edge technologies into the oil refining
-							industry, striving for sustainable development and reducing
-							environmental impact. Collaborating with Fogrosa is a step toward
-							eco-conscious and efficient production.
-						</p>
-						<p className='page-content-subtitle'>
-							Reliable Partnership for Long-Term Success
-						</p>
-						<p className='page-content-text'>
-							We value long-term relationships and guarantee transparency at
-							every stage of collaboration. Fogrosa is your partner, ready to
-							support your business and make your oil refining more successful.
+						<div className='page-content-img-wrapper'>
+							<img
+								src='../../../../../images/tolling-page-content-img.png'
+								alt='gasoline article'
+							/>
+						</div>
+						<p className='service-subtitle'>
+							Adaptable Tolling: Your Process, Your Way
 						</p>
 						<p className='page-content-text'>
-							Fogrosa invites oil refineries to collaborate. We are prepared to
-							provide you not only with high-quality raw materials but also
-							individualized solutions for your production. Contact us to
-							discuss how we can help you reach new heights in your business.
+							FOGROSA stands out by providing adaptable tolling conditions,
+							granting our partners the flexibility needed to fine-tune their
+							production processes. We prioritize aligning with your
+							technological needs, facilitating optimal resource utilization and
+							ensuring the pinnacle of productivity in your operations.
+						</p>
+						<p className='service-subtitle'>
+							Pioneering Technology and Environmental Stewardship
+						</p>
+						<p className='page-content-text'>
+							In our pursuit of excellence, we integrate cutting-edge
+							technologies into the fabric of oil refining, championing
+							sustainable development and minimizing environmental impact. A
+							partnership with Fogrosa is a commitment to embracing
+							eco-conscious practices while ensuring the highest standards of
+							efficiency in production.
+						</p>
+						<p className='service-subtitle'>
+							Enduring Partnerships for Sustained Success
+						</p>
+						<p className='page-content-text'>
+							At FOGROSA, we cherish enduring relationships and uphold
+							unwavering transparency throughout our collaboration journey.
+							Consider us not just a supplier but a reliable partner,
+							steadfastly dedicated to supporting your business and propelling
+							your oil refining endeavors towards resounding success.
+						</p>
+						<p className='page-content-text'>
+							FOGROSA extends a warm invitation to oil refineries seeking
+							collaboration. Beyond delivering top-notch raw materials, we stand
+							ready to offer bespoke solutions tailored to elevate your
+							production. Contact us today to initiate a conversation on how
+							FOGROSA can be the catalyst for achieving new heights in your
+							business.
 						</p>
 					</div>
 					<PageSidebar />

@@ -34,86 +34,89 @@ const FuelSuppliesPage = (props: Props) => {
 			<div className='small-container'>
 				<div className='page-container'>
 					<div className='page-content'>
-						<p className='page-content-text'>
-							Welcome to our dedicated page for Freight Services catering
-							specifically to the oil and petroleum industry. Our comprehensive
-							shipping solutions are tailored to meet the unique requirements of
-							transporting oil and petroleum products efficiently and securely.
-						</p>
-						<p className='page-content-title'>OUR SPECIALIZED SERVICES</p>
-						<p className='page-content-subtitle'>Safe and Secure Transport</p>
-						<p className='page-content-text'>
-							Trust in our commitment to the safe and secure transportation of
-							oil and petroleum products. We employ rigorous safety protocols
-							and compliance measures to ensure the integrity of your cargo
-						</p>
-						<p className='page-content-subtitle'>Specialized Tanker Fleet</p>
-						<p className='page-content-text'>
-							Benefit from our diverse fleet of specialized tankers designed for
-							the transportation of crude oil, refined products, and various
-							petroleum derivatives. Our fleet is equipped to handle the
-							specific needs of the oil and gas sector.
-						</p>
-						<p className='page-content-subtitle'>Global Logistics Network</p>
-						<p className='page-content-text'>
-							Seamlessly navigate the complexities of global logistics with our
-							extensive network. We connect you to major ports and destinations
-							worldwide, facilitating smooth and efficient shipments.
-						</p>
-						<p className='page-content-subtitle'>Customized Solutions</p>
-						<p className='page-content-text'>
-							Recognizing the diverse nature of oil and petroleum products, we
-							provide tailored shipping solutions to accommodate your unique
-							cargo specifications. Our team works closely with you to address
-							specific challenges and requirements.
-						</p>
-						<p className='page-content-subtitle'>Quality Assurance</p>
-						<p className='page-content-text'>
-							Ensure the quality of your oil and petroleum products throughout
-							the shipping process. Our quality assurance practices guarantee
-							that your cargo reaches its destination in optimal condition.
-						</p>
-						<p className='page-content-subtitle'>Compliance and Regulations</p>
-						<p className='page-content-text'>
-							Navigate international regulations and compliance seamlessly with
-							our experienced team. We stay abreast of industry regulations to
-							ensure that your shipments meet all necessary standards.
-						</p>
-						<p className='page-content-subtitle'>DIP&PAY Services</p>
-						<p className='page-content-text'>
-							Streamline your transactions with our DIP&PAY services, offering a
-							transparent and accurate process for dip inspections and payments.
-							Enhance efficiency and reduce the risk of discrepancies in cargo
-							quantity.
-						</p>
-						<p className='page-content-subtitle'>
-							WHY CHOOSE OUR FREIGHT SERVICES
+						<p className='service-title'>
+							Welcome to FOGROSA Fuel Supply: Fuelling Success Across the Globe
 						</p>
 						<p className='page-content-text'>
-							<span>Industry Expertise:</span> Leverage our deep industry
-							knowledge and experience in oil and petroleum shipping.
+							At FOGROSA, our commitment to excellence extends beyond oil
+							refining, encompassing a global presence in fuel supply. As a
+							consortium of leading oil companies, we take pride in delivering a
+							diverse range of high-quality fuels to destinations worldwide,
+							ensuring reliability, efficiency, and sustainability.
+						</p>
+						<p className='service-subtitle'>
+							Global Fuel Portfolio: From Jet Fuel to Marine Diesel
 						</p>
 						<p className='page-content-text'>
-							<span>Reliability:</span> Count on our track record of reliable
-							and timely deliveries, meeting the stringent demands of the oil
-							and gas sector.
+							Our extensive portfolio covers a spectrum of fuels tailored to
+							meet the dynamic needs of diverse industries. From aviation to
+							maritime, we supply top-tier jet fuels, marine diesel, and
+							everything in between. FOGROSA stands as your one-stop solution
+							for premium fuels, facilitating seamless operations across
+							continents.
+						</p>
+						<div className='page-content-img-wrapper'>
+							<img
+								src='../../../../../images/fuel-supplies-page-content-img.png'
+								alt='gasoline article'
+							/>
+						</div>
+						<p className='service-subtitle'>
+							Aviation Fuels: Soaring High with Quality
 						</p>
 						<p className='page-content-text'>
-							<span>End-to-End Solutions:</span> From loading to unloading, our
-							end-to-end solutions cover every aspect of the shipping process.
+							Group of petroleum companies FOGROSA ensures a steady supply of
+							aviation fuels, meeting stringent industry standards. Whether you
+							operate a bustling international airport or a regional airfield,
+							trust us to provide jet fuels that propel your aircraft to new
+							heights with unmatched efficiency and reliability.
+						</p>
+						<p className='service-subtitle'>
+							Marine Fuels: Navigating Oceans of Possibilities
 						</p>
 						<p className='page-content-text'>
-							<span>Customer-Centric Approach:</span> Enjoy personalized
-							customer support and a dedicated team committed to your
-							satisfaction.
+							Our commitment to the maritime industry is unwavering. FOGROSA
+							supplies marine diesel fuels that power vessels across the globe.
+							With a focus on quality and compliance, we contribute to the
+							smooth sailing of your maritime operations, ensuring reliability
+							in every nautical mile.
+						</p>
+						<p className='service-subtitle'>
+							Industrial and Commercial Fuels: Powering Progress Worldwide
 						</p>
 						<p className='page-content-text'>
-							Explore the efficiency and reliability of our Freight Services for
-							Oil and Petroleum Products. Whether you are shipping crude oil,
-							refined products, or specialty chemicals, we have the expertise to
-							ensure the success of your shipments. Contact us today to discuss
-							your specific freight needs and experience a seamless shipping
-							journey with us.
+							From industrial plants to commercial enterprises, Fogrosa delivers
+							fuels that fuel progress. We understand the unique energy
+							requirements of various sectors and provide tailored solutions to
+							power your machinery, vehicles, and operations with maximum
+							efficiency
+						</p>
+						<p className='service-subtitle'>
+							Global Reach, Local Excellence: Our Supply Chain Advantage
+						</p>
+						<p className='page-content-text'>
+							FOGROSA’s global network ensures that our top-quality fuels reach
+							you wherever you are. With a robust supply chain and logistics
+							expertise, we navigate regulatory landscapes seamlessly,
+							delivering excellence from refineries to your doorstep.
+						</p>
+						<p className='service-subtitle'>
+							Environmental Responsibility: Sustainable Fuels for a Sustainable
+							Future
+						</p>
+						<p className='page-content-text'>
+							FOGROSA is committed to environmental stewardship. We offer
+							eco-friendly fuel options, contributing to a greener future. Our
+							sustainable fuels align with global initiatives for reducing
+							carbon footprints, allowing you to make environmentally conscious
+							choices without compromising performance.
+						</p>
+						<p className='page-content-text'>
+							Embark on a journey of reliable fuel supply with FOGROSA. Explore
+							our comprehensive range of fuels designed to power industries,
+							connect continents, and drive progress. Contact us today to
+							discuss how FOGROSA can be your trusted partner in meeting all
+							your fuel requirements, ensuring success on a global scale.
 						</p>
 					</div>
 					<PageSidebar />

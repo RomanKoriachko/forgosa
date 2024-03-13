@@ -3,6 +3,7 @@
 	grid-template-columns: 1fr 450px;
 	gap: 30px;
 	margin-top: 32px;
+	margin-bottom: -80px;
 	.page-content-title {
 		margin-bottom: 18px;
 		font-size: 24px;
@@ -17,12 +18,29 @@
 		line-height: 24px;
 		text-transform: uppercase;
 	}
+	.service-title {
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 39px;
+		margin-bottom: 24px;
+	}
+	.service-subtitle {
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 22px;
+		margin-bottom: 8px;
+		text-transform: uppercase;
+	}
 	.page-content-text {
-		margin-bottom: 32px;
+		margin-bottom: 24px;
 		line-height: 26px;
 		> span {
 			font-weight: 700;
 		}
+	}
+	.no-margin {
+		margin-bottom: 0px;
 	}
 	.page-content-img-wrapper {
 		margin-bottom: 32px;
@@ -34,9 +52,30 @@
 			width: 100%;
 		}
 	}
+	.page-content-table {
+		width: 100%;
+		border: 1px solid #ffffff;
+		text-transform: uppercase;
+		thead {
+			background: #ffffff1a;
+		}
+		th,
+		td {
+			border: 1px solid #ffffff;
+			padding: 18px 0px;
+		}
+		td {
+			text-align: center;
+		}
+		.table-cell-alighn-left {
+			text-align: left;
+			padding-left: 36px;
+		}
+	}
 }
 
 .page-btn-row {
+	margin-top: 80px;
 	.page-btn-item {
 		background: transparent;
 		border: 2px solid #ffffff;
