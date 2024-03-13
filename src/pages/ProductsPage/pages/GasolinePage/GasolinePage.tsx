@@ -164,7 +164,7 @@ const GasolinePage = (props: Props) => {
 				</div>
 				<div className='page-btn-row'>
 					<button className='page-btn-item page-btn-download'>
-						Download document
+						Download Specification
 					</button>
 					<button className='page-btn-item page-btn-form'>
 						Fill out the form
