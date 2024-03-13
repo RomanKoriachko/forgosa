@@ -88,12 +88,15 @@ const ContactsPage = (props: Props) => {
 								<div className='item-img item-img-mail'></div>
 								<div>
 									<p className='contacts-subtitle'>Write Us Anytime</p>
+									<p className='contacts-text'>Sales department:</p>
 									<p className='contacts-text'>
-										Sales department: <span>mexico@fogrosa.com</span>,{' '}
+										<span>mexico@fogrosa.com,</span>
+									</p>
+									<p className='contacts-text'>
 										<span>oman@fogrosa.com</span>
-										<p>
-											Main office: <span>office@fogrosa.com</span>
-										</p>
+									</p>
+									<p className='contacts-text'>
+										Main office: <span>office@fogrosa.com</span>
 									</p>
 								</div>
 							</div>

@@ -2,10 +2,6 @@
 	padding-bottom: 140px;
 	position: relative;
 	overflow: hidden;
-	// background: url(../../../../assets/experiense-bg-1.png),
-	// 	url(../../../../assets/experiense-bg-2.png);
-	// background-repeat: no-repeat;
-	// background-position: left, right 100%;
 	.experience-title-wrapper {
 		margin-left: 105px;
 		.experience-title {
@@ -17,6 +13,7 @@
 		}
 		.experience-subtitle {
 			line-height: 27px;
+			width: 75%;
 		}
 	}
 	.experience-content-wrapper {
