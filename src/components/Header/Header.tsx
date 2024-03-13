@@ -115,7 +115,7 @@ const Header = (props: Props) => {
 					<HeaderButton />
 				</div>
 			</div>
-			{location.pathname === '/' ? <Marquee /> : undefined}
+			<Marquee />
 		</header>
 	);
 };

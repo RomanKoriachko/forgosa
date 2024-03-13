@@ -69,7 +69,7 @@ const SidebarWidget: React.FC = () => {
 			});
 
 			const widgetContainer = document.getElementsByClassName(
-				'tradingview-widget-container__widget'
+				'sidebar-tradingview-widget-container__widget'
 			)[0];
 			if (widgetContainer) {
 				widgetContainer.appendChild(script);
@@ -78,7 +78,7 @@ const SidebarWidget: React.FC = () => {
 
 		return () => {
 			const widgetContainer = document.getElementsByClassName(
-				'tradingview-widget-container__widget'
+				'sidebar-tradingview-widget-container__widget'
 			)[0];
 			if (widgetContainer && widgetContainer.firstChild) {
 				widgetContainer.removeChild(widgetContainer.firstChild);
@@ -93,7 +93,7 @@ const SidebarWidget: React.FC = () => {
 	return (
 		<div className='tradingview-widget-container'>
 			{shouldAddWidget && (
-				<div className='tradingview-widget-container__widget'></div>
+				<div className='sidebar-tradingview-widget-container__widget'></div>
 			)}
 			<div className='tradingview-widget-copyright'>
 				<a

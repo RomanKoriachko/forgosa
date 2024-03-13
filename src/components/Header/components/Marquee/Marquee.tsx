@@ -51,7 +51,7 @@ const Marquee: React.FC = () => {
           "locale": "en"
         }`;
 		const container = document.querySelector(
-			'.tradingview-widget-container__widget'
+			'.header-tradingview-widget-container__widget'
 		);
 		if (container) {
 			container.appendChild(script);
@@ -65,7 +65,7 @@ const Marquee: React.FC = () => {
 	}, []);
 	return (
 		<div id='tradingview-widget-container'>
-			<div className='tradingview-widget-container__widget'></div>
+			<div className='header-tradingview-widget-container__widget'></div>
 			<div
 				className='tradingview-widget-copyright'
 				id='tradingview-widget-copyright'
