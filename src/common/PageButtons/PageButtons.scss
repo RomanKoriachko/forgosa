@@ -1,0 +1,36 @@
+.page-btn-row {
+	margin-top: 40px;
+	.page-btn-item {
+		background: transparent;
+		border: 2px solid #ffffff;
+		padding: 27px 0px;
+		color: #ffffff;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 19px;
+		width: 330px;
+		background-repeat: no-repeat;
+		background-position: 93% 50%;
+		padding-right: 30px;
+		cursor: pointer;
+	}
+	.page-btn-download {
+		margin-right: 30px;
+		background-image: url(../../assets/file-img.svg);
+	}
+	.page-btn-form {
+		background-image: url(../../assets/list-img.svg);
+	}
+}
+
+@media (hover: hover) {
+	.page-btn-row {
+		.page-btn-item {
+			transition: border 0.3s;
+			&:hover {
+				border-color: #fe6700;
+			}
+		}
+	}
+}

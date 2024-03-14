@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './GasolinePage.scss';
-import { PageSidebar, PageTitle } from '../../../../common';
+import { PageButtons, PageSidebar, PageTitle } from '../../../../common';
 import { Helmet } from 'react-helmet-async';
 
 type Props = {};
@@ -159,16 +159,9 @@ const GasolinePage = (props: Props) => {
 							evolution of humanity's relationship with energy and the
 							environment.
 						</p>
+						<PageButtons />
 					</div>
 					<PageSidebar />
-				</div>
-				<div className='page-btn-row'>
-					<button className='page-btn-item page-btn-download'>
-						Download Specification
-					</button>
-					<button className='page-btn-item page-btn-form'>
-						Fill out the form
-					</button>
 				</div>
 			</div>
 		</div>

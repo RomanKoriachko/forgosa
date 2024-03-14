@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './DieselFuelPage.scss';
-import { PageSidebar, PageTitle } from '../../../../common';
+import { PageButtons, PageSidebar, PageTitle } from '../../../../common';
 import { Helmet } from 'react-helmet-async';
 
 type Props = {};
@@ -157,16 +157,9 @@ const DieselFuelPage = (props: Props) => {
 							highlight the importance of responsible energy choices in shaping
 							a more sustainable future.
 						</p>
+						<PageButtons />
 					</div>
 					<PageSidebar />
-				</div>
-				<div className='page-btn-row'>
-					<button className='page-btn-item page-btn-download'>
-						Download Specification
-					</button>
-					<button className='page-btn-item page-btn-form'>
-						Fill out the form
-					</button>
 				</div>
 			</div>
 		</div>
