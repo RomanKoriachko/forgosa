@@ -27,6 +27,12 @@
 		line-height: 195px;
 		z-index: 10;
 	}
+	.page-subtitle {
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 20px;
+		text-transform: lowercase;
+	}
 	.page-title-link {
 		margin: 0 auto;
 		font-size: 16px;
@@ -35,12 +41,6 @@
 		text-decoration: none;
 		color: white;
 		width: fit-content;
-		.page-link-row {
-			align-items: center;
-			justify-content: center;
-			gap: 8px;
-			margin-top: 24px;
-		}
 		.arrow-img {
 			background-image: url(../../assets/small-arrow-right.svg);
 			background-position: center;
@@ -49,6 +49,12 @@
 			height: 24px;
 			transform: rotate(180deg);
 		}
+	}
+	.page-link-row {
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		margin-top: 24px;
 	}
 }
 

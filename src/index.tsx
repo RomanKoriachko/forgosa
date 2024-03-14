@@ -28,6 +28,13 @@ import {
 	TollingPage,
 } from './pages/ServicesPage/pages';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import {
+	CrudeOilPage,
+	DictionaryPage,
+	KeyTransactionPage,
+	PetroleumRefiningPage,
+	TypesOfTankersPage,
+} from './pages/FaqPage/pages';
 
 const router = createBrowserRouter([
 	{
@@ -106,6 +113,26 @@ const router = createBrowserRouter([
 			{
 				element: <FaqPage />,
 				path: '/faq',
+			},
+			{
+				element: <DictionaryPage />,
+				path: '/faq/dictionary',
+			},
+			{
+				element: <CrudeOilPage />,
+				path: '/faq/crude_oil_and_petroleum_products',
+			},
+			{
+				element: <PetroleumRefiningPage />,
+				path: '/faq/petroleum_refining_processes',
+			},
+			{
+				element: <TypesOfTankersPage />,
+				path: '/faq/types_of_tankers',
+			},
+			{
+				element: <KeyTransactionPage />,
+				path: '/faq/key_transactions_procedures',
 			},
 		],
 	},

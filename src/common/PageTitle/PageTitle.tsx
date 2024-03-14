@@ -7,9 +7,10 @@ type Props = {
 	image: string;
 	title: string;
 	link?: string;
+	subtitle?: string;
 };
 
-const PageTitle = ({ image, title, link }: Props) => {
+const PageTitle = ({ image, title, link, subtitle }: Props) => {
 	return (
 		<div
 			className='page-title-wrapper'
@@ -31,7 +32,11 @@ const PageTitle = ({ image, title, link }: Props) => {
 							<p className='page-link-text'>HOME</p>
 						</div>
 					</Link>
-				) : undefined}
+				) : (
+					<div className='row page-link-row'>
+						<p className='page-subtitle'>{subtitle}</p>
+					</div>
+				)}
 			</div>
 			<div className='page-title-bg'></div>
 		</div>

@@ -4,6 +4,7 @@ import { PageTitle } from '../../common';
 
 import './FaqPage.scss';
 import { Helmet } from 'react-helmet-async';
+import { LinksSlider } from './components';
 
 type Props = {};
 
@@ -28,6 +29,7 @@ const FaqPage = (props: Props) => {
 				/>
 			</Helmet>
 			<PageTitle image='faq-bg-img.png' title='FAQ' />
+			<LinksSlider index={0} />
 		</div>
 	);
 };
