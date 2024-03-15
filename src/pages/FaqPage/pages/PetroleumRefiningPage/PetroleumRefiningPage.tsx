@@ -16,7 +16,7 @@ const PetroleumRefiningPage = (props: Props) => {
 			/>
 			<LinksSlider index={2} />
 			<div className='page-content'>
-				<div className='small-container'>
+				<div className='faq-page-container'>
 					<p className='bold-text margin-bottom'>
 						Petroleum refining is the process of converting crude oil into
 						various useful products through physical and chemical

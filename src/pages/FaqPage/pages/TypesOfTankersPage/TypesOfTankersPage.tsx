@@ -16,7 +16,7 @@ const TypesOfTankersPage = (props: Props) => {
 			/>
 			<LinksSlider index={3} />
 			<div className='page-content'>
-				<div className='small-container'>
+				<div className='faq-page-container'>
 					<p className='bold-text margin-bottom'>
 						Oil tankers play a crucial role in the transportation of oil and its
 						products across the globe. The two main types of oil tankers, crude

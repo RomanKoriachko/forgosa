@@ -17,7 +17,7 @@ const CrudeOilPage = (props: Props) => {
 			/>
 			<LinksSlider index={1} />
 			<div className='page-content'>
-				<div className='small-container'>
+				<div className='faq-page-container'>
 					<p className='bold-text'>
 						Petroleum products are materials derived from crude oil (petroleum)
 						as it is processed in oil refineries. Unlike petrochemicals, which

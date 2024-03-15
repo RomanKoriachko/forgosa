@@ -1,3 +1,16 @@
+.faq-page-container {
+	margin: 0 auto;
+	max-width: 1920px;
+	padding: 0px 375px;
+}
+
+.dictionary-page-container {
+	margin: 0 auto;
+	max-width: 1920px;
+	padding-right: 375px;
+	padding-left: 245px;
+}
+
 .page-content {
 	font-family: 'Roboto', sans-serif;
 }
@@ -60,5 +73,33 @@ p {
 	.table-cell-alighn-left {
 		text-align: left;
 		padding-left: 36px;
+	}
+}
+
+.dictionary-page {
+	.dictionary-container {
+		display: flex;
+		gap: 75px;
+	}
+	.tab-buttons-container {
+		.active {
+			color: #fe6700;
+		}
+	}
+	.tab-button {
+		font-family: 'Roboto', sans-serif;
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 52px;
+		cursor: pointer;
+	}
+	.dictionary-item {
+		margin-bottom: 24px;
+	}
+	.dictionary-item-title {
+		font-weight: 600;
+	}
+	.dictionary-item-text {
+		font-weight: 300;
 	}
 }

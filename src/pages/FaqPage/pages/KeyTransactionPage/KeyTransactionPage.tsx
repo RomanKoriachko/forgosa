@@ -16,7 +16,7 @@ const KeyTransactionPage = (props: Props) => {
 			/>
 			<LinksSlider index={0} />
 			<div className='page-content'>
-				<div className='small-container'>
+				<div className='faq-page-container'>
 					<p className='big-text'>FREE ON BOARD (FOB)</p>
 					<p className='page-title'>WHAT IS FREE ON BOARD?</p>
 					<p>
