@@ -167,7 +167,7 @@ const FreightServisesPage = (props: Props) => {
 								</tr>
 								<tr>
 									<td className='table-cell-alighn-left'>
-										ulcc -ultra large crude carrier
+										ulcc - ultra large crude carrier
 									</td>
 									<td>above 320,000</td>
 									<td>ulcc</td>

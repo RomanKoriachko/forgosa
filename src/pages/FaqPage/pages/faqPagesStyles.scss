@@ -3,6 +3,9 @@
 }
 p {
 	font-weight: 300;
+	span {
+		font-weight: 700;
+	}
 }
 .page-title {
 	text-transform: uppercase;
@@ -20,9 +23,13 @@ p {
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 29px;
+	margin-bottom: 8px;
 }
 .margin-bottom {
 	margin-bottom: 24px;
+}
+.orange-text {
+	color: #fe6700;
 }
 .page-img {
 	text-align: center;
@@ -31,5 +38,27 @@ p {
 		object-fit: contain;
 		object-position: center;
 		max-height: 780px;
+	}
+}
+
+.page-content-table {
+	width: 100%;
+	border: 1px solid #ffffff;
+	text-transform: uppercase;
+	margin: 24px 0px;
+	thead {
+		background: #ffffff1a;
+	}
+	th,
+	td {
+		border: 1px solid #ffffff;
+		padding: 18px 0px;
+	}
+	td {
+		text-align: center;
+	}
+	.table-cell-alighn-left {
+		text-align: left;
+		padding-left: 36px;
 	}
 }
