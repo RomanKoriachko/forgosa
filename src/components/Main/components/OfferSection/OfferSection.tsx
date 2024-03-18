@@ -53,7 +53,7 @@ const OfferSection = (props: Props) => {
 						<p className='offer-btn-label'>view all</p>
 					</div>
 				</div>
-				<div className='offer-items-wrapper row'>
+				<div className='offer-items-wrapper'>
 					{offerItemsArr.map((item, i) => (
 						<div key={i} className={`offer-item offer-item-${i + 1}`}>
 							<Link to={item.link}>
@@ -63,6 +63,14 @@ const OfferSection = (props: Props) => {
 							</Link>
 						</div>
 					))}
+				</div>
+				<div className='offer-btn-wrapper offer-mobile-btn-wrapper'>
+					<Link to='/products'>
+						<div className='offer-btn'>
+							<div className='offer-btn-small'></div>
+						</div>
+					</Link>
+					<p className='offer-btn-label'>view all</p>
 				</div>
 			</div>
 		</section>

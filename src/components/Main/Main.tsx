@@ -32,11 +32,11 @@ const Main = (props: Props) => {
 				/>
 			</Helmet>
 			<IntroduceSection />
-			{/* <OfferSection />
-			<ExperienceSection />
-			<MapSection />
-			<ArticlesSection />
-			<VideoSection /> */}
+			<OfferSection />
+			{/* <ExperienceSection /> */}
+			{/* <MapSection /> */}
+			{/* <ArticlesSection /> */}
+			{/* <VideoSection /> */}
 		</main>
 	);
 };

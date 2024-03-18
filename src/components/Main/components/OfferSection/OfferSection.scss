@@ -53,7 +53,12 @@
 			line-height: 17px;
 		}
 	}
+	.offer-mobile-btn-wrapper {
+		display: none;
+	}
 	.offer-items-wrapper {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
 		gap: 30px;
 		margin-top: 60px;
 		.offer-item {
@@ -131,6 +136,76 @@
 					);
 					box-shadow: 0px 30px 55px 20px #d075e333;
 				}
+			}
+		}
+	}
+}
+
+// ---------------------- Adaptive ----------------------
+
+// ------------- Large Desktop -------------
+@media (max-width: 1300px) {
+	.offer-section {
+		.offer-items-wrapper {
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+		}
+	}
+}
+
+// ------------- Tablet -------------
+@media (max-width: 992px) {
+	.offer-section {
+		.offer-title-row {
+			display: block;
+			.offer-title-wrapper {
+				margin-left: 0;
+				width: 100%;
+			}
+			.offer-btn-wrapper {
+				display: none;
+			}
+		}
+		.offer-mobile-btn-wrapper {
+			display: block;
+			width: 120px;
+			margin: 24px auto 0px auto;
+		}
+	}
+}
+
+// ------------- Mobile -------------
+@media (max-width: 576px) {
+	.offer-section {
+		padding-top: 48px;
+		padding-bottom: 48px;
+		.offer-title-wrapper {
+			.offer-title {
+				font-size: 24px;
+				line-height: 29px;
+				text-align: center;
+			}
+		}
+		.offer-items-wrapper {
+			grid-template-columns: 1fr;
+			margin-top: 24px;
+			gap: 16px;
+			.offer-item {
+				padding: 16px;
+			}
+		}
+		.offer-mobile-btn-wrapper {
+			width: 80px;
+			.offer-btn {
+				width: 80px;
+				height: 80px;
+				.offer-btn-small {
+					width: 64px;
+					height: 64px;
+				}
+			}
+			.offer-btn-label {
+				margin-top: 16px;
 			}
 		}
 	}
