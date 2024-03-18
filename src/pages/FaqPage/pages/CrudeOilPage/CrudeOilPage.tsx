@@ -9,7 +9,7 @@ type Props = {};
 
 const CrudeOilPage = (props: Props) => {
 	return (
-		<div className='crude-oil-page'>
+		<div className='faq-page crude-oil-page'>
 			<PageTitle
 				image='faq-bg-img.png'
 				title='FAQ'

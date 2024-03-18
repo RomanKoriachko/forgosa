@@ -30,3 +30,12 @@
 		}
 	}
 }
+
+// ------------- Mobile -------------
+@media (max-width: 576px) {
+	.button {
+		.btn-content-row {
+			justify-content: center;
+		}
+	}
+}

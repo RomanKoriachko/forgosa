@@ -16,8 +16,8 @@ const PageTitle = ({ image, title, link, subtitle }: Props) => {
 			className='page-title-wrapper'
 			style={{ backgroundImage: `url('../../../images/${image}')` }}
 		>
-			<div className='page-title'>
-				<p>{title}</p>
+			<div className='page-title-container'>
+				<p className='page-title'>{title}</p>
 				{link && link !== '/' ? (
 					<Link to={`/${link}`} className='page-title-link'>
 						<div className='row page-link-row'>

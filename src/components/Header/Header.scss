@@ -86,27 +86,34 @@
 				display: none;
 			}
 		}
-		.header-burger-menu-container {
+		.burger-menu-btn {
 			background-image: url(../../assets/burger-menu-img.svg);
 			background-position: center;
 			background-repeat: no-repeat;
 			width: 24px;
 			height: 24px;
 			display: none;
+			transition: background-image 0.5s;
+		}
+		.burger-menu-btn.active {
+			background-image: url(../../assets/close-img.svg);
 		}
 	}
 	.burger-menu {
 		display: none;
 		position: absolute;
 		top: 60px;
-		left: 110%;
+		left: 0px;
+		visibility: hidden;
+		opacity: 0;
 		width: 100%;
 		background-color: #070707;
 		padding: 24px 16px 34px;
 		background-image: url(../../../src/assets/experiense-bg-2.png);
 		background-position: right -120px top 50%;
 		background-repeat: no-repeat;
-		transition: display 0.5s;
+		transition: visibility 0.5s, opacity 0.5s;
+		z-index: 500;
 		.header-menu-item-link {
 			margin-bottom: 16px;
 		}
@@ -116,7 +123,9 @@
 		}
 	}
 	.burger-menu.active {
-		left: 0px;
+		transition: opacity 0.5s;
+		visibility: visible;
+		opacity: 1;
 	}
 }
 
@@ -207,7 +216,7 @@
 			.desktop-header-btn {
 				display: none;
 			}
-			.header-burger-menu-container {
+			.burger-menu-btn {
 				display: block;
 			}
 		}
@@ -219,4 +228,17 @@
 
 // ------------- Mobile -------------
 @media (max-width: 576px) {
+	.header {
+		.header-row {
+			max-height: 40px;
+			.logo-link {
+				height: 40px;
+				width: 90px;
+			}
+		}
+		.burger-menu {
+			top: 40px;
+			background-size: 90%;
+		}
+	}
 }

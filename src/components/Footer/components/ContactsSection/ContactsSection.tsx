@@ -26,23 +26,34 @@ const ContactsSection = (props: Props) => {
 						/>
 					</div>
 					<div className='footer-row-navigation'>
-						<p className='footer-row-title'>Company</p>
-						<Link to='/'>
-							<p className='footer-row-item'>Home</p>
-						</Link>
-						<Link to='/products'>
-							<p className='footer-row-item'>Products</p>
-						</Link>
-						<Link to='/services'>
-							<p className='footer-row-item'>Sevice</p>
-						</Link>
-						<Link to='/contacts'>
-							<p className='footer-row-item'>Contact Us</p>
-						</Link>
+						<div>
+							<p className='footer-row-title'>Company</p>
+							<Link to='/'>
+								<p className='footer-row-item'>Home</p>
+							</Link>
+							<Link to='/products'>
+								<p className='footer-row-item'>Products</p>
+							</Link>
+							<Link to='/services'>
+								<p className='footer-row-item'>Sevice</p>
+							</Link>
+							<Link to='/contacts'>
+								<p className='footer-row-item'>Contact Us</p>
+							</Link>
+							<Link to='/faq'>
+								<p className='footer-row-item'>FAQ</p>
+							</Link>
+						</div>
+						<div className='footer-row-contacts-container-tablet'>
+							<p className='footer-row-title'>Contact</p>
+							<p className='footer-row-subtitle'>+1 (786) 707-06-06</p>
+						</div>
 					</div>
 					<div className='footer-row-contacts'>
-						<p className='footer-row-title'>Contact</p>
-						<p className='footer-row-subtitle'>+1 (786) 707-06-06</p>
+						<div className='footer-row-contacts-container'>
+							<p className='footer-row-title'>Contact</p>
+							<p className='footer-row-subtitle'>+1 (786) 707-06-06</p>
+						</div>
 						<div className='footer-row-addresses'>
 							<div className='footer-row-address footer-row-address-1'>
 								<div className='footer-row-address-img'></div>

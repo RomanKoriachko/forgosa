@@ -1,78 +1,80 @@
-.faq-page-container {
-	margin: 0 auto;
-	max-width: 1920px;
-	padding: 0px 375px;
-}
+.faq-page {
+	.faq-page-container {
+		margin: 0 auto;
+		max-width: 1920px;
+		padding: 0px 375px;
+	}
 
-.dictionary-page-container {
-	margin: 0 auto;
-	max-width: 1920px;
-	padding-right: 375px;
-	padding-left: 245px;
-}
+	.dictionary-page-container {
+		margin: 0 auto;
+		max-width: 1920px;
+		padding-right: 375px;
+		padding-left: 245px;
+	}
 
-.page-content {
-	font-family: 'Roboto', sans-serif;
-}
-p {
-	font-weight: 300;
-	span {
+	.page-content {
+		font-family: 'Roboto', sans-serif;
+	}
+	p {
+		font-weight: 300;
+		span {
+			font-weight: 700;
+		}
+	}
+	.page-title {
+		text-transform: uppercase;
+		font-size: 18px;
 		font-weight: 700;
+		line-height: 22px;
+		margin-top: 24px;
+		margin-bottom: 8px;
 	}
-}
-.page-title {
-	text-transform: uppercase;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 22px;
-	margin-top: 24px;
-	margin-bottom: 8px;
-}
-.bold-text {
-	font-weight: 600;
-}
-.big-text {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 24px;
-	font-weight: 700;
-	line-height: 29px;
-	margin-bottom: 8px;
-}
-.margin-bottom {
-	margin-bottom: 24px;
-}
-.orange-text {
-	color: #fe6700;
-}
-.page-img {
-	text-align: center;
-	margin-top: 24px;
-	> img {
-		object-fit: contain;
-		object-position: center;
-		max-height: 780px;
+	.bold-text {
+		font-weight: 600;
 	}
-}
-
-.page-content-table {
-	width: 100%;
-	border: 1px solid #ffffff;
-	text-transform: uppercase;
-	margin: 24px 0px;
-	thead {
-		background: #ffffff1a;
+	.big-text {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 29px;
+		margin-bottom: 8px;
 	}
-	th,
-	td {
-		border: 1px solid #ffffff;
-		padding: 18px 0px;
+	.margin-bottom {
+		margin-bottom: 24px;
 	}
-	td {
+	.orange-text {
+		color: #fe6700;
+	}
+	.page-img {
 		text-align: center;
+		margin-top: 24px;
+		> img {
+			object-fit: contain;
+			object-position: center;
+			max-height: 780px;
+		}
 	}
-	.table-cell-alighn-left {
-		text-align: left;
-		padding-left: 36px;
+
+	.page-content-table {
+		width: 100%;
+		border: 1px solid #ffffff;
+		text-transform: uppercase;
+		margin: 24px 0px;
+		thead {
+			background: #ffffff1a;
+		}
+		th,
+		td {
+			border: 1px solid #ffffff;
+			padding: 18px 0px;
+		}
+		td {
+			text-align: center;
+		}
+		.table-cell-alighn-left {
+			text-align: left;
+			padding-left: 36px;
+		}
 	}
 }
 

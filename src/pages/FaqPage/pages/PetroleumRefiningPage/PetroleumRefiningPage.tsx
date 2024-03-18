@@ -8,7 +8,7 @@ type Props = {};
 
 const PetroleumRefiningPage = (props: Props) => {
 	return (
-		<div className='petroleum-refining-page'>
+		<div className='faq-page petroleum-refining-page'>
 			<PageTitle
 				image='faq-bg-img.png'
 				title='FAQ'

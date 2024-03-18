@@ -31,8 +31,12 @@
 	}
 }
 
-// ------------- Laptop -------------
-// @media (max-width: 1200px) {
-// 	.header-btn {
-// 	}
-// }
+// ------------- Mobile -------------
+@media (max-width: 576px) {
+	.header-btn {
+		width: 100%;
+		padding-top: 23px;
+		padding-bottom: 23px;
+		margin-top: 24px;
+	}
+}

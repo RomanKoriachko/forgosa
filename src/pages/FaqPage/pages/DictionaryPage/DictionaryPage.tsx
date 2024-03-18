@@ -125,7 +125,7 @@ const DictionaryPage = (props: Props) => {
 	});
 
 	return (
-		<div className='dictionary-page'>
+		<div className='faq-page dictionary-page'>
 			<PageTitle image='faq-bg-img.png' title='FAQ' subtitle='dictionary' />
 			<LinksSlider index={4} />
 			<SearchComponent

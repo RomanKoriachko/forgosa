@@ -8,7 +8,7 @@ type Props = {};
 
 const KeyTransactionPage = (props: Props) => {
 	return (
-		<div className='key-transactions-page'>
+		<div className='faq-page key-transactions-page'>
 			<PageTitle
 				image='faq-bg-img.png'
 				title='FAQ'

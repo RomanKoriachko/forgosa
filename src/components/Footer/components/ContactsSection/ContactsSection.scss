@@ -69,6 +69,9 @@
 		}
 		.footer-row-navigation {
 			min-width: 160px;
+			.footer-row-contacts-container-tablet {
+				display: none;
+			}
 		}
 		.footer-row-contacts {
 			.footer-row-addresses {
@@ -157,7 +160,7 @@
 // ------------- laptop -------------
 @media (max-width: 1200px) {
 	.footer-content {
-		background-position: 110% 120%;
+		background-position: right -150px top 100%;
 		.footer-row {
 			flex-wrap: wrap;
 			.footer-row-logo-wrapper {
@@ -170,6 +173,7 @@
 // ------------- Tablet -------------
 @media (max-width: 992px) {
 	.footer-content {
+		background-position: right -240px top 50%;
 		.footer-row {
 			display: grid;
 			grid-template-columns: 1fr 2fr;
@@ -198,20 +202,38 @@
 // ------------- Mobile -------------
 @media (max-width: 576px) {
 	.footer-content {
-		background-position: right -185px bottom 65%;
+		background-position: right -300px bottom 25%;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
 		.footer-row {
 			grid-template-columns: 1fr;
 			.footer-row-logo-wrapper {
 				grid-column-start: 1;
 				grid-column-end: 2;
 				.footer-logo {
-					width: 280px;
-					height: 78px;
+					width: 180px;
+					height: 50px;
 				}
 				.footer-logo-wrapper-title {
 					font-size: 28px;
 					line-height: 40px;
 				}
+			}
+			.footer-row-navigation {
+				display: flex;
+				justify-content: space-between;
+				.footer-row-contacts-container-tablet {
+					display: block;
+					.footer-row-title {
+						margin-bottom: 4px;
+					}
+				}
+			}
+			.footer-row-contacts-container {
+				display: none;
+			}
+			.footer-btn {
+				width: 100%;
 			}
 		}
 		.footer-copyright {

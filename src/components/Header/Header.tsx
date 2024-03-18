@@ -12,7 +12,10 @@ const Header = (props: Props) => {
 	const [burgerMenuState, setBurgerMenuState] = useState<boolean>(false);
 
 	function onBurgerMenuClick() {
-		burgerMenuState ? setBurgerMenuState(false) : setBurgerMenuState(true);
+		burgerMenuState ? closeBurgerMenu() : setBurgerMenuState(true);
+	}
+	function closeBurgerMenu() {
+		setBurgerMenuState(false);
 	}
 	return (
 		<header className='header'>
@@ -118,7 +121,7 @@ const Header = (props: Props) => {
 						</Link>
 					</div>
 					<div
-						className='header-burger-menu-container'
+						className={`burger-menu-btn ${burgerMenuState ? 'active' : ''}`}
 						onClick={onBurgerMenuClick}
 					></div>
 					<div className='desktop-header-btn'>
@@ -133,6 +136,7 @@ const Header = (props: Props) => {
 								? 'header-menu-item-link active'
 								: 'header-menu-item-link'
 						}
+						onClick={closeBurgerMenu}
 					>
 						<p className='header-menu-item'>Home</p>
 					</NavLink>
@@ -143,6 +147,7 @@ const Header = (props: Props) => {
 								? 'header-menu-item-link active'
 								: 'header-menu-item-link'
 						}
+						onClick={closeBurgerMenu}
 					>
 						<p className='header-menu-item'>Products</p>
 					</NavLink>
@@ -153,6 +158,7 @@ const Header = (props: Props) => {
 								? 'header-menu-item-link active'
 								: 'header-menu-item-link'
 						}
+						onClick={closeBurgerMenu}
 					>
 						<p className='header-menu-item'>Services</p>
 					</NavLink>
@@ -162,6 +168,7 @@ const Header = (props: Props) => {
 							smooth={true}
 							duration={700}
 							className='header-menu-item-link'
+							onClick={closeBurgerMenu}
 						>
 							<p className='header-menu-item'>Deposit Map</p>
 						</NavPageLink>
@@ -173,6 +180,7 @@ const Header = (props: Props) => {
 								? 'header-menu-item-link active'
 								: 'header-menu-item-link'
 						}
+						onClick={closeBurgerMenu}
 					>
 						<p className='header-menu-item'>Contact Us</p>
 					</NavLink>
@@ -183,6 +191,7 @@ const Header = (props: Props) => {
 								? 'header-menu-item-link active'
 								: 'header-menu-item-link'
 						}
+						onClick={closeBurgerMenu}
 					>
 						<p className='header-menu-item'>FAQ</p>
 					</NavLink>

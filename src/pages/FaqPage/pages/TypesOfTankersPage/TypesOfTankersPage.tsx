@@ -8,7 +8,7 @@ type Props = {};
 
 const TypesOfTankersPage = (props: Props) => {
 	return (
-		<div className='types-of-tankers-page'>
+		<div className='faq-page types-of-tankers-page'>
 			<PageTitle
 				image='faq-bg-img.png'
 				title='FAQ'

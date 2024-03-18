@@ -118,3 +118,69 @@
 		}
 	}
 }
+
+// ---------------------- Adaptive ----------------------
+
+// ------------- Large Desktop -------------
+@media (max-width: 1500px) {
+	.subscribe-section {
+		.subscribe-form {
+			.form {
+				flex-direction: column;
+				.form-btn {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+// ------------- Laptop -------------
+@media (max-width: 1350px) {
+	.subscribe-section {
+		.subscribe-bg-2 {
+			display: none;
+		}
+	}
+}
+
+// ------------- Tablet -------------
+@media (max-width: 992px) {
+	.subscribe-section {
+		margin-bottom: 36px;
+		.subscribe-bg-1 {
+			width: 250px;
+			height: 250px;
+			left: -75px;
+			top: -70px;
+		}
+		.subscribe-form {
+			flex-direction: column;
+			gap: 56px;
+			.form {
+				.form-input {
+					width: 100%;
+				}
+			}
+		}
+		.page-logo-transparent {
+			display: none;
+		}
+	}
+}
+
+// ------------- Mobile -------------
+@media (max-width: 576px) {
+	.subscribe-section {
+		.subscribe-bg-1 {
+			top: -100px;
+		}
+		.subscribe-form {
+			padding: 24px;
+			.subscribe-form-text {
+				font-size: 20px;
+				line-height: 34px;
+			}
+		}
+	}
+}
