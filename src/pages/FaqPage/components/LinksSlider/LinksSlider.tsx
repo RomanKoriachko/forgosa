@@ -3,8 +3,8 @@ import React from 'react';
 import Flicking from '@egjs/react-flicking';
 import '@egjs/react-flicking/dist/flicking.css';
 
-import './LinksSlider.scss';
 import { NavLink } from 'react-router-dom';
+import './LinksSlider.scss';
 
 type Props = {
 	index: number;

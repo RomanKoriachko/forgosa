@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.scss';
 import { HeaderButton, Marquee } from './components';
 import { Link, NavLink, useLocation } from 'react-router-dom';
@@ -8,6 +8,12 @@ type Props = {};
 
 const Header = (props: Props) => {
 	const location = useLocation();
+
+	const [burgerMenuState, setBurgerMenuState] = useState<boolean>(false);
+
+	function onBurgerMenuClick() {
+		burgerMenuState ? setBurgerMenuState(false) : setBurgerMenuState(true);
+	}
 	return (
 		<header className='header'>
 			<div className='header-container'>
@@ -94,7 +100,6 @@ const Header = (props: Props) => {
 								</div>
 							</Link>
 						</div>
-
 						{location.pathname !== '/' ? undefined : (
 							<NavPageLink
 								to='map'
@@ -112,7 +117,78 @@ const Header = (props: Props) => {
 							<p className='header-menu-item'>FAQ</p>
 						</Link>
 					</div>
-					<HeaderButton />
+					<div
+						className='header-burger-menu-container'
+						onClick={onBurgerMenuClick}
+					></div>
+					<div className='desktop-header-btn'>
+						<HeaderButton />
+					</div>
+				</div>
+				<div className={`burger-menu ${burgerMenuState ? 'active' : ''}`}>
+					<NavLink
+						to='/'
+						className={({ isActive }) =>
+							isActive
+								? 'header-menu-item-link active'
+								: 'header-menu-item-link'
+						}
+					>
+						<p className='header-menu-item'>Home</p>
+					</NavLink>
+					<NavLink
+						to='/products'
+						className={({ isActive }) =>
+							isActive
+								? 'header-menu-item-link active'
+								: 'header-menu-item-link'
+						}
+					>
+						<p className='header-menu-item'>Products</p>
+					</NavLink>
+					<NavLink
+						to='/services'
+						className={({ isActive }) =>
+							isActive
+								? 'header-menu-item-link active'
+								: 'header-menu-item-link'
+						}
+					>
+						<p className='header-menu-item'>Services</p>
+					</NavLink>
+					{location.pathname !== '/' ? undefined : (
+						<NavPageLink
+							to='map'
+							smooth={true}
+							duration={700}
+							className='header-menu-item-link'
+						>
+							<p className='header-menu-item'>Deposit Map</p>
+						</NavPageLink>
+					)}
+					<NavLink
+						to='/contacts'
+						className={({ isActive }) =>
+							isActive
+								? 'header-menu-item-link active'
+								: 'header-menu-item-link'
+						}
+					>
+						<p className='header-menu-item'>Contact Us</p>
+					</NavLink>
+					<NavLink
+						to='/faq'
+						className={({ isActive }) =>
+							isActive
+								? 'header-menu-item-link active'
+								: 'header-menu-item-link'
+						}
+					>
+						<p className='header-menu-item'>FAQ</p>
+					</NavLink>
+					<div className='burger-menu-btn'>
+						<HeaderButton />
+					</div>
 				</div>
 			</div>
 			<Marquee />
