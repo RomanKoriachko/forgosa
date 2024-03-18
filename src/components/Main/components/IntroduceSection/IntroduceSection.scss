@@ -38,20 +38,6 @@
 	.introduce-button-wrapper {
 		gap: 30px;
 		margin-top: 88px;
-		.introduce-btn-info {
-			font-family: 'Montserrat', sans-serif;
-			font-size: 19px;
-			font-weight: 700;
-			line-height: 19px;
-			color: #ffffff;
-			background-color: transparent;
-			border: 2px solid white;
-			padding: 27px 68px;
-			background-image: url(../../../../assets/plus-img.svg);
-			background-repeat: no-repeat;
-			background-position: 90% 50%;
-			cursor: pointer;
-		}
 		.introduce-btn-meet {
 			border: none;
 			background-color: transparent;
@@ -71,6 +57,24 @@
 			}
 		}
 	}
+	.introduce-btn-info {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 19px;
+		font-weight: 700;
+		line-height: 19px;
+		max-width: 450px;
+		color: #ffffff;
+		background-color: transparent;
+		border: 2px solid white;
+		padding: 27px 68px;
+		background-image: url(../../../../assets/plus-img.svg);
+		background-repeat: no-repeat;
+		background-position: 90% 50%;
+		cursor: pointer;
+	}
+	.introduce-btn-info-mobile {
+		display: none;
+	}
 }
 
 // ---------------------- hover ----------------------
@@ -78,12 +82,6 @@
 @media (hover: hover) {
 	.introduce-section {
 		.introduce-button-wrapper {
-			.introduce-btn-info {
-				transition: background 0.3s;
-				&:hover {
-					background-color: rgba(255, 255, 255, 0.2);
-				}
-			}
 			.introduce-btn-meet {
 				&:hover .introduce-btn-meet-img {
 					transform: translateX(-30%);
@@ -91,6 +89,12 @@
 				.introduce-btn-meet-img {
 					transition: transform 0.3s;
 				}
+			}
+		}
+		.introduce-btn-info {
+			transition: background 0.3s;
+			&:hover {
+				background-color: rgba(255, 255, 255, 0.2);
 			}
 		}
 	}
@@ -111,8 +115,40 @@
 
 // ------------- Tablet -------------
 @media (max-width: 992px) {
+	.introduce-section {
+		.introduce-content {
+			width: 94%;
+		}
+		.introduce-title {
+			font-size: 36px;
+			line-height: 45px;
+			margin-bottom: 14px;
+		}
+		.introduce-button-wrapper {
+			flex-direction: column-reverse;
+			margin-top: 12px;
+			gap: 92px;
+		}
+	}
 }
 
 // ------------- Mobile -------------
 @media (max-width: 576px) {
+	.introduce-section {
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		.introduce-title {
+			font-size: 24px;
+			line-height: 29px;
+		}
+		.introduce-btn-info {
+			display: none;
+		}
+		.introduce-btn-info-mobile {
+			display: block;
+			width: 100%;
+			position: absolute;
+			bottom: 40px;
+		}
+	}
 }

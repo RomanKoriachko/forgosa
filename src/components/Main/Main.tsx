@@ -31,8 +31,8 @@ const Main = (props: Props) => {
 					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
 				/>
 			</Helmet>
-			{/* <IntroduceSection />
-			<OfferSection />
+			<IntroduceSection />
+			{/* <OfferSection />
 			<ExperienceSection />
 			<MapSection />
 			<ArticlesSection />
