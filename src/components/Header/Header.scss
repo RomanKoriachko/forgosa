@@ -101,6 +101,7 @@
 	}
 	.burger-menu {
 		display: none;
+		height: 100vh;
 		position: absolute;
 		top: 60px;
 		left: 0px;
@@ -110,10 +111,13 @@
 		background-color: #070707;
 		padding: 24px 16px 34px;
 		background-image: url(../../../src/assets/experiense-bg-2.png);
-		background-position: right -120px top 50%;
+		background-position: right -200px top 50%;
 		background-repeat: no-repeat;
-		transition: visibility 0.5s, opacity 0.5s;
+		transition: visibility 0.5s, opacity 0.5s, background 0.5s;
 		z-index: 500;
+		.header-menu-item-link.active {
+			color: #fe6700;
+		}
 		.header-menu-item-link {
 			margin-bottom: 16px;
 		}
@@ -123,7 +127,7 @@
 		}
 	}
 	.burger-menu.active {
-		transition: opacity 0.5s;
+		background-position: right -120px top 50%;
 		visibility: visible;
 		opacity: 1;
 	}
@@ -221,7 +225,9 @@
 			}
 		}
 		.burger-menu {
-			display: block;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
 		}
 	}
 }

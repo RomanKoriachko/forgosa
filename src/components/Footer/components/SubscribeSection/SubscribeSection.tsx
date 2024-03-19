@@ -2,6 +2,7 @@ import React from 'react';
 
 import './SubscribeSection.scss';
 import { useParallax } from 'react-scroll-parallax';
+import { useLocation } from 'react-router-dom';
 
 type Props = {};
 
@@ -17,10 +18,15 @@ const SubscribeSection = (props: Props) => {
 		scale: [0.7, 1, 'easeInQuad'],
 	});
 
+	const location = useLocation();
+
 	return (
 		<section className='subscribe-section'>
 			<div ref={parallaxLeft.ref} className='subscribe-bg-1'></div>
-			<div ref={parallaxRight.ref} className='subscribe-bg-2'></div>
+			<div
+				ref={parallaxRight.ref}
+				className={`subscribe-bg-2 ${location.pathname === '/' ? 'hide' : ''}`}
+			></div>
 			<div className='small-container'>
 				<div className='subscribe-form row'>
 					<div className='page-logo-transparent'></div>

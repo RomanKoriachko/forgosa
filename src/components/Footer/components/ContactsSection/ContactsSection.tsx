@@ -73,13 +73,12 @@ const ContactsSection = (props: Props) => {
 								<div className='footer-row-address-content'>
 									<p className='footer-row-address-item'>Oman OFFICE:</p>
 									<p className='footer-row-address-item'>
-										The Walk Mall Street no 6Muscat 138, Sultanate of Oman, TM
+										The Walk Mall Street no 6 Muscat 138, Sultanate of Oman, TM
 										PO BOX 1, PC 138, SEEB, Sultanate of Oman
 									</p>
 									<p className='footer-row-address-item-bold'>
 										oman@fogrosa.com
 									</p>
-									<p className='footer-row-address-item-bold'>www.fogrosa.ae</p>
 								</div>
 							</div>
 							<div className='footer-row-address footer-row-address-3'>
@@ -87,7 +86,7 @@ const ContactsSection = (props: Props) => {
 								<div className='footer-row-address-content'>
 									<p className='footer-row-address-item'>Mexico OFFICE:</p>
 									<p className='footer-row-address-item'>
-										Blvd. Kulkulcán km. 1.5Puerto Juarez, Zona Hotelera, 77500
+										Blvd. Kulkulcán km. 1.5 Puerto Juarez, Zona Hotelera, 77500
 										Cancún, QROO, México
 									</p>
 									<p className='footer-row-address-item-bold'>

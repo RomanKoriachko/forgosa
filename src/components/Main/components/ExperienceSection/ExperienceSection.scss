@@ -4,6 +4,10 @@
 	overflow: hidden;
 	.experience-title-wrapper {
 		margin-left: 105px;
+		background-color: #07070763;
+		position: relative;
+		padding: 16px;
+		border-radius: 10px;
 		.experience-title {
 			font-size: 64px;
 			font-weight: 700;
@@ -18,7 +22,11 @@
 	}
 	.experience-content-wrapper {
 		margin-top: 55px;
-		margin-left: 280px;
+		margin-left: 200px;
+		background-color: #07070763;
+		position: relative;
+		padding: 16px;
+		border-radius: 10px;
 		.experience-text {
 			margin-bottom: 24px;
 		}
@@ -42,5 +50,49 @@
 		width: 370px;
 		height: 370px;
 		background-image: url(../../../../assets/experiense-bg-2.png);
+	}
+}
+
+// ---------------------- Adaptive ----------------------
+
+// ------------- Tablet -------------
+@media (max-width: 992px) {
+	.experience-section {
+		.experience-title-wrapper {
+			margin-left: 0;
+			padding: 0;
+			.experience-title {
+				text-align: center;
+			}
+			.experience-subtitle {
+				width: 100%;
+			}
+		}
+		.experience-content-wrapper {
+			margin-left: 0;
+			padding: 0;
+			margin-top: 24px;
+		}
+		.experience-section-bg-1,
+		.experience-section-bg-2 {
+			display: none;
+		}
+	}
+}
+
+// ------------- Mobile -------------
+@media (max-width: 576px) {
+	.experience-section {
+		padding-bottom: 48px;
+		.experience-title-wrapper {
+			.experience-title {
+				font-size: 24px;
+				line-height: 29px;
+				margin-bottom: 16px;
+			}
+		}
+		.experience-content-wrapper {
+			margin-top: 16px;
+		}
 	}
 }
