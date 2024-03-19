@@ -69,3 +69,43 @@
 		}
 	}
 }
+
+// ---------------------- Adaptive ----------------------
+
+// ------------- Desctop -------------
+@media (max-width: 1500px) {
+	.page-sidebar {
+		.page-sidebar-nav {
+			padding: 40px 50px;
+		}
+	}
+}
+
+// ------------- Laptop -------------
+@media (max-width: 1200px) {
+	.page-sidebar {
+		.page-sidebar-nav {
+			padding: 24px 16px;
+		}
+	}
+}
+
+// ------------- Tablet -------------
+@media (max-width: 992px) {
+	.page-sidebar {
+		.page-sidebar-nav {
+			.page-sidebar-nav-about {
+				margin-bottom: 48px;
+			}
+		}
+	}
+}
+
+// ------------- Mobile -------------
+@media (max-width: 576px) {
+	.page-sidebar {
+		.page-sidebar-widjet {
+			margin-top: 24px;
+		}
+	}
+}

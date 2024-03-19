@@ -73,3 +73,84 @@
 		}
 	}
 }
+
+.post-page {
+	.page-content-title {
+		line-height: 44px;
+	}
+	.page-content-subtitle {
+		font-size: 16px;
+		line-height: 26px;
+		text-transform: capitalize;
+		margin-bottom: 24px;
+	}
+}
+
+// ---------------------- Adaptive ----------------------
+
+// ------------- Desctop -------------
+@media (max-width: 1500px) {
+	.page-container {
+		grid-template-columns: 1fr 350px;
+	}
+}
+
+// ------------- Laptop -------------
+@media (max-width: 1200px) {
+	.page-container {
+		grid-template-columns: 1fr 300px;
+	}
+}
+
+// ------------- Tablet -------------
+@media (max-width: 992px) {
+	.page-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+// ------------- Mobile -------------
+@media (max-width: 576px) {
+	.page-container {
+		.page-content-title {
+			font-size: 18px;
+			line-height: 27px;
+			margin-bottom: 8px;
+		}
+		.page-content-text {
+			font-size: 16px;
+			line-height: 26px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		.page-content-img-wrapper {
+			max-height: 205px;
+			margin-left: -16px;
+			margin-right: -16px;
+			margin-bottom: 24px;
+		}
+		.service-title {
+			font-size: 18px;
+			line-height: 27px;
+			margin-bottom: 8px;
+		}
+		.service-subtitle {
+			font-size: 16px;
+			line-height: 22.4px;
+			margin-bottom: 8px;
+		}
+		.page-content-table {
+			font-size: 12px;
+			line-height: 17px;
+			.table-cell-alighn-left {
+				padding-left: 13px;
+			}
+		}
+	}
+	.post-page {
+		.page-content-subtitle {
+			margin-bottom: 8px;
+		}
+	}
+}

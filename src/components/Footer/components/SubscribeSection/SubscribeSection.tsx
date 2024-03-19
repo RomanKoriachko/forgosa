@@ -22,6 +22,7 @@ const SubscribeSection = (props: Props) => {
 
 	return (
 		<section className='subscribe-section'>
+			<div className='subscribe-bg-static'></div>
 			<div ref={parallaxLeft.ref} className='subscribe-bg-1'></div>
 			<div
 				ref={parallaxRight.ref}

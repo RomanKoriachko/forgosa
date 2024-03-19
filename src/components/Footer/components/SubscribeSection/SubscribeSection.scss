@@ -63,6 +63,9 @@
 		box-shadow: 1px 25px 100px 25px #d484e880;
 		z-index: 1;
 	}
+	.subscribe-bg-static {
+		display: none;
+	}
 	.subscribe-bg-1,
 	.subscribe-bg-2 {
 		position: absolute;
@@ -151,11 +154,20 @@
 @media (max-width: 992px) {
 	.subscribe-section {
 		margin-bottom: 36px;
+		.subscribe-bg-static {
+			display: block;
+			position: absolute;
+			left: -20px;
+			top: 45px;
+			width: 100px;
+			height: 100px;
+			background-image: url(../../../../../public/images/subscribe-section-img-1.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
 		.subscribe-bg-1 {
-			width: 250px;
-			height: 250px;
-			left: -75px;
-			top: -70px;
+			display: none;
 		}
 		.subscribe-form {
 			flex-direction: column;
@@ -175,12 +187,10 @@
 // ------------- Mobile -------------
 @media (max-width: 576px) {
 	.subscribe-section {
-		padding-top: 32px;
+		padding-top: 48px;
 		margin-bottom: 0;
-		.subscribe-bg-1 {
-			width: 200px;
-			height: 200px;
-			top: -35px;
+		.subscribe-bg-static {
+			top: 15px;
 		}
 		.subscribe-form {
 			padding: 24px;
@@ -188,6 +198,11 @@
 				font-size: 20px;
 				line-height: 34px;
 			}
+		}
+	}
+	.footer-page {
+		.subscribe-section {
+			margin-top: 0;
 		}
 	}
 }

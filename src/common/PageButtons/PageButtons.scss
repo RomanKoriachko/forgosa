@@ -1,5 +1,7 @@
 .page-btn-row {
 	margin-top: 40px;
+	display: flex;
+	gap: 30px;
 	.page-btn-item {
 		background: transparent;
 		border: 2px solid #ffffff;
@@ -9,14 +11,15 @@
 		font-size: 16px;
 		font-weight: 700;
 		line-height: 19px;
-		width: 330px;
+		max-width: 330px;
+		min-width: 265px;
+		width: 100%;
 		background-repeat: no-repeat;
 		background-position: 93% 50%;
 		padding-right: 30px;
 		cursor: pointer;
 	}
 	.page-btn-download {
-		margin-right: 30px;
 		background-image: url(../../assets/file-img.svg);
 	}
 	.page-btn-form {
@@ -31,6 +34,17 @@
 			&:hover {
 				border-color: #fe6700;
 			}
+		}
+	}
+}
+
+// ------------- Mobile -------------
+@media (max-width: 576px) {
+	.page-btn-row {
+		flex-direction: column;
+		.page-btn-item {
+			max-width: none;
+			width: 100%;
 		}
 	}
 }
