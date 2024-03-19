@@ -175,8 +175,12 @@
 // ------------- Mobile -------------
 @media (max-width: 576px) {
 	.subscribe-section {
+		padding-top: 32px;
+		margin-bottom: 0;
 		.subscribe-bg-1 {
-			top: -100px;
+			width: 200px;
+			height: 200px;
+			top: -35px;
 		}
 		.subscribe-form {
 			padding: 24px;

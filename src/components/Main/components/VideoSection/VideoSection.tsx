@@ -6,7 +6,7 @@ type Props = {};
 
 const LogoSection = (props: Props) => {
 	return (
-		<section className='logo-section'>
+		<section className='video-section'>
 			<video
 				src='video/video_2024-02-12_16-09-41.mp4'
 				className='video-bg'
@@ -16,7 +16,7 @@ const LogoSection = (props: Props) => {
 				muted
 				loop
 			></video>
-			<div className='logo-section-img'>
+			<div className='video-section-img'>
 				<img src='../../../../images/big-logo.png' alt='' />
 			</div>
 		</section>
