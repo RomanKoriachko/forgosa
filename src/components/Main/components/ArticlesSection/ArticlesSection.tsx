@@ -2,6 +2,9 @@ import React from 'react';
 
 import './ArticlesSection.scss';
 import { Link } from 'react-router-dom';
+import Flicking from '@egjs/react-flicking';
+
+import '@egjs/react-flicking/dist/flicking.css';
 
 type Props = {};
 
@@ -63,6 +66,32 @@ const ArticlesSection = (props: Props) => {
 							</Link>
 						</div>
 					))}
+				</div>
+				<div className='articles-tablet-wrapper'>
+					<Flicking align='center'>
+						{articlesArr.map((article, i) => (
+							<div key={i} className='article-item'>
+								<div>
+									<div className='article-image-wrapper'>
+										<img
+											src={`../../../../../images/${article.img}`}
+											alt='article'
+										/>
+									</div>
+									<p className='article-title'>{article.title}</p>
+								</div>
+								<div className='article-text-wrapper'>
+									<p className='article-text'>{article.text}</p>
+								</div>
+								<Link to={article.link}>
+									<div className='row article-link'>
+										<p>Read More</p>
+										<div className='article-link-img'></div>
+									</div>
+								</Link>
+							</div>
+						))}
+					</Flicking>
 				</div>
 			</div>
 		</section>

@@ -36,7 +36,7 @@ const Main = (props: Props) => {
 			<ExperienceSection />
 			<MapSection />
 			<ArticlesSection />
-			{/* <VideoSection /> */}
+			<VideoSection />
 		</main>
 	);
 };
