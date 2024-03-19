@@ -176,6 +176,9 @@
 // ------------- Mobile -------------
 @media (max-width: 576px) {
 	.map-section {
+		.anchor-element {
+			margin-top: -70px;
+		}
 		.map {
 			overflow: hidden;
 		}
