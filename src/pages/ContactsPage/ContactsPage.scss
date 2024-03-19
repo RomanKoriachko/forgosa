@@ -31,7 +31,7 @@
 			.contacts-item-row {
 				gap: 11px;
 				.item-img {
-					width: 16px;
+					min-width: 16px;
 					height: 16px;
 					margin-top: 6px;
 					background-position: center;
@@ -77,6 +77,74 @@
 		.form-container {
 			width: 50%;
 			text-align: left;
+		}
+	}
+}
+
+// ---------------------- Adaptive ----------------------
+
+// ------------- Desctop -------------
+@media (max-width: 1500px) {
+}
+
+// ------------- Laptop -------------
+@media (max-width: 1200px) {
+}
+
+// ------------- Tablet -------------
+@media (max-width: 992px) {
+	.contacts-page-section {
+		.contacts-row {
+			flex-direction: column;
+			gap: 24px;
+			.contacts-content {
+				width: 100%;
+				.contacts-item-list-row {
+					justify-content: center;
+					margin-left: 0;
+				}
+			}
+			.form-container {
+				width: 100%;
+			}
+		}
+		.form-component {
+			.subtitle,
+			.title {
+				text-align: center;
+			}
+		}
+	}
+}
+
+// ------------- Mobile -------------
+@media (max-width: 576px) {
+	.contacts-page-section {
+		line-height: 29px;
+		.contacts-row {
+			padding-top: 24px;
+			padding-bottom: 48px;
+			gap: 49px;
+			.contacts-content {
+				.contacts-title {
+					font-size: 18px;
+					line-height: 22px;
+				}
+				.contacts-subtitle {
+					font-size: 18px;
+					line-height: 36px;
+				}
+				.contact-item-phone {
+					padding-top: 24px;
+					padding-bottom: 16px;
+				}
+				.contacts-item-row-country {
+					margin-bottom: 16px;
+				}
+				.contacts-item-mail {
+					padding-bottom: 49px;
+				}
+			}
 		}
 	}
 }

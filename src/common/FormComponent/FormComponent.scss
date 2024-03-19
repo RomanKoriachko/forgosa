@@ -81,3 +81,43 @@
 		}
 	}
 }
+
+// ---------------------- Adaptive ----------------------
+
+// ------------- Laptop -------------
+@media (max-width: 1200px) {
+}
+
+// ------------- Tablet -------------
+@media (max-width: 992px) {
+}
+
+// ------------- Mobile -------------
+@media (max-width: 576px) {
+	.form-component {
+		.title {
+			font-size: 18px;
+			line-height: 21.94px;
+			margin-top: 16px;
+			margin-bottom: 48px;
+		}
+		.form {
+			.input-row {
+				flex-direction: column;
+				gap: 16px;
+			}
+			.input-item-row {
+				width: 100%;
+			}
+			.form-textarea {
+				height: 100px;
+			}
+			.btn-container {
+				margin-top: 32px;
+				.form-btn {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

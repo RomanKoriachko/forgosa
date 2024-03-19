@@ -54,7 +54,7 @@ const ContactsPage = (props: Props) => {
 									<p className='contacts-subtitle'>We are Here </p>
 								</div>
 							</div>
-							<div className='row contacts-item-row'>
+							<div className='row contacts-item-row contacts-item-row-country'>
 								<div className='item-img item-img-uae'></div>
 								<div>
 									<p className='contacts-text'>
@@ -63,7 +63,7 @@ const ContactsPage = (props: Props) => {
 									</p>
 								</div>
 							</div>
-							<div className='row contacts-item-row'>
+							<div className='row contacts-item-row contacts-item-row-country'>
 								<div className='item-img item-img-oman'></div>
 								<div>
 									<p className='contacts-text'>
@@ -73,7 +73,7 @@ const ContactsPage = (props: Props) => {
 									</p>
 								</div>
 							</div>
-							<div className='row contacts-item-row'>
+							<div className='row contacts-item-row contacts-item-row-country'>
 								<div className='item-img item-img-mexico'></div>
 								<div>
 									<p className='contacts-text'>
