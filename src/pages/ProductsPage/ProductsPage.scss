@@ -36,3 +36,38 @@
 		}
 	}
 }
+
+// ---------------------- Adaptive ----------------------
+
+// ------------- Laptop -------------
+@media (max-width: 1200px) {
+	.products-page {
+		.products-links-row {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+}
+
+// ------------- Tablet -------------
+@media (max-width: 992px) {
+}
+
+// ------------- Mobile -------------
+@media (max-width: 576px) {
+	.products-page {
+		.products-links-row {
+			grid-template-columns: 1fr;
+			padding: 32px 0px 48px;
+			gap: 16px;
+		}
+		.form-bg {
+			.form-bg-img {
+				display: none;
+			}
+			.form-container {
+				width: 100%;
+				padding: 0px 16px;
+			}
+		}
+	}
+}
