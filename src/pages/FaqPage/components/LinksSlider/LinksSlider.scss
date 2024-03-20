@@ -1,5 +1,8 @@
 .links-slider {
-	margin-top: 77px;
+	padding-top: 77px;
+	position: sticky;
+	top: 60px;
+	background-color: #070707;
 	.slider-item {
 		text-transform: uppercase;
 		text-align: center;

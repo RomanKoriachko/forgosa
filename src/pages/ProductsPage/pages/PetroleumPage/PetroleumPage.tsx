@@ -1,8 +1,9 @@
 import React from 'react';
 
-import './PetroleumPage.scss';
 import { PageButtons, PageSidebar, PageTitle } from '../../../../common';
 import { Helmet } from 'react-helmet-async';
+
+import './PetroleumPage.scss';
 
 type Props = {};
 
@@ -77,11 +78,10 @@ const PetroleumPage = (props: Props) => {
 							fibers and cosmetics. As the backbone of countless industries,
 							crude oil is indispensable to the functioning of modern society.
 						</p>
+						<p className='page-content-subtitle'>
+							Economic Engine: Crude Oil's Impact on Global Trade and Commerce
+						</p>
 						<p className='page-content-text'>
-							<span>
-								Economic Engine: Crude Oil's Impact on Global Trade and
-								Commerce.
-							</span>
 							The significance of crude oil extends beyond its utility; it plays
 							a central role in driving global trade and commerce. As one of the
 							world's most traded commodities, crude oil influences financial
@@ -92,11 +92,11 @@ const PetroleumPage = (props: Props) => {
 							transportation of crude oil create employment opportunities and
 							drive economic growth in regions rich in petroleum resources.
 						</p>
+						<p className='page-content-subtitle'>
+							Environmental Considerations: Balancing Progress and
+							Sustainability.
+						</p>
 						<p className='page-content-text'>
-							<span>
-								Environmental Considerations: Balancing Progress and
-								Sustainability.
-							</span>
 							While crude oil is indispensable to modern industry, its
 							extraction, processing, and combustion contribute to environmental
 							challenges such as air and water pollution, habitat destruction,
@@ -109,10 +109,10 @@ const PetroleumPage = (props: Props) => {
 							consumption, paving the way for a more sustainable energy
 							landscape.
 						</p>
+						<p className='page-content-subtitle'>
+							Conclusion: Crude Oil - A Precious Resource in a Changing World
+						</p>
 						<p className='page-content-text'>
-							<span>
-								Conclusion: Crude Oil - A Precious Resource in a Changing World.
-							</span>
 							In an era defined by innovation and progress, crude oil remains a
 							cornerstone of modern industry, powering economies, driving
 							innovation, and fueling progress. Its versatility, ubiquity, and

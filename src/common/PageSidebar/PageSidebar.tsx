@@ -3,6 +3,7 @@ import React from 'react';
 import './PageSidebar.scss';
 import { Link, useLocation } from 'react-router-dom';
 import SidebarWidget from '../SidebarWidget/SidebarWidget';
+import StickyBox from 'react-sticky-box';
 
 type Props = {};
 
@@ -103,31 +104,33 @@ const PageSidebar = (props: Props) => {
 	// console.log(currentProductsArr);
 
 	return (
-		<div className='page-sidebar'>
-			<div className='page-sidebar-nav'>
-				<div className='page-sidebar-nav-about'>
-					<p>About Us</p>
-					<p>
-						Our company specializes in the supply of fuel to customers
-						worldwide, with a focus on Southeast Asia and the Middle East
-						regions.
-					</p>
+		<StickyBox offsetTop={140} offsetBottom={20}>
+			<div className='page-sidebar'>
+				<div className='page-sidebar-nav'>
+					<div className='page-sidebar-nav-about'>
+						<p>About Us</p>
+						<p>
+							Our company specializes in the supply of fuel to customers
+							worldwide, with a focus on Southeast Asia and the Middle East
+							regions.
+						</p>
+					</div>
+					<div className='page-sidebar-nav-links'>
+						{currentArr.map((element) => (
+							<div key={element.title} className='nav-link-item'>
+								<Link to={element.link}>
+									<p>{element.title}</p>
+								</Link>
+								<p className='nav-link-item-description'>{element.text}</p>
+							</div>
+						))}
+					</div>
 				</div>
-				<div className='page-sidebar-nav-links'>
-					{currentArr.map((element) => (
-						<div key={element.title} className='nav-link-item'>
-							<Link to={element.link}>
-								<p>{element.title}</p>
-							</Link>
-							<p className='nav-link-item-description'>{element.text}</p>
-						</div>
-					))}
+				<div className='page-sidebar-widjet'>
+					<SidebarWidget />
 				</div>
 			</div>
-			<div className='page-sidebar-widjet'>
-				<SidebarWidget />
-			</div>
-		</div>
+		</StickyBox>
 	);
 };
 
