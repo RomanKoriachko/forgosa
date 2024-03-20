@@ -24,6 +24,9 @@ const SidebarWidget: React.FC = () => {
 							{ name: 'INDEX:NKY', displayName: 'Nikkei 225' },
 							{ name: 'INDEX:DEU40', displayName: 'DAX Index' },
 							{ name: 'FOREXCOM:UKXGBP', displayName: 'UK 100' },
+							{ name: 'PEPPERSTONE:GASOLINE', displayName: 'Gasoline' },
+							{ name: 'FRED:DDFUELUSGULF', displayName: 'Diesel Fuel' },
+							{ name: 'ECONOMICS:USCOSPRE	', displayName: 'Petroleum' },
 						],
 					},
 					{
@@ -35,7 +38,23 @@ const SidebarWidget: React.FC = () => {
 							{ name: 'COMEX:GC1!', displayName: 'Gold' },
 							{ name: 'NYMEX:CL1!', displayName: 'WTI Crude Oil' },
 							{ name: 'NYMEX:NG1!', displayName: 'Gas' },
-							{ name: 'CBOT:ZC1!', displayName: 'Corn' },
+							{ name: 'NYMEX:AGE1!', displayName: 'Gulf Coast Jet Fuel' },
+							{ name: 'NYMEX:A1Q1!', displayName: 'NY Jet Fuel' },
+							{ name: 'NYMEX:AGT1!', displayName: 'European Diesel' },
+							{
+								name: 'NYMEX:AZ71!',
+								displayName:
+									'ULSD 10ppm CIF MED (Platts) vs. Low Sulphur Gasoil Futures',
+							},
+							{
+								name: 'NYMEX:EP11!',
+								displayName:
+									'ULSD 10ppm Cargoes CIF Med (Platts) vs. New York Harbor ULSD Futures',
+							},
+							{
+								name: 'NYMEX:ALY1!',
+								displayName: 'Gulf Coast ULSD',
+							},
 						],
 					},
 					{

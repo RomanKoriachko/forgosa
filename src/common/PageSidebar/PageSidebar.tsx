@@ -52,11 +52,11 @@ const PageSidebar = (props: Props) => {
 			link: '/services/freight_services',
 			text: 'Gasoline, a hydrocarbon-based fuel derived primarily from crude oil, has been a cornerstone of the global energy landscape for over a century. Its significance stems from its role...',
 		},
-		{
-			title: 'Consulting',
-			link: '/services/consulting',
-			text: 'Gasoline, a hydrocarbon-based fuel derived primarily from crude oil, has been a cornerstone of the global energy landscape for over a century. Its significance stems from its role...',
-		},
+		// {
+		// 	title: 'Consulting',
+		// 	link: '/services/consulting',
+		// 	text: 'Gasoline, a hydrocarbon-based fuel derived primarily from crude oil, has been a cornerstone of the global energy landscape for over a century. Its significance stems from its role...',
+		// },
 	];
 
 	const postsData = [

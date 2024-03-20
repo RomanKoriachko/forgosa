@@ -1,9 +1,10 @@
 import React from 'react';
 
-import './ServicesPage.scss';
 import { FormComponent, PageItemComponent, PageTitle } from '../../common';
 import { useParallax } from 'react-scroll-parallax';
 import { Helmet } from 'react-helmet-async';
+
+import './ServicesPage.scss';
 
 type Props = {};
 

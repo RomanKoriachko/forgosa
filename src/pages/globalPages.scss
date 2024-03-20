@@ -1,6 +1,6 @@
 .page-container {
 	display: grid;
-	grid-template-columns: 1fr 450px;
+	grid-template-columns: 1fr 380px;
 	gap: 30px;
 	margin-top: 32px;
 	margin-bottom: -80px;
@@ -87,13 +87,6 @@
 }
 
 // ---------------------- Adaptive ----------------------
-
-// ------------- Desctop -------------
-@media (max-width: 1500px) {
-	.page-container {
-		grid-template-columns: 1fr 350px;
-	}
-}
 
 // ------------- Laptop -------------
 @media (max-width: 1200px) {

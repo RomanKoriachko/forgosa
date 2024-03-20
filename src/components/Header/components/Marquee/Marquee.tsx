@@ -13,14 +13,6 @@ const Marquee: React.FC = () => {
           "symbols": [
             {
               "description": "",
-              "proName": "NYMEX:JKM1!"
-            },
-            {
-              "description": "",
-              "proName": "NYMEX:MTF1!"
-            },
-            {
-              "description": "",
               "proName": "NYMEX:AZ71!"
             },
             {
@@ -42,6 +34,18 @@ const Marquee: React.FC = () => {
             {
               "description": "",
               "proName": "NYMEX:AGT1!"
+            },
+            {
+              "description": "",
+              "proName": "PEPPERSTONE:GASOLINE"
+            },
+            {
+              "description": "",
+              "proName": "FRED:DDFUELUSGULF"
+            },
+            {
+              "description": "",
+              "proName": "ECONOMICS:USCOSPRE"
             }
           ],
           "showSymbolLogo": true,
