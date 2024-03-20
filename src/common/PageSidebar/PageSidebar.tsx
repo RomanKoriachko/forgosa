@@ -1,9 +1,10 @@
 import React from 'react';
 
-import './PageSidebar.scss';
 import { Link, useLocation } from 'react-router-dom';
 import SidebarWidget from '../SidebarWidget/SidebarWidget';
 import StickyBox from 'react-sticky-box';
+
+import './PageSidebar.scss';
 
 type Props = {};
 
@@ -100,11 +101,8 @@ const PageSidebar = (props: Props) => {
 		});
 	}
 
-	// console.log(location);
-	// console.log(currentProductsArr);
-
 	return (
-		<StickyBox offsetTop={140} offsetBottom={20}>
+		<StickyBox className='sticky-box' offsetTop={140} offsetBottom={20}>
 			<div className='page-sidebar'>
 				<div className='page-sidebar-nav'>
 					<div className='page-sidebar-nav-about'>
