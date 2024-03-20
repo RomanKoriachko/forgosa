@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { PageTitle } from '../../../../common';
 import { LinksSlider, SearchComponent } from '../../components';
+import Flicking from '@egjs/react-flicking';
 
 import './DictionaryPage.scss';
 
@@ -42,6 +43,16 @@ const DictionaryPage = (props: Props) => {
 	function onSymbolClick(symbol: string) {
 		setActiveLetter(symbol);
 	}
+
+	useEffect(() => {
+		const buttons = document.querySelectorAll('.tab-button');
+		buttons.forEach((button) => {
+			button.classList.remove('active');
+			if (button.textContent === activeLetter) {
+				button.classList.add('active');
+			}
+		});
+	}, [activeLetter]);
 
 	const arr = [
 		{
@@ -128,6 +139,24 @@ const DictionaryPage = (props: Props) => {
 		<div className='faq-page dictionary-page'>
 			<PageTitle image='faq-bg-img.png' title='FAQ' subtitle='dictionary' />
 			<LinksSlider index={4} />
+			<div className='tablet-tab-buttons-container'>
+				<Flicking bound={true} align='prev'>
+					{alphabet.map((letter) => (
+						<div
+							onClick={() => onSymbolClick(letter)}
+							className={`${
+								letter === activeLetter ? 'tab-button active' : 'tab-button'
+							}`}
+							key={letter}
+						>
+							{letter}
+						</div>
+					))}
+				</Flicking>
+			</div>
+			<div className='container'>
+				<div className='underline'></div>
+			</div>
 			<SearchComponent
 				searchInput={searchInput}
 				handleChangeSearchInput={handleChangeSearchInput}
@@ -147,14 +176,20 @@ const DictionaryPage = (props: Props) => {
 							</div>
 						))}
 					</div>
-					<div>
-						{filtredArr.map((element, i) => (
-							<div className='dictionary-item' key={i}>
-								<p className='dictionary-item-title'>{element.title}</p>
-								<p className='dictionary-item-text'>{element.content}</p>
-							</div>
-						))}
-					</div>
+					{filtredArr.length < 1 ? (
+						<div className='no-matches-result'>
+							<p>no matches</p>
+						</div>
+					) : (
+						<div>
+							{filtredArr.map((element, i) => (
+								<div className='dictionary-item' key={i}>
+									<p className='dictionary-item-title'>{element.title}</p>
+									<p className='dictionary-item-text'>{element.content}</p>
+								</div>
+							))}
+						</div>
+					)}
 				</div>
 			</div>
 		</div>

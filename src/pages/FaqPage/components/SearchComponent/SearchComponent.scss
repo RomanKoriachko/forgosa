@@ -27,3 +27,18 @@
 		}
 	}
 }
+
+// ---------------------- Adaptive ----------------------
+
+// ------------- Tablet -------------
+@media (max-width: 992px) {
+	.search-component {
+		.search {
+			width: 100%;
+		}
+	}
+}
+
+// ------------- Mobile -------------
+@media (max-width: 576px) {
+}
