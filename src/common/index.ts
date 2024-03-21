@@ -5,3 +5,4 @@ export { PageItemComponent } from './PageItemComponent';
 export { ScrollToTop } from './ScrollToTop';
 export { PageSidebar } from './PageSidebar';
 export { PageButtons } from './PageButtons';
+export { PopUpComponent } from './PopUpComponent';

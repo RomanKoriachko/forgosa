@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import { ButtonComponent, PopUpComponent } from '../../../../common';
+import { Link } from 'react-router-dom';
 
 import './ContactsSection.scss';
-import { ButtonComponent } from '../../../../common';
-import { Link } from 'react-router-dom';
 
 type Props = {};
 
 const ContactsSection = (props: Props) => {
+	const [popUpState, setPopUpState] = useState<boolean>(false);
+
+	function openPopUp() {
+		setPopUpState(true);
+		document.body.style.overflow = 'hidden';
+	}
+
 	return (
 		<div className='footer-content'>
+			<PopUpComponent isOpen={popUpState} setPopUpState={setPopUpState} />
 			<div className='container'>
 				<div className='footer-row'>
 					<div className='footer-row-logo-wrapper'>
@@ -20,7 +29,7 @@ const ContactsSection = (props: Props) => {
 							DISCUSSION NOW TO COLLABORATE
 						</p>
 						<ButtonComponent
-							onCLickFunction={() => console.log('test')}
+							onCLickFunction={() => openPopUp()}
 							buttonText='Write to us'
 							className='footer-btn'
 						/>
