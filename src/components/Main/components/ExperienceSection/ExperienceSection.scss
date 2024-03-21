@@ -2,6 +2,11 @@
 	padding-bottom: 140px;
 	position: relative;
 	overflow: hidden;
+	.experience-sectio-anker {
+		// margin-bottom: 106px;
+		position: absolute;
+		top: -106px;
+	}
 	.experience-title-wrapper {
 		margin-left: 105px;
 		background-color: #07070763;
@@ -84,6 +89,9 @@
 @media (max-width: 576px) {
 	.experience-section {
 		padding-bottom: 48px;
+		.experience-sectio-anker {
+			top: -130px;
+		}
 		.experience-title-wrapper {
 			.experience-title {
 				font-size: 24px;

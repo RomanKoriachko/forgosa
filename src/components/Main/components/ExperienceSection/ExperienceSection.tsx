@@ -1,6 +1,7 @@
 import React from 'react';
 import './ExperienceSection.scss';
 import { useParallax } from 'react-scroll-parallax';
+import { Element } from 'react-scroll';
 
 type Props = {};
 
@@ -20,6 +21,7 @@ const ExperienceSection = (props: Props) => {
 
 	return (
 		<section className='experience-section'>
+			<Element className='experience-sectio-anker' name='experience'></Element>
 			<div
 				ref={parallaxLeft.ref}
 				className='experience-section-bg experience-section-bg-1'
