@@ -174,7 +174,7 @@ const PetroleumRefiningPage = (props: Props) => {
 						these end-products makes them essential components in various
 						sectors, ranging from transportation to manufacturing.
 					</p>
-					<PageButtons />
+					<PageButtons fileName='PETROLEUM_REFINING_PROCESSES.pdf' />
 				</div>
 			</div>
 		</div>

@@ -157,7 +157,7 @@ const DieselFuelPage = (props: Props) => {
 							highlight the importance of responsible energy choices in shaping
 							a more sustainable future.
 						</p>
-						<PageButtons />
+						<PageButtons fileName='empty-file.pdf' />
 					</div>
 					<PageSidebar />
 				</div>

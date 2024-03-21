@@ -341,7 +341,7 @@ const KeyTransactionPage = (props: Props) => {
 						commercial guidelines and statutory requirements, thereby justifying
 						their commitment to safety.
 					</p>
-					<PageButtons />
+					<PageButtons fileName='KEY_TRANSACTION_PROCEDURES_&_TERMS_OF_DELIVERY.pdf' />
 				</div>
 			</div>
 		</div>

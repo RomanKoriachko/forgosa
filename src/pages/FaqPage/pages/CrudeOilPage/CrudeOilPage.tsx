@@ -503,7 +503,7 @@ const CrudeOilPage = (props: Props) => {
 						feedstock in the chemical industry for synthesizing olefins such as
 						ethylene and propylene.
 					</p>
-					<PageButtons />
+					<PageButtons fileName='CRUDE_OIL_&_PETROLEUM_PRODUCTS.pdf' />
 				</div>
 			</div>
 		</div>

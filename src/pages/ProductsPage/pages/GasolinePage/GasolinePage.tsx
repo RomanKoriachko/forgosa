@@ -159,7 +159,7 @@ const GasolinePage = (props: Props) => {
 							evolution of humanity's relationship with energy and the
 							environment.
 						</p>
-						<PageButtons />
+						<PageButtons fileName='empty-file.pdf' />
 					</div>
 					<PageSidebar />
 				</div>

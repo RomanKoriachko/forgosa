@@ -1,7 +1,9 @@
 import React from 'react';
 
-import './IntroduceSection.scss';
 import { Link } from 'react-scroll';
+import { Link as NavPageLink } from 'react-scroll';
+
+import './IntroduceSection.scss';
 
 type Props = {};
 
@@ -21,10 +23,12 @@ const IntroduceSection = (props: Props) => {
 								<button className='introduce-btn-info'>More information</button>
 							</Link>
 							<button className='introduce-btn-meet'>
-								<div className='row'>
-									<div className='introduce-btn-meet-img'></div>
-									<p>Meeting with FOGROSA</p>
-								</div>
+								<NavPageLink to='map' smooth={true} duration={700}>
+									<div className='row'>
+										<div className='introduce-btn-meet-img'></div>
+										<p>Deposit Map</p>
+									</div>
+								</NavPageLink>
 							</button>
 						</div>
 						<Link to='experience' smooth={true} duration={700}>

@@ -123,7 +123,7 @@ const PetroleumPage = (props: Props) => {
 							imperative for ensuring a prosperous and resilient future for
 							generations to come.
 						</p>
-						<PageButtons />
+						<PageButtons fileName='empty-file.pdf' />
 					</div>
 					<PageSidebar />
 				</div>

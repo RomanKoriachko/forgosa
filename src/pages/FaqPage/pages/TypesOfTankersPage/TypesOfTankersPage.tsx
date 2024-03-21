@@ -403,7 +403,7 @@ const TypesOfTankersPage = (props: Props) => {
 						of pipeline infrastructure, and economic considerations in the oil
 						and gas industry.
 					</p>
-					<PageButtons />
+					<PageButtons fileName='TYPES_OF_OIL_TANKERS.pdf' />
 				</div>
 			</div>
 		</div>

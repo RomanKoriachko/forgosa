@@ -47,6 +47,9 @@
 			font-weight: 700;
 			line-height: 19px;
 			cursor: pointer;
+			> a {
+				color: #fe6700;
+			}
 			.introduce-btn-meet-img {
 				background-image: url(../../../../assets/btn-arrow-img.svg);
 				background-position: center;
@@ -147,6 +150,7 @@
 		.introduce-btn-info-mobile {
 			display: block;
 			width: 100%;
+			max-width: none;
 			position: absolute;
 			bottom: 40px;
 		}

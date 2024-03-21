@@ -111,7 +111,7 @@ const Header = (props: Props) => {
 								</div>
 							</Link>
 						</div>
-						{location.pathname !== '/' ? undefined : (
+						{/* {location.pathname !== '/' ? undefined : (
 							<NavPageLink
 								to='map'
 								smooth={true}
@@ -120,7 +120,7 @@ const Header = (props: Props) => {
 							>
 								<p className='header-menu-item'>Deposit Map</p>
 							</NavPageLink>
-						)}
+						)} */}
 						<Link to='/contacts' className='header-menu-item-link'>
 							<p className='header-menu-item'>Contact Us</p>
 						</Link>

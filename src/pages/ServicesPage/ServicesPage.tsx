@@ -5,6 +5,7 @@ import { useParallax } from 'react-scroll-parallax';
 import { Helmet } from 'react-helmet-async';
 
 import './ServicesPage.scss';
+import { Element, Link } from 'react-scroll';
 
 type Props = {};
 
@@ -79,12 +80,14 @@ const ServicesPage = (props: Props) => {
 					<p className='contact-container-text'>
 						Contact us and we will offer you the best cooperation option
 					</p>
-					<button className='contact-container-btn'>
-						<div className='row contact-container-btn-row'>
-							<p>CALL NOW</p>
-							<div className='arrow-img'></div>
-						</div>
-					</button>
+					<Link to='form' smooth={true} duration={500}>
+						<button className='contact-container-btn'>
+							<div className='row contact-container-btn-row'>
+								<p>CALL NOW</p>
+								<div className='arrow-img'></div>
+							</div>
+						</button>
+					</Link>
 				</div>
 			</div>
 			<div className='form-bg'>
@@ -93,6 +96,7 @@ const ServicesPage = (props: Props) => {
 					ref={parallaxRight.ref}
 					className='form-bg-img form-bg-img-2'
 				></div>
+				<Element className='form-anker' name='form'></Element>
 				<div className='form-container'>
 					<FormComponent title='Send us a Message​' />
 				</div>

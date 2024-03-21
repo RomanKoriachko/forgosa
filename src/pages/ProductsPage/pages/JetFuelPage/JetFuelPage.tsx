@@ -147,7 +147,7 @@ const JetFuelPage = (props: Props) => {
 							heightened awareness of the environmental impact of our journeys
 							through the clouds.
 						</p>
-						<PageButtons />
+						<PageButtons fileName='empty-file.pdf' />
 					</div>
 					<PageSidebar />
 				</div>

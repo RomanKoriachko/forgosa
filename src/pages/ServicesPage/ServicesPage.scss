@@ -39,6 +39,10 @@
 		padding-bottom: 200px;
 		position: relative;
 		overflow: hidden;
+		.form-anker {
+			position: absolute;
+			top: -116px;
+		}
 		.form-bg-img {
 			position: absolute;
 			background-position: center;
@@ -140,6 +144,9 @@
 		}
 		.form-bg {
 			padding-bottom: 48px;
+			.form-anker {
+				top: -130px;
+			}
 		}
 	}
 }
