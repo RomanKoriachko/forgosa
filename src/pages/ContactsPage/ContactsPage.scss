@@ -65,6 +65,7 @@
 				align-items: center;
 				gap: 9px;
 				margin-left: 42px;
+				cursor: pointer;
 				.contacts-item-list {
 					width: 24px;
 					height: 24px;
@@ -77,6 +78,11 @@
 		.form-container {
 			width: 50%;
 			text-align: left;
+			position: relative;
+			.form-anker {
+				position: absolute;
+				top: -114px;
+			}
 		}
 	}
 }
@@ -143,6 +149,11 @@
 				}
 				.contacts-item-mail {
 					padding-bottom: 49px;
+				}
+			}
+			.form-container {
+				.form-anker {
+					top: -130px;
 				}
 			}
 		}

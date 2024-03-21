@@ -3,6 +3,7 @@ import React from 'react';
 import './ContactsPage.scss';
 import { FormComponent, PageTitle } from '../../common';
 import { Helmet } from 'react-helmet-async';
+import { Element, Link } from 'react-scroll';
 
 type Props = {};
 
@@ -101,12 +102,15 @@ const ContactsPage = (props: Props) => {
 								</div>
 							</div>
 						</div>
-						<div className='row contacts-item-list-row'>
-							<div className='contacts-item-list'></div>
-							<p>Fill out the form</p>
-						</div>
+						<Link to='form' smooth={true} duration={500}>
+							<div className='row contacts-item-list-row'>
+								<div className='contacts-item-list'></div>
+								<p>Fill out the form</p>
+							</div>
+						</Link>
 					</div>
 					<div className='form-container'>
+						<Element className='form-anker' name='form'></Element>
 						<FormComponent title='More about you' />
 					</div>
 				</div>
