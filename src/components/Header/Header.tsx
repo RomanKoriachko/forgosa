@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 import './Header.scss';
 import { HeaderButton, Marquee } from './components';
-import { Link, NavLink, useLocation } from 'react-router-dom';
-import { Link as NavPageLink } from 'react-scroll';
+import { Link, NavLink } from 'react-router-dom';
 
 type Props = {};
 
 const Header = (props: Props) => {
-	const location = useLocation();
-
 	const [burgerMenuState, setBurgerMenuState] = useState<boolean>(false);
 
 	function onBurgerMenuClick() {
@@ -37,79 +34,79 @@ const Header = (props: Props) => {
 						<div className='header-menu-item-wrapper header-menu-item-products'>
 							<Link to='/products' className='header-menu-item-link'>
 								<p className='header-menu-item'>Products</p>
-								<div className='header-menu-item-dropdown header-menu-item-dropdown-products'>
-									<NavLink
-										to='/products/gasoline'
-										className={({ isActive }) => (isActive ? 'active' : '')}
-									>
-										<div className='dropdown-link-wrapper row'>
-											<div className='link-circle'></div>
-											<p>Gasoline</p>
-										</div>
-									</NavLink>
-									<NavLink
-										to='/products/petroleum'
-										className={({ isActive }) => (isActive ? 'active' : '')}
-									>
-										<div className='dropdown-link-wrapper row'>
-											<div className='link-circle'></div>
-											<p>Petroleum</p>
-										</div>
-									</NavLink>
-									<NavLink
-										to='/products/jet_fuel'
-										className={({ isActive }) => (isActive ? 'active' : '')}
-									>
-										<div className='dropdown-link-wrapper row'>
-											<div className='link-circle'></div>
-											<p>Jet Fuel</p>
-										</div>
-									</NavLink>
-									<NavLink
-										to='/products/diesel_fuel'
-										className={({ isActive }) => (isActive ? 'active' : '')}
-									>
-										<div className='dropdown-link-wrapper row'>
-											<div className='link-circle'></div>
-											<p>Diesel Fuel</p>
-										</div>
-									</NavLink>
-								</div>
 							</Link>
+							<div className='header-menu-item-dropdown header-menu-item-dropdown-products'>
+								<NavLink
+									to='/products/gasoline'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
+									<div className='dropdown-link-wrapper row'>
+										<div className='link-circle'></div>
+										<p>Gasoline</p>
+									</div>
+								</NavLink>
+								<NavLink
+									to='/products/petroleum'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
+									<div className='dropdown-link-wrapper row'>
+										<div className='link-circle'></div>
+										<p>Petroleum</p>
+									</div>
+								</NavLink>
+								<NavLink
+									to='/products/jet_fuel'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
+									<div className='dropdown-link-wrapper row'>
+										<div className='link-circle'></div>
+										<p>Jet Fuel</p>
+									</div>
+								</NavLink>
+								<NavLink
+									to='/products/diesel_fuel'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
+									<div className='dropdown-link-wrapper row'>
+										<div className='link-circle'></div>
+										<p>Diesel Fuel</p>
+									</div>
+								</NavLink>
+							</div>
 						</div>
 						<div className='header-menu-item-wrapper header-menu-item-services'>
 							<Link to='/services' className='header-menu-item-link'>
 								<p className='header-menu-item'>Services</p>
-								<div className='header-menu-item-dropdown header-menu-item-dropdown-services'>
-									<NavLink
-										to='/services/fuel_supplies'
-										className={({ isActive }) => (isActive ? 'active' : '')}
-									>
-										<div className='dropdown-link-wrapper row'>
-											<div className='link-circle'></div>
-											<p>Fuel supplies</p>
-										</div>
-									</NavLink>
-									<NavLink
-										to='/services/freight_services'
-										className={({ isActive }) => (isActive ? 'active' : '')}
-									>
-										<div className='dropdown-link-wrapper row'>
-											<div className='link-circle'></div>
-											<p>Freight Services</p>
-										</div>
-									</NavLink>
-									<NavLink
-										to='/services/tolling'
-										className={({ isActive }) => (isActive ? 'active' : '')}
-									>
-										<div className='dropdown-link-wrapper row'>
-											<div className='link-circle'></div>
-											<p>Tolling</p>
-										</div>
-									</NavLink>
-								</div>
 							</Link>
+							<div className='header-menu-item-dropdown header-menu-item-dropdown-services'>
+								<NavLink
+									to='/services/fuel_supplies'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
+									<div className='dropdown-link-wrapper row'>
+										<div className='link-circle'></div>
+										<p>Fuel supplies</p>
+									</div>
+								</NavLink>
+								<NavLink
+									to='/services/freight_services'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
+									<div className='dropdown-link-wrapper row'>
+										<div className='link-circle'></div>
+										<p>Freight Services</p>
+									</div>
+								</NavLink>
+								<NavLink
+									to='/services/tolling'
+									className={({ isActive }) => (isActive ? 'active' : '')}
+								>
+									<div className='dropdown-link-wrapper row'>
+										<div className='link-circle'></div>
+										<p>Tolling</p>
+									</div>
+								</NavLink>
+							</div>
 						</div>
 						{/* {location.pathname !== '/' ? undefined : (
 							<NavPageLink
@@ -171,7 +168,7 @@ const Header = (props: Props) => {
 						>
 							<p className='header-menu-item'>Services</p>
 						</NavLink>
-						{location.pathname !== '/' ? undefined : (
+						{/* {location.pathname !== '/' ? undefined : (
 							<NavPageLink
 								to='map'
 								smooth={true}
@@ -181,7 +178,7 @@ const Header = (props: Props) => {
 							>
 								<p className='header-menu-item'>Deposit Map</p>
 							</NavPageLink>
-						)}
+						)} */}
 						<NavLink
 							to='/contacts'
 							className={({ isActive }) =>
