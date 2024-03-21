@@ -52,7 +52,12 @@ const MapSection = (props: Props) => {
 							Start exploring today!
 						</p>
 						{window.innerWidth <= 992 ? (
-							<Link to='map' smooth={true} duration={300}>
+							<Link
+								to='map'
+								smooth={true}
+								duration={300}
+								className='desktop-button'
+							>
 								<ButtonComponent
 									onCLickFunction={() => showMap()}
 									buttonText='click and explore'
@@ -66,6 +71,15 @@ const MapSection = (props: Props) => {
 								className=''
 							/>
 						)}
+						<div className='mobile-button'>
+							<a
+								href='https://www.oilmap.xyz/'
+								target='_blank'
+								rel='noreferrer'
+							>
+								<ButtonComponent buttonText='click and explore' className='' />
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>

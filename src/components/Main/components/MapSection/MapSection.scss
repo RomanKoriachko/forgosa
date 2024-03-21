@@ -85,6 +85,9 @@
 			}
 		}
 	}
+	.mobile-button {
+		display: none;
+	}
 }
 
 // ---------------------- Adaptive ----------------------
@@ -206,6 +209,33 @@
 		}
 		.active {
 			grid-template-rows: 70vh 0fr;
+		}
+	}
+}
+
+// ------------- Small Mobile -------------
+@media (max-width: 400px) {
+	.map-section {
+		overflow: auto;
+		position: static;
+		.map-wrapper {
+			display: block;
+		}
+		.map-overlap {
+			display: none;
+		}
+		.map-content {
+			position: static;
+			.map-text {
+				position: static;
+				transform: translate(0%, 0%);
+			}
+		}
+		.desktop-button {
+			display: none;
+		}
+		.mobile-button {
+			display: block;
 		}
 	}
 }
