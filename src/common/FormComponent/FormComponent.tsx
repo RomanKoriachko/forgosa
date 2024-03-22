@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './FormComponent.scss';
 import { ButtonComponent } from '../ButtonComponent';
@@ -8,6 +8,51 @@ type Props = {
 };
 
 const FormComponent = ({ title }: Props) => {
+	const [name, setName] = useState<string>('');
+	const [email, setEmail] = useState<string>('');
+	const [message, setMessage] = useState<string>('');
+	const [validation, setValidation] = useState<boolean>(false);
+
+	function handleChangeName(e: React.FormEvent<HTMLInputElement>) {
+		setName(e.currentTarget.value);
+		checkInputValidation();
+	}
+
+	function handleChangeEmail(e: React.FormEvent<HTMLInputElement>) {
+		setEmail(e.currentTarget.value);
+		checkInputValidation();
+	}
+
+	function handleChangeMessage(e: React.FormEvent<HTMLTextAreaElement>) {
+		setMessage(e.currentTarget.value);
+		checkInputValidation();
+	}
+
+	function checkInputValidation() {
+		if (
+			name === '' ||
+			email === '' ||
+			!email.includes('@') ||
+			!email.includes('mail') ||
+			message === ''
+		) {
+			setValidation(false);
+		} else {
+			setValidation(true);
+		}
+	}
+
+	function handleButtonClick() {
+		if (validation) {
+			const link = document.createElement('a');
+			link.href = '/files/FOGROSA.pdf';
+			link.setAttribute('download', 'FOGROSA.pdf');
+			document.body.appendChild(link);
+			link.click();
+			document.body.removeChild(link);
+		}
+	}
+
 	return (
 		<div className='form-component'>
 			<p className='subtitle'>Contact</p>
@@ -29,6 +74,8 @@ const FormComponent = ({ title }: Props) => {
 							name='name'
 							id='name'
 							placeholder='Enter your name'
+							value={name}
+							onChange={handleChangeName}
 						/>
 					</div>
 					<div className='input-item-row'>
@@ -42,6 +89,8 @@ const FormComponent = ({ title }: Props) => {
 							name='email'
 							id='email'
 							placeholder='Enter your mail'
+							value={email}
+							onChange={handleChangeEmail}
 						/>
 					</div>
 				</div>
@@ -80,10 +129,12 @@ const FormComponent = ({ title }: Props) => {
 					name='message'
 					id='message'
 					placeholder='Enter you massage ...'
+					value={message}
+					onChange={handleChangeMessage}
 				></textarea>
 				<div className='btn-container'>
 					<ButtonComponent
-						onCLickFunction={() => console.log('test')}
+						onCLickFunction={handleButtonClick}
 						buttonText='Send a Message'
 						className='form-btn'
 					/>
