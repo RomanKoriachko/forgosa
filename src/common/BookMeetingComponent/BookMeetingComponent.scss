@@ -1,0 +1,111 @@
+.book-meeting-component {
+	.book-meeting-bg {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100vh;
+		background: #ffffff33;
+		backdrop-filter: blur(7px);
+		z-index: 1200;
+	}
+	.metting-form-wrapper {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1500;
+		.close-form-btn {
+			position: absolute;
+			right: 12px;
+			top: 12px;
+			background-image: url(../../assets/close-img.svg);
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 24px;
+			height: 24px;
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+		}
+	}
+	.meeting-form {
+		padding: 36px 40px 32px;
+		background-color: #22241a;
+		box-shadow: 0px 4px 20px 0px #00000073;
+		border: 2px solid #ffffff;
+		border-radius: 16px;
+		.form-title {
+			color: #fe6700;
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 20px;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+		.form-input-wrapper {
+			display: flex;
+			flex-direction: column;
+			font-family: 'Roboto', sans-serif;
+			label,
+			input,
+			textarea {
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 25.2px;
+				border-radius: 4px;
+				background-color: transparent;
+			}
+			input,
+			textarea {
+				padding: 5px 13px;
+				border: 1px solid #ffffff66;
+				margin-top: 3px;
+				margin-bottom: 16px;
+				color: #fe6700;
+				min-width: 330px;
+			}
+			textarea {
+				resize: none;
+				height: 120px;
+			}
+			input::placeholder,
+			textarea::placeholder {
+				font-family: 'Roboto', sans-serif;
+				color: #fe6700;
+				opacity: 0.6;
+			}
+		}
+		.button-wrapper {
+			.button {
+				width: 100%;
+				.btn-content-row {
+					justify-content: center;
+				}
+			}
+		}
+	}
+}
+
+// ---------------------- Adaptive ----------------------
+
+// ------------- Mobile -------------
+@media (max-width: 576px) {
+	.book-meeting-component {
+		.metting-form-wrapper {
+			left: 16px;
+			right: 16px;
+			transform: translate(0%, -50%);
+		}
+		.meeting-form {
+			padding: 58px 29px 32px;
+			.form-input-wrapper {
+				input,
+				textarea {
+					width: 100%;
+					min-width: auto;
+				}
+			}
+		}
+	}
+}

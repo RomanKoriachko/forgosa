@@ -16,10 +16,11 @@ const PopUpComponent = ({ isOpen, setPopUpState }: Props) => {
 
 	return (
 		<div className={`pop-up-form ${isOpen ? 'active' : 'not-active'}`}>
-			<div className='form-wrapper'>
+			<div className='form-popup-wrapper'>
 				<button className='close-btn' onClick={() => closePopUp()}></button>
 				<FormComponent title='Send us a Message​' />
 			</div>
+			<div className='form-bg'></div>
 		</div>
 	);
 };

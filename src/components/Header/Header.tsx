@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import './Header.scss';
 import { HeaderButton, Marquee } from './components';
 import { Link, NavLink } from 'react-router-dom';
+import { BookMeetingComponent } from '../../common';
+
+import './Header.scss';
 
 type Props = {};
 
@@ -22,8 +24,16 @@ const Header = (props: Props) => {
 		document.body.style.overflow = 'auto';
 	}
 
+	const [formState, setFormState] = useState<boolean>(false);
+
+	function openMeetingForm() {
+		setFormState(true);
+		document.body.style.overflow = 'hidden';
+	}
+
 	return (
 		<header className='header'>
+			<BookMeetingComponent formState={formState} setFormState={setFormState} />
 			<div className='header-container'>
 				<div className='row header-row'>
 					<Link className='logo-link' to='/' />
@@ -108,16 +118,6 @@ const Header = (props: Props) => {
 								</NavLink>
 							</div>
 						</div>
-						{/* {location.pathname !== '/' ? undefined : (
-							<NavPageLink
-								to='map'
-								smooth={true}
-								duration={700}
-								className='header-menu-item-link'
-							>
-								<p className='header-menu-item'>Deposit Map</p>
-							</NavPageLink>
-						)} */}
 						<Link to='/contacts' className='header-menu-item-link'>
 							<p className='header-menu-item'>Contact Us</p>
 						</Link>
@@ -130,7 +130,7 @@ const Header = (props: Props) => {
 						onClick={onBurgerMenuClick}
 					></div>
 					<div className='desktop-header-btn'>
-						<HeaderButton />
+						<HeaderButton openMeetingForm={openMeetingForm} />
 					</div>
 				</div>
 				<div className={`burger-menu ${burgerMenuState ? 'active' : ''}`}>
@@ -168,17 +168,6 @@ const Header = (props: Props) => {
 						>
 							<p className='header-menu-item'>Services</p>
 						</NavLink>
-						{/* {location.pathname !== '/' ? undefined : (
-							<NavPageLink
-								to='map'
-								smooth={true}
-								duration={700}
-								className='header-menu-item-link'
-								onClick={closeBurgerMenu}
-							>
-								<p className='header-menu-item'>Deposit Map</p>
-							</NavPageLink>
-						)} */}
 						<NavLink
 							to='/contacts'
 							className={({ isActive }) =>
@@ -203,7 +192,7 @@ const Header = (props: Props) => {
 						</NavLink>
 					</div>
 					<div className='burger-menu-btn'>
-						<HeaderButton />
+						<HeaderButton openMeetingForm={openMeetingForm} />
 					</div>
 				</div>
 			</div>
