@@ -3,9 +3,10 @@ import React from 'react';
 import { FormComponent, PageItemComponent, PageTitle } from '../../common';
 import { useParallax } from 'react-scroll-parallax';
 import { Helmet } from 'react-helmet-async';
+import { Element } from 'react-scroll';
 
 import './ServicesPage.scss';
-import { Element, Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 type Props = {};
 
@@ -80,7 +81,7 @@ const ServicesPage = (props: Props) => {
 					<p className='contact-container-text'>
 						Contact us and we will offer you the best cooperation option
 					</p>
-					<Link to='form' smooth={true} duration={500}>
+					<Link to='/contacts'>
 						<button className='contact-container-btn'>
 							<div className='row contact-container-btn-row'>
 								<p>CALL NOW</p>
@@ -98,7 +99,7 @@ const ServicesPage = (props: Props) => {
 				></div>
 				<Element className='form-anker' name='form'></Element>
 				<div className='form-container'>
-					<FormComponent title='Send us a Message​' />
+					<FormComponent title='Send us a Message' />
 				</div>
 			</div>
 		</div>

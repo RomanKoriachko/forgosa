@@ -1,21 +1,24 @@
 import React from 'react';
 
-import './PopUpComponent.scss';
 import { FormComponent } from '../FormComponent';
+import { useAppDispatch, useAppSelector } from '../../redux/hooks';
+import { setFormState } from '../../redux/formReducer';
 
-type Props = {
-	isOpen: boolean;
-	setPopUpState(value: React.SetStateAction<boolean>): void;
-};
+import './PopUpComponent.scss';
 
-const PopUpComponent = ({ isOpen, setPopUpState }: Props) => {
+type Props = {};
+
+const PopUpComponent = (props: Props) => {
+	const formState = useAppSelector((state) => state.formState);
+	const dispatch = useAppDispatch();
+
 	function closePopUp() {
-		setPopUpState(false);
+		dispatch(setFormState(false));
 		document.body.style.overflow = 'auto';
 	}
 
 	return (
-		<div className={`pop-up-form ${isOpen ? 'active' : 'not-active'}`}>
+		<div className={`pop-up-form ${formState ? 'active' : 'not-active'}`}>
 			<div className='form-popup-wrapper'>
 				<button className='close-btn' onClick={() => closePopUp()}></button>
 				<FormComponent title='Send us a Message​' />

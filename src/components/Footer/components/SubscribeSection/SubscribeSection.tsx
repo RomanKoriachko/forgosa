@@ -37,11 +37,16 @@ const SubscribeSection = (props: Props) => {
 							We will send you only <span>up-to-date</span> quotes.
 						</p>
 					</div>
-					<form className='form row'>
+					<form
+						className='form row'
+						action='https://formsubmit.co/mazaxaka.tyt@gmail.com'
+						method='POST'
+					>
 						<input
 							className='form-input'
 							type='text'
 							placeholder='Enter your email'
+							required
 						/>
 						<button className='form-btn'>Submit</button>
 					</form>

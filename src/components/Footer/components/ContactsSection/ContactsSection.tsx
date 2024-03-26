@@ -1,23 +1,25 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { ButtonComponent, PopUpComponent } from '../../../../common';
 import { Link } from 'react-router-dom';
+import { useAppDispatch } from '../../../../redux/hooks';
+import { setFormState } from '../../../../redux/formReducer';
 
 import './ContactsSection.scss';
 
 type Props = {};
 
 const ContactsSection = (props: Props) => {
-	const [popUpState, setPopUpState] = useState<boolean>(false);
+	const dispatch = useAppDispatch();
 
 	function openPopUp() {
-		setPopUpState(true);
+		dispatch(setFormState(true));
 		document.body.style.overflow = 'hidden';
 	}
 
 	return (
 		<div className='footer-content'>
-			<PopUpComponent isOpen={popUpState} setPopUpState={setPopUpState} />
+			<PopUpComponent />
 			<div className='container'>
 				<div className='footer-row'>
 					<div className='footer-row-logo-wrapper'>

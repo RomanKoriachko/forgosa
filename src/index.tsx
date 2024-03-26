@@ -35,6 +35,8 @@ import {
 	PetroleumRefiningPage,
 	TypesOfTankersPage,
 } from './pages/FaqPage/pages';
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
 
 const router = createBrowserRouter([
 	{
@@ -144,7 +146,9 @@ const root = ReactDOM.createRoot(
 root.render(
 	<React.StrictMode>
 		<ParallaxProvider>
-			<RouterProvider router={router} />
+			<Provider store={store}>
+				<RouterProvider router={router} />
+			</Provider>
 		</ParallaxProvider>
 	</React.StrictMode>
 );
