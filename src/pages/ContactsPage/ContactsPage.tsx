@@ -59,8 +59,8 @@ const ContactsPage = (props: Props) => {
 								<div className='item-img item-img-uae'></div>
 								<div>
 									<p className='contacts-text'>
-										<span>UAE:</span> M05-0190 Unique Adventure Business Centre,
-										Building PR1005, Port Saeed, Dubai, UAE
+										<span>UAE:</span> Business Centre, Sharjah Publishing City
+										Free Zone, Sharjah, United Arab Emirates
 									</p>
 								</div>
 							</div>

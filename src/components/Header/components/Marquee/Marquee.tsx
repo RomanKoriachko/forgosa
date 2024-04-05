@@ -67,6 +67,7 @@ const Marquee: React.FC = () => {
 			}
 		};
 	}, []);
+
 	return (
 		<div id='tradingview-widget-container'>
 			<div className='header-tradingview-widget-container__widget'></div>

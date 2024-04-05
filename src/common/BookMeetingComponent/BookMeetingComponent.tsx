@@ -10,8 +10,6 @@ type Props = {
 };
 
 const BookMeetingComponent = ({ formState, setFormState }: Props) => {
-	console.log(formState);
-
 	function closeMeetingForm() {
 		setFormState(false);
 		document.body.style.overflow = 'auto';

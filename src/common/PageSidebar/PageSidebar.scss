@@ -1,7 +1,7 @@
 .page-sidebar {
 	.page-sidebar-nav {
 		padding: 40px 90px 40px 50px;
-		background: #bdbaba24;
+		background: #1e222d;
 		.page-sidebar-nav-about {
 			margin-bottom: 130px;
 			> p:nth-child(1) {
@@ -9,6 +9,7 @@
 				font-weight: 700;
 				line-height: 29px;
 				margin-bottom: 16px;
+				text-transform: uppercase;
 			}
 			> p:nth-child(2) {
 				line-height: 26px;
@@ -44,7 +45,7 @@
 	.page-sidebar-widjet {
 		margin-top: 32px;
 		height: 780px;
-		background: #bdbaba24;
+		background: #1e222d;
 		.sidebar-tradingview-widget-container__widget {
 			height: 780px;
 		}

@@ -2,6 +2,7 @@ import React from 'react';
 import './ExperienceSection.scss';
 import { useParallax } from 'react-scroll-parallax';
 import { Element } from 'react-scroll';
+import { ButtonComponent } from '../../../../common';
 
 type Props = {};
 
@@ -63,6 +64,10 @@ const ExperienceSection = (props: Props) => {
 					</p>
 					<p>YOUR TRUST, OUR ENERGY</p>
 					<p>FOGROSA TM</p>
+					<ButtonComponent
+						buttonText='download presentation'
+						className='experience-btn'
+					/>
 				</div>
 			</div>
 		</section>

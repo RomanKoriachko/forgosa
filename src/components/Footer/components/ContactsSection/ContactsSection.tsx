@@ -46,7 +46,7 @@ const ContactsSection = (props: Props) => {
 								<p className='footer-row-item'>Products</p>
 							</Link>
 							<Link to='/services'>
-								<p className='footer-row-item'>Sevice</p>
+								<p className='footer-row-item'>Services</p>
 							</Link>
 							<Link to='/contacts'>
 								<p className='footer-row-item'>Contact Us</p>
@@ -71,8 +71,8 @@ const ContactsSection = (props: Props) => {
 								<div className='footer-row-address-content'>
 									<p className='footer-row-address-item'>UAE OFFICE:</p>
 									<p className='footer-row-address-item'>
-										M05-0190 Unique Adventure Business Centre, Building PR1005,
-										Port Saeed, Dubai, UAE
+										Business Centre, Sharjah Publishing City Free Zone, Sharjah,
+										United Arab Emirates
 									</p>
 									<p className='footer-row-address-item-bold'>
 										office@fogrosa.com
