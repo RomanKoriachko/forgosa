@@ -56,7 +56,8 @@
 		height: 370px;
 		background-image: url(../../../../assets/experiense-bg-2.png);
 	}
-	.experience-btn {
+	.experience-download-link {
+		width: fit-content;
 		margin-top: 26px;
 	}
 }
@@ -105,8 +106,12 @@
 		.experience-content-wrapper {
 			margin-top: 16px;
 		}
-		.experience-btn {
+		.experience-download-link {
 			width: 100%;
+			margin-top: 26px;
+			.experience-btn {
+				width: 100%;
+			}
 		}
 	}
 }

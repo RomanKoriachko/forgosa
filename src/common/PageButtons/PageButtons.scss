@@ -38,6 +38,16 @@
 	}
 }
 
+// ------------- Tablet -------------
+@media (max-width: 992px) {
+	.page-btn-row {
+		gap: 10px;
+		.page-btn-item {
+			min-width: 255px;
+		}
+	}
+}
+
 // ------------- Mobile -------------
 @media (max-width: 576px) {
 	.page-btn-row {

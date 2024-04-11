@@ -64,10 +64,16 @@ const ExperienceSection = (props: Props) => {
 					</p>
 					<p>YOUR TRUST, OUR ENERGY</p>
 					<p>FOGROSA TM</p>
-					<ButtonComponent
-						buttonText='download presentation'
-						className='experience-btn'
-					/>
+					<a
+						className='experience-download-link'
+						href='/files/FOGROSA.pdf'
+						download
+					>
+						<ButtonComponent
+							buttonText='download presentation'
+							className='experience-btn'
+						/>
+					</a>
 				</div>
 			</div>
 		</section>
