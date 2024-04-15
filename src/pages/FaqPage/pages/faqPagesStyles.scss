@@ -102,6 +102,11 @@
 		display: flex;
 		gap: 75px;
 	}
+	.dictionary-page-scroll-anker {
+		// margin-top: -150px;
+		position: absolute;
+		bottom: 50px;
+	}
 	.tab-buttons-container {
 		.active {
 			color: #fe6700;

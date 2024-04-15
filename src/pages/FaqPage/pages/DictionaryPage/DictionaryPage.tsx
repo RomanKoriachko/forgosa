@@ -4,6 +4,7 @@ import { PageTitle } from '../../../../common';
 import { LinksSlider, SearchComponent } from '../../components';
 import { alphabet, dictionaryArr } from './dictionaryArr';
 import Flicking from '@egjs/react-flicking';
+import { Element, Link as NavPageLink } from 'react-scroll';
 
 import './DictionaryPage.scss';
 
@@ -52,6 +53,10 @@ const DictionaryPage = (props: Props) => {
 	return (
 		<div className='faq-page dictionary-page'>
 			<PageTitle image='faq-bg-img.png' title='FAQ' subtitle='dictionary' />
+			<Element
+				className='dictionary-page-scroll-anker'
+				name='page-top'
+			></Element>
 			<LinksSlider index={4} />
 			<div className='tablet-tab-buttons-container'>
 				<Flicking bound={true} align='prev'>
@@ -79,15 +84,21 @@ const DictionaryPage = (props: Props) => {
 				<div className='dictionary-container'>
 					<div className='tab-buttons-container'>
 						{alphabet.map((letter) => (
-							<div
-								onClick={() => onSymbolClick(letter)}
-								className={`${
-									letter === activeLetter ? 'tab-button active' : 'tab-button'
-								}`}
+							<NavPageLink
+								to='page-top'
+								smooth={true}
+								duration={700}
 								key={letter}
 							>
-								{letter}
-							</div>
+								<div
+									onClick={() => onSymbolClick(letter)}
+									className={`${
+										letter === activeLetter ? 'tab-button active' : 'tab-button'
+									}`}
+								>
+									{letter}
+								</div>
+							</NavPageLink>
 						))}
 					</div>
 					{filtredArr.length < 1 ? (
@@ -97,10 +108,15 @@ const DictionaryPage = (props: Props) => {
 					) : (
 						<div>
 							{filtredArr.map((element, i) => (
-								<div className='dictionary-item' key={i}>
+								<div
+									className='dictionary-item'
+									key={element.title[0] + element.content[0][0] + i}
+								>
 									<p className='dictionary-item-title'>{element.title}</p>
-									{element.content.map((paragraph) => (
-										<p className='dictionary-item-text'>{paragraph}</p>
+									{element.content.map((paragraph, i) => (
+										<p className='dictionary-item-text' key={i}>
+											{paragraph}
+										</p>
 									))}
 								</div>
 							))}

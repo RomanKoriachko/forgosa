@@ -11,11 +11,22 @@ type Props = {
 };
 
 const LinksSlider = ({ index }: Props) => {
+	function scrollTo100vh() {
+		const screenHeight =
+			window.innerHeight || document.documentElement.clientHeight;
+		const scrollToPixels = screenHeight * 1.0 - 100;
+		window.scrollTo({
+			top: scrollToPixels,
+			left: 0,
+			behavior: 'smooth',
+		});
+	}
+
 	return (
 		<div className='links-slider'>
 			<div className='container'>
 				<Flicking circular={true} defaultIndex={index}>
-					<div className='slider-item'>
+					<div className='slider-item' onClick={scrollTo100vh}>
 						<NavLink
 							to='/faq/key_transactions_procedures'
 							className={({ isActive }) => (isActive ? 'active' : '')}
@@ -23,7 +34,7 @@ const LinksSlider = ({ index }: Props) => {
 							KEY TRANSACTION PROCEDURES & TERMS OF DELIVERY
 						</NavLink>
 					</div>
-					<div className='slider-item'>
+					<div className='slider-item' onClick={scrollTo100vh}>
 						<NavLink
 							to='/faq/crude_oil_and_petroleum_products'
 							className={({ isActive }) => (isActive ? 'active' : '')}
@@ -31,7 +42,7 @@ const LinksSlider = ({ index }: Props) => {
 							crude oil & petroleum products
 						</NavLink>
 					</div>
-					<div className='slider-item'>
+					<div className='slider-item' onClick={scrollTo100vh}>
 						<NavLink
 							to='/faq/petroleum_refining_processes'
 							className={({ isActive }) => (isActive ? 'active' : '')}
@@ -39,7 +50,7 @@ const LinksSlider = ({ index }: Props) => {
 							PETROLEUM REFINING PROCESSES
 						</NavLink>
 					</div>
-					<div className='slider-item'>
+					<div className='slider-item' onClick={scrollTo100vh}>
 						<NavLink
 							to='/faq/types_of_tankers'
 							className={({ isActive }) => (isActive ? 'active' : '')}
@@ -47,7 +58,7 @@ const LinksSlider = ({ index }: Props) => {
 							TYPES OF MODERN OIL TANKERS
 						</NavLink>
 					</div>
-					<div className='slider-item'>
+					<div className='slider-item' onClick={scrollTo100vh}>
 						<NavLink
 							to='/faq/dictionary'
 							className={({ isActive }) => (isActive ? 'active' : '')}

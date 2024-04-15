@@ -2397,6 +2397,25 @@ export const dictionaryArr: DictionaryArrtype[] = [
 		],
 	},
 	{
+		title: 'Qualified facility (QF)',
+		content: [
+			'A generator or small power producer that meets certain ownership, operating, and efficiency criteria established by the Federal Energy Regulatory Commission (FERC), and has filed with FERC for QF status or has self-certified. QFs are physical generating facilities.',
+		],
+	},
+	{
+		title: 'Quality or grade',
+		content: [
+			'• An informal classification of coal relating to its suitability for use for a particular purpose.',
+			'• Individual measurements such as heat value, fixed carbon, moisture, ash, sulphur, major, minor, and trace elements, coking properties, petrologic properties, and particular organic constituents. The individual quality elements may be aggregated in various ways to classify coal for such special purposes as metallurgical, gas, petrochemical, and blending usages. ',
+		],
+	},
+	{
+		title: 'Quanto product',
+		content: [
+			'An asset or liability denominated in a currency other than that in which it is usually traded. Since the combined exposure to the asset and to the foreign exchange rate will change continuously, the structures must be dynamically hedged',
+		],
+	},
+	{
 		title: 'Permeability',
 		content: [
 			'The permeability of a rock is the measure of the resistance to the flow of fluid through the rock. High permeability means fluid passes through the rock easily.',
