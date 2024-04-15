@@ -103,7 +103,6 @@
 		gap: 75px;
 	}
 	.dictionary-page-scroll-anker {
-		// margin-top: -150px;
 		position: absolute;
 		bottom: 50px;
 	}
@@ -172,17 +171,29 @@
 		}
 		.tablet-tab-buttons-container {
 			display: flex;
+			flex-direction: column;
+			position: sticky;
+			top: 238px;
+			background-color: #070707;
+			padding-top: 24px;
+			margin-bottom: 24px;
 			.tab-button {
 				margin-left: 20px;
 				margin-right: 20px;
+			}
+			.underline {
+				margin-top: 24px;
 			}
 		}
 		.underline {
 			width: 100%;
 			height: 2px;
 			background-color: #ffffff;
-			margin-top: 24px;
-			margin-bottom: 24px;
+		}
+	}
+	.dictionary-page {
+		.dictionary-page-scroll-anker {
+			bottom: 100px;
 		}
 	}
 }
@@ -194,11 +205,14 @@
 			padding: 0px 16px;
 		}
 		.tablet-tab-buttons-container {
+			padding-left: 16px;
+			padding-right: 16px;
+			top: 213px;
 			.tab-button {
 				font-size: 18px;
 				line-height: 21px;
-				margin-left: 8px;
-				margin-right: 8px;
+				margin-left: 9px;
+				margin-right: 9px;
 			}
 		}
 		.dictionary-page-container {
@@ -214,6 +228,11 @@
 			.table-cell-alighn-left {
 				padding-left: 13px;
 			}
+		}
+	}
+	.dictionary-page {
+		.dictionary-page-scroll-anker {
+			bottom: 110px;
 		}
 	}
 }

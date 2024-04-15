@@ -61,19 +61,20 @@ const DictionaryPage = (props: Props) => {
 			<div className='tablet-tab-buttons-container'>
 				<Flicking bound={true} align='prev'>
 					{alphabet.map((letter) => (
-						<div
-							onClick={() => onSymbolClick(letter)}
-							className={`${
-								letter === activeLetter ? 'tab-button active' : 'tab-button'
-							}`}
-							key={letter}
-						>
-							{letter}
+						<div key={letter}>
+							<NavPageLink to='page-top' smooth={true} duration={700}>
+								<div
+									onClick={() => onSymbolClick(letter)}
+									className={`${
+										letter === activeLetter ? 'tab-button active' : 'tab-button'
+									}`}
+								>
+									{letter}
+								</div>
+							</NavPageLink>
 						</div>
 					))}
 				</Flicking>
-			</div>
-			<div className='container'>
 				<div className='underline'></div>
 			</div>
 			<SearchComponent

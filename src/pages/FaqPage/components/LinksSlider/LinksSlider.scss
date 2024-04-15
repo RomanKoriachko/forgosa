@@ -42,9 +42,22 @@
 			width: 70%;
 		}
 		.underline {
-			margin-top: 24px;
 			margin-bottom: 24px;
 		}
+	}
+	.dictionary-page {
+		.links-slider {
+			.underline {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+// ------------- Small Tablet -------------
+@media (max-width: 770px) {
+	.links-slider {
+		top: 133px;
 	}
 }
 

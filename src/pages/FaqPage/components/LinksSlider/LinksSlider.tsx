@@ -14,7 +14,14 @@ const LinksSlider = ({ index }: Props) => {
 	function scrollTo100vh() {
 		const screenHeight =
 			window.innerHeight || document.documentElement.clientHeight;
-		const scrollToPixels = screenHeight * 1.0 - 100;
+		let scrollToPixels;
+		if (window.innerWidth > 770) {
+			scrollToPixels = screenHeight * 1.0 - 100;
+		} else if (window.innerWidth <= 770 && window.innerWidth > 576) {
+			scrollToPixels = screenHeight * 1.0 - 130;
+		} else if (window.innerWidth <= 576) {
+			scrollToPixels = screenHeight * 1.0 - 110;
+		}
 		window.scrollTo({
 			top: scrollToPixels,
 			left: 0,
