@@ -27,11 +27,6 @@ const ServicesPage = (props: Props) => {
 			text: 'Fogrosa provides various types of fertilizers to meet the needs of agriculture and other related...',
 			link: 'tolling',
 		},
-		// {
-		// 	title: 'Consulting',
-		// 	text: 'We provide consulting services to help our clients make informed decisions related to their businesses. Our...',
-		// 	link: 'consulting',
-		// },
 	];
 
 	const parallaxLeft = useParallax<HTMLDivElement>({
