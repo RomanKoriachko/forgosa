@@ -39,7 +39,7 @@ const SubscribeSection = (props: Props) => {
 					</div>
 					<form
 						className='form row'
-						action='https://formsubmit.co/mazaxaka.tyt@gmail.com'
+						action='https://formsubmit.co/office@fogrosa.com'
 						method='POST'
 					>
 						<input

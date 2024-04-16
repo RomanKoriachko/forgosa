@@ -28,7 +28,7 @@ const ContactsSection = (props: Props) => {
 							Your TRUST, our ENERGY
 						</p>
 						<p className='footer-logo-wrapper-title'>
-							DISCUSSION NOW TO COLLABORATE
+							discuss collaboration now
 						</p>
 						<ButtonComponent
 							onCLickFunction={() => openPopUp()}

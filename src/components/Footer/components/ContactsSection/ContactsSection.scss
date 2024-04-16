@@ -41,6 +41,7 @@
 				font-size: 48px;
 				font-weight: 600;
 				line-height: 58px;
+				text-transform: uppercase;
 			}
 		}
 		.footer-btn {
@@ -158,6 +159,18 @@
 
 // Adaptive
 
+@media (max-width: 1300px) {
+	.footer-content {
+		.footer-row {
+			.footer-row-logo-wrapper {
+				.footer-logo-wrapper-title {
+					margin-top: 50px;
+				}
+			}
+		}
+	}
+}
+
 // ------------- laptop -------------
 @media (max-width: 1200px) {
 	.footer-content {
@@ -166,6 +179,9 @@
 			flex-wrap: wrap;
 			.footer-row-logo-wrapper {
 				width: 60%;
+				.footer-logo-wrapper-title {
+					margin-top: 0px;
+				}
 			}
 		}
 	}

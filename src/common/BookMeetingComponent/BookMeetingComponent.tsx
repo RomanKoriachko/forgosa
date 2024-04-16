@@ -24,7 +24,7 @@ const BookMeetingComponent = ({ formState, setFormState }: Props) => {
 			<div className='metting-form-wrapper'>
 				<button className='close-form-btn' onClick={closeMeetingForm}></button>
 				<form
-					action='https://formsubmit.co/42e7b1c424b7b5b991f9fdb964f46774'
+					action='https://formsubmit.co/office@fogrosa.com'
 					method='POST'
 					className='meeting-form'
 				>

@@ -58,7 +58,7 @@ const FormComponent = ({ title }: Props) => {
 			<p className='subtitle'>Contact</p>
 			<p className='title'>{title}</p>
 			<form
-				action='https://formsubmit.co/mazaxaka.tyt@gmail.com'
+				action='https://formsubmit.co/office@fogrosa.com'
 				method='POST'
 				className='form'
 			>
