@@ -2,12 +2,30 @@ import React from 'react';
 
 import './SupplyChainPostPage.scss';
 import { PageSidebar, PageTitle } from '../../common';
+import { Helmet } from 'react-helmet-async';
 
 type Props = {};
 
 const SupplyChainPostPage = (props: Props) => {
 	return (
 		<div className='post-page supply-chain-post-page'>
+			<Helmet>
+				<title>Fogrosa - Post</title>
+				<meta property='og:title' content='Fogrosa - Contacts' />
+				<meta property='telegram:title' content='Fogrosa - Contacts' />
+				<meta
+					name='description'
+					content='FOGROSA - a leading group of petroleum companies committed to ensuring reliable fuel deliveries to the farthest corners of the globe.'
+				/>
+				<meta
+					property='og:description'
+					content='FOGROSA - a leading group of petroleum companies committed to ensuring reliable fuel deliveries to the farthest corners of the globe.'
+				/>
+				<meta
+					property='telegram:description'
+					content='FOGROSA - a leading group of petroleum companies committed to ensuring reliable fuel deliveries to the farthest corners of the globe.'
+				/>
+			</Helmet>
 			<PageTitle
 				image='supply-chain-post-img.jpg'
 				title='Supply Chain Resilience and Geopolitical Risks'

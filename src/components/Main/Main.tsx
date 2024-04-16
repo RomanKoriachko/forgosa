@@ -20,15 +20,15 @@ const Main = (props: Props) => {
 				<meta property='telegram:title' content='Fogrosa - Home' />
 				<meta
 					name='description'
-					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
+					content='FOGROSA - a leading group of petroleum companies committed to ensuring reliable fuel deliveries to the farthest corners of the globe.'
 				/>
 				<meta
 					property='og:description'
-					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
+					content='FOGROSA - a leading group of petroleum companies committed to ensuring reliable fuel deliveries to the farthest corners of the globe.'
 				/>
 				<meta
 					property='telegram:description'
-					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
+					content='FOGROSA - a leading group of petroleum companies committed to ensuring reliable fuel deliveries to the farthest corners of the globe.'
 				/>
 			</Helmet>
 			<IntroduceSection />

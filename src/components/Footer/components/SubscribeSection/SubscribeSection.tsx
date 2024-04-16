@@ -42,6 +42,12 @@ const SubscribeSection = (props: Props) => {
 						action='https://formsubmit.co/office@fogrosa.com'
 						method='POST'
 					>
+						<input type='hidden' name='_captcha' value='false'></input>
+						<input
+							type='hidden'
+							name='_next'
+							value='https://www.fogrosa.com/'
+						></input>
 						<input
 							className='form-input'
 							type='text'

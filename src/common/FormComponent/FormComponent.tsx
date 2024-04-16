@@ -62,6 +62,12 @@ const FormComponent = ({ title }: Props) => {
 				method='POST'
 				className='form'
 			>
+				<input type='hidden' name='_captcha' value='false'></input>
+				<input
+					type='hidden'
+					name='_next'
+					value='https://www.fogrosa.com/'
+				></input>
 				<div className='row input-row'>
 					<div className='input-item-row'>
 						<label className='label' htmlFor='name'>
