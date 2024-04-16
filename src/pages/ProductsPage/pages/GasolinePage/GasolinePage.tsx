@@ -27,7 +27,7 @@ const GasolinePage = (props: Props) => {
 				/>
 			</Helmet>
 			<PageTitle
-				image='gasoline-page-img.png'
+				image='gasoline-page-img.jpg'
 				title='Gasoline'
 				link='products'
 			/>
@@ -100,7 +100,7 @@ const GasolinePage = (props: Props) => {
 						</p>
 						<div className='page-content-img-wrapper'>
 							<img
-								src='../../../../../images/gasoline-page-content-img.png'
+								src='../../../../../images/gasoline-page-content-img.jpg'
 								alt='gasoline article'
 							/>
 						</div>

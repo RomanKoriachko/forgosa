@@ -9,7 +9,7 @@ const GlobalEnergyPostPage = (props: Props) => {
 	return (
 		<div className='post-page global-energy-post-page'>
 			<PageTitle
-				image='global-energy-post-img.png'
+				image='global-energy-post-img.jpg'
 				title='Global Energy Market Trends and Analysis'
 				link='/'
 			/>

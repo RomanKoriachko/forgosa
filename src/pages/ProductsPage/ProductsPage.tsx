@@ -61,7 +61,7 @@ const ProductsPage = (props: Props) => {
 					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
 				/>
 			</Helmet>
-			<PageTitle image='products-bg-img.png' title='Products' />
+			<PageTitle image='products-bg-img.jpg' title='Products' />
 			<div className='small-container'>
 				<div className='products-links-row'>
 					{linksArr.map((element, i) => (

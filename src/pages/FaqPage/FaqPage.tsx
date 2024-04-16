@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 
 import { PageTitle } from '../../common';
-
-import './FaqPage.scss';
 import { Helmet } from 'react-helmet-async';
 import { LinksSlider } from './components';
 import { useLocation, useNavigate } from 'react-router-dom';
+
+import './FaqPage.scss';
 
 type Props = {};
 
@@ -38,7 +38,7 @@ const FaqPage = (props: Props) => {
 					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
 				/>
 			</Helmet>
-			<PageTitle image='faq-bg-img.png' title='FAQ' />
+			<PageTitle image='faq-bg-img.jpg' title='FAQ' />
 			<LinksSlider index={0} />
 		</div>
 	);

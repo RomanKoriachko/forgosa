@@ -9,7 +9,7 @@ const PriceVolatillityPostPage = (props: Props) => {
 	return (
 		<div className='post-page price-volatillity-post-page'>
 			<PageTitle
-				image='price-volatility-post-img.png'
+				image='price-volatility-post-img.jpg'
 				title='Price Volatility and Forecasting'
 				link='/'
 			/>

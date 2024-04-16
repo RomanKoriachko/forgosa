@@ -60,7 +60,7 @@ const PetroleumPage = (props: Props) => {
 						</p>
 						<div className='page-content-img-wrapper'>
 							<img
-								src='../../../../../images/petroleum-fuel-page-content-img.png'
+								src='../../../../../images/petroleum-fuel-page-content-img.jpg'
 								alt='gasoline article'
 							/>
 						</div>

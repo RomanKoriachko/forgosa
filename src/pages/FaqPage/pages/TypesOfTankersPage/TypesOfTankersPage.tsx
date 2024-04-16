@@ -10,7 +10,7 @@ const TypesOfTankersPage = (props: Props) => {
 	return (
 		<div className='faq-page types-of-tankers-page'>
 			<PageTitle
-				image='faq-bg-img.png'
+				image='faq-bg-img.jpg'
 				title='FAQ'
 				subtitle='TYPES OF MODERN OIL TANKERS'
 			/>

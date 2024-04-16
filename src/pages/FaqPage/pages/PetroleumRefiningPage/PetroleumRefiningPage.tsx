@@ -10,7 +10,7 @@ const PetroleumRefiningPage = (props: Props) => {
 	return (
 		<div className='faq-page petroleum-refining-page'>
 			<PageTitle
-				image='faq-bg-img.png'
+				image='faq-bg-img.jpg'
 				title='FAQ'
 				subtitle='PETROLEUM REFINING PROCESSES'
 			/>

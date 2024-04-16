@@ -11,7 +11,7 @@ const CrudeOilPage = (props: Props) => {
 	return (
 		<div className='faq-page crude-oil-page'>
 			<PageTitle
-				image='faq-bg-img.png'
+				image='faq-bg-img.jpg'
 				title='FAQ'
 				subtitle='crude oil & petroleum products'
 			/>

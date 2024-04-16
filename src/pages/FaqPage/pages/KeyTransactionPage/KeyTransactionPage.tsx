@@ -10,7 +10,7 @@ const KeyTransactionPage = (props: Props) => {
 	return (
 		<div className='faq-page key-transactions-page'>
 			<PageTitle
-				image='faq-bg-img.png'
+				image='faq-bg-img.jpg'
 				title='FAQ'
 				subtitle='KEY TRANSACTION PROCEDURES & TERMS OF DELIVERY'
 			/>

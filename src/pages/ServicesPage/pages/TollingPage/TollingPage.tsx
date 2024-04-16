@@ -26,7 +26,7 @@ const TollingPage = (props: Props) => {
 					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
 				/>
 			</Helmet>
-			<PageTitle image='tolling-page-img.png' title='Tolling' link='services' />
+			<PageTitle image='tolling-page-img.jpg' title='Tolling' link='services' />
 			<div className='small-container'>
 				<div className='page-container'>
 					<div className='page-content'>
@@ -54,7 +54,7 @@ const TollingPage = (props: Props) => {
 						</p>
 						<div className='page-content-img-wrapper'>
 							<img
-								src='../../../../../images/tolling-page-content-img.png'
+								src='../../../../../images/tolling-page-content-img.jpg'
 								alt='gasoline article'
 							/>
 						</div>

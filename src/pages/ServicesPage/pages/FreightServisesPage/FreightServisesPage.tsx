@@ -27,7 +27,7 @@ const FreightServisesPage = (props: Props) => {
 				/>
 			</Helmet>
 			<PageTitle
-				image='freight-services-img.png'
+				image='freight-services-img.jpg'
 				title='Freight Services'
 				link='services'
 			/>

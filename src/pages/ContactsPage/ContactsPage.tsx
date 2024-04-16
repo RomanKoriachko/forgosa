@@ -27,7 +27,7 @@ const ContactsPage = (props: Props) => {
 					content='Our company specializes in the supply of fuel to customers worldwide, with a focus on Southeast Asia and the Middle East regions.'
 				/>
 			</Helmet>
-			<PageTitle image='contacts-bg-img.png' title='Contact us' />
+			<PageTitle image='contacts-bg-img.jpg' title='Contact us' />
 			<div className='small-container'>
 				<div className='row contacts-row'>
 					<div className='contacts-content'>

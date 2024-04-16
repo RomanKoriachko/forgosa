@@ -9,7 +9,7 @@ const SupplyChainPostPage = (props: Props) => {
 	return (
 		<div className='post-page supply-chain-post-page'>
 			<PageTitle
-				image='supply-chain-post-img.png'
+				image='supply-chain-post-img.jpg'
 				title='Supply Chain Resilience and Geopolitical Risks'
 				link='/'
 			/>
@@ -31,7 +31,7 @@ const SupplyChainPostPage = (props: Props) => {
 						</p>
 						<div className='page-content-img-wrapper'>
 							<img
-								src='../../../../images/supply-chain-page-content-img.png'
+								src='../../../../images/supply-chain-page-content-img.jpg'
 								alt='gasoline article'
 							/>
 						</div>
