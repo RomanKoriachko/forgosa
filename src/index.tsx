@@ -2,7 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './components/App/App';
 
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import {
+	RouterProvider,
+	// createBrowserRouter,
+	createHashRouter,
+} from 'react-router-dom';
 
 import { Main } from './components';
 import {
@@ -38,7 +42,7 @@ import {
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
 	{
 		path: '/',
 		element: <App />,
@@ -86,10 +90,6 @@ const router = createBrowserRouter([
 				element: <TollingPage />,
 				path: '/services/tolling',
 			},
-			// {
-			// 	element: <ConsultingPage />,
-			// 	path: '/services/consulting',
-			// },
 
 			{
 				element: <SupplyChainPostPage />,
@@ -112,6 +112,7 @@ const router = createBrowserRouter([
 				element: <ContactsPage />,
 				path: '/contacts',
 			},
+
 			{
 				element: <FaqPage />,
 				path: '/faq',
