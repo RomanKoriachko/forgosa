@@ -34,7 +34,7 @@ const Header = (props: Props) => {
 	return (
 		<header className='header'>
 			<BookMeetingComponent formState={formState} setFormState={setFormState} />
-			<div className='header-container'>
+			<div className='container'>
 				<div className='row header-row'>
 					<Link className='logo-link' to='/' />
 					<div className='header-menu row'>
