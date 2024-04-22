@@ -18,12 +18,6 @@ const SidebarWidget: React.FC = () => {
 						name: 'Indices',
 						originalName: 'Indices',
 						symbols: [
-							{ name: 'FOREXCOM:SPXUSD', displayName: 'S&P 500' },
-							{ name: 'FOREXCOM:NSXUSD', displayName: 'US 100' },
-							{ name: 'FOREXCOM:DJI', displayName: 'Dow 30' },
-							{ name: 'INDEX:NKY', displayName: 'Nikkei 225' },
-							{ name: 'INDEX:DEU40', displayName: 'DAX Index' },
-							{ name: 'FOREXCOM:UKXGBP', displayName: 'UK 100' },
 							{ name: 'PEPPERSTONE:GASOLINE', displayName: 'Gasoline' },
 							{ name: 'FRED:DDFUELUSGULF', displayName: 'Diesel Fuel' },
 							{ name: 'ECONOMICS:USCOSPRE	', displayName: 'Petroleum' },
@@ -33,9 +27,6 @@ const SidebarWidget: React.FC = () => {
 						name: 'Futures',
 						originalName: 'Futures',
 						symbols: [
-							{ name: 'CME_MINI:ES1!', displayName: 'S&P 500' },
-							{ name: 'CME:6E1!', displayName: 'Euro' },
-							{ name: 'COMEX:GC1!', displayName: 'Gold' },
 							{ name: 'NYMEX:CL1!', displayName: 'WTI Crude Oil' },
 							{ name: 'NYMEX:NG1!', displayName: 'Gas' },
 							{ name: 'NYMEX:AGE1!', displayName: 'Gulf Coast Jet Fuel' },
