@@ -15,6 +15,7 @@ const LogoSection = (props: Props) => {
 				autoPlay
 				muted
 				loop
+				playsInline
 			></video>
 			<div className='video-section-img'>
 				<img src='../../../../images/big-logo.png' alt='' />
