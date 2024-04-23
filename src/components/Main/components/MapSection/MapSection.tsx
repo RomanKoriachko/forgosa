@@ -32,9 +32,7 @@ const MapSection = (props: Props) => {
 			/>
 			<div className={`desktop-map-wrapper map-wrapper ${showMapState}`}>
 				{showMapState === 'map-not-active' ? (
-					<div className='map-preview-container'>
-						{/* <img src='../../../../images/map-preview.jpg' alt='' /> */}
-					</div>
+					<div className='map-preview-container'></div>
 				) : (
 					<div className='map-overlap'>
 						<iframe
