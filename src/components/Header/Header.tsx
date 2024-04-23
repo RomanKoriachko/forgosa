@@ -42,9 +42,16 @@ const Header = (props: Props) => {
 							<p className='header-menu-item'>Home</p>
 						</Link>
 						<div className='header-menu-item-wrapper header-menu-item-products'>
-							<Link to='/products' className='header-menu-item-link'>
+							<NavLink
+								to='/products'
+								className={({ isActive }) =>
+									isActive
+										? 'header-menu-item-link active'
+										: 'header-menu-item-link'
+								}
+							>
 								<p className='header-menu-item'>Products</p>
-							</Link>
+							</NavLink>
 							<div className='header-menu-item-dropdown header-menu-item-dropdown-products'>
 								<NavLink
 									to='/products/gasoline'
@@ -85,9 +92,16 @@ const Header = (props: Props) => {
 							</div>
 						</div>
 						<div className='header-menu-item-wrapper header-menu-item-services'>
-							<Link to='/services' className='header-menu-item-link'>
+							<NavLink
+								to='/services'
+								className={({ isActive }) =>
+									isActive
+										? 'header-menu-item-link active'
+										: 'header-menu-item-link'
+								}
+							>
 								<p className='header-menu-item'>Services</p>
-							</Link>
+							</NavLink>
 							<div className='header-menu-item-dropdown header-menu-item-dropdown-services'>
 								<NavLink
 									to='/services/fuel_supplies'
@@ -118,12 +132,26 @@ const Header = (props: Props) => {
 								</NavLink>
 							</div>
 						</div>
-						<Link to='/contacts' className='header-menu-item-link'>
+						<NavLink
+							to='/contacts'
+							className={({ isActive }) =>
+								isActive
+									? 'header-menu-item-link active'
+									: 'header-menu-item-link'
+							}
+						>
 							<p className='header-menu-item'>Contact Us</p>
-						</Link>
-						<Link to='/faq' className='header-menu-item-link'>
-							<p className='header-menu-item'>FAQ</p>
-						</Link>
+						</NavLink>
+						<NavLink
+							to='/knowledge_base'
+							className={({ isActive }) =>
+								isActive
+									? 'header-menu-item-link active'
+									: 'header-menu-item-link'
+							}
+						>
+							<p className='header-menu-item'>Knowledge Base</p>
+						</NavLink>
 					</div>
 					<div
 						className={`burger-menu-btn ${burgerMenuState ? 'active' : ''}`}
@@ -180,7 +208,7 @@ const Header = (props: Props) => {
 							<p className='header-menu-item'>Contact Us</p>
 						</NavLink>
 						<NavLink
-							to='/faq'
+							to='/knowledge_base'
 							className={({ isActive }) =>
 								isActive
 									? 'header-menu-item-link active'
@@ -188,7 +216,7 @@ const Header = (props: Props) => {
 							}
 							onClick={closeBurgerMenu}
 						>
-							<p className='header-menu-item'>FAQ</p>
+							<p className='header-menu-item'>Knowledge Base</p>
 						</NavLink>
 					</div>
 					<div className='burger-menu-btn'>

@@ -7,13 +7,6 @@
 	a {
 		text-decoration: none;
 	}
-	// .header-container {
-	// 	padding-left: 40px;
-	// 	padding-right: 75px;
-	// 	margin: 0 auto;
-	// 	max-width: 1920px;
-	// 	position: relative;
-	// }
 	.header-row {
 		max-height: 60px;
 		justify-content: space-between;
@@ -49,6 +42,11 @@
 				font-weight: 700;
 				line-height: 37px;
 				cursor: pointer;
+			}
+			.header-menu-item-link.active {
+				.header-menu-item {
+					color: #fe6700;
+				}
 			}
 			.header-menu-item-dropdown {
 				position: absolute;
@@ -116,11 +114,13 @@
 		background-repeat: no-repeat;
 		transition: visibility 0.5s, opacity 0.5s, background 0.5s;
 		z-index: 500;
-		.header-menu-item-link.active {
-			color: #fe6700;
-		}
 		.header-menu-item-link {
 			margin-bottom: 16px;
+		}
+		.header-menu-item-link.active {
+			.header-menu-item {
+				color: #fe6700;
+			}
 		}
 		.header-menu-item {
 			font-weight: 700;
@@ -173,25 +173,12 @@
 
 // ---------------------- Adaptive ----------------------
 
-@media (max-width: 1600px) {
-	.header {
-		.header-row {
-			.header-menu {
-				// gap: 40px;
-			}
-		}
-	}
-}
-
 // ------------- Large Desktop -------------
 @media (max-width: 1500px) {
 	.header {
 		.header-row {
 			.header-logo {
 				width: 250px;
-			}
-			.header-menu {
-				// gap: 20px;
 			}
 		}
 	}
@@ -205,7 +192,7 @@
 		}
 		.header-row {
 			.header-menu {
-				gap: 50px;
+				gap: 40px;
 			}
 		}
 	}

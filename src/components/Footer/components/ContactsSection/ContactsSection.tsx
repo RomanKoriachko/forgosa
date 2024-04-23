@@ -51,8 +51,8 @@ const ContactsSection = (props: Props) => {
 							<Link to='/contacts'>
 								<p className='footer-row-item'>Contact Us</p>
 							</Link>
-							<Link to='/faq'>
-								<p className='footer-row-item'>FAQ</p>
+							<Link to='/knowledge_base'>
+								<p className='footer-row-item'>Knowledge Base</p>
 							</Link>
 						</div>
 						<div className='footer-row-contacts-container-tablet'>

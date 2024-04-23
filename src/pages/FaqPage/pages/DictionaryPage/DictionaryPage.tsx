@@ -52,7 +52,11 @@ const DictionaryPage = (props: Props) => {
 
 	return (
 		<div className='faq-page dictionary-page'>
-			<PageTitle image='faq-bg-img.jpg' title='FAQ' subtitle='dictionary' />
+			<PageTitle
+				image='faq-bg-img.jpg'
+				title='knowledge base'
+				subtitle='dictionary'
+			/>
 			<Element
 				className='dictionary-page-scroll-anker'
 				name='page-top'

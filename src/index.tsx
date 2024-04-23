@@ -115,27 +115,27 @@ const router = createHashRouter([
 
 			{
 				element: <FaqPage />,
-				path: '/faq',
+				path: '/knowledge_base',
 			},
 			{
 				element: <DictionaryPage />,
-				path: '/faq/dictionary',
+				path: '/knowledge_base/dictionary',
 			},
 			{
 				element: <CrudeOilPage />,
-				path: '/faq/crude_oil_and_petroleum_products',
+				path: '/knowledge_base/crude_oil_and_petroleum_products',
 			},
 			{
 				element: <PetroleumRefiningPage />,
-				path: '/faq/petroleum_refining_processes',
+				path: '/knowledge_base/petroleum_refining_processes',
 			},
 			{
 				element: <TypesOfTankersPage />,
-				path: '/faq/types_of_tankers',
+				path: '/knowledge_base/types_of_tankers',
 			},
 			{
 				element: <KeyTransactionPage />,
-				path: '/faq/key_transactions_procedures',
+				path: '/knowledge_base/key_transactions_procedures',
 			},
 		],
 	},

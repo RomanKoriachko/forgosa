@@ -11,7 +11,7 @@ const TypesOfTankersPage = (props: Props) => {
 		<div className='faq-page types-of-tankers-page'>
 			<PageTitle
 				image='faq-bg-img.jpg'
-				title='FAQ'
+				title='knowledge base'
 				subtitle='TYPES OF MODERN OIL TANKERS'
 			/>
 			<LinksSlider index={3} />

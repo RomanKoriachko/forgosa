@@ -11,7 +11,7 @@ const KeyTransactionPage = (props: Props) => {
 		<div className='faq-page key-transactions-page'>
 			<PageTitle
 				image='faq-bg-img.jpg'
-				title='FAQ'
+				title='knowledge base'
 				subtitle='KEY TRANSACTION PROCEDURES & TERMS OF DELIVERY'
 			/>
 			<LinksSlider index={0} />

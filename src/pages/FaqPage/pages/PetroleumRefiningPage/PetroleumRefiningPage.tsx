@@ -11,7 +11,7 @@ const PetroleumRefiningPage = (props: Props) => {
 		<div className='faq-page petroleum-refining-page'>
 			<PageTitle
 				image='faq-bg-img.jpg'
-				title='FAQ'
+				title='knowledge base'
 				subtitle='PETROLEUM REFINING PROCESSES'
 			/>
 			<LinksSlider index={2} />

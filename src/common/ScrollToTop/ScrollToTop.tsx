@@ -10,7 +10,7 @@ export default function ScrollToTop() {
 		if (!isItFaqPage) {
 			window.scrollTo(0, 0);
 		}
-		if (pathname.includes('/faq')) {
+		if (pathname.includes('/knowledge_base')) {
 			setIsItFaqPage(true);
 		} else {
 			setIsItFaqPage(false);

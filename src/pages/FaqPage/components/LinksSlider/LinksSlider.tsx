@@ -35,7 +35,7 @@ const LinksSlider = ({ index }: Props) => {
 				<Flicking circular={true} defaultIndex={index}>
 					<div className='slider-item' onClick={scrollTo100vh}>
 						<NavLink
-							to='/faq/key_transactions_procedures'
+							to='/knowledge_base/key_transactions_procedures'
 							className={({ isActive }) => (isActive ? 'active' : '')}
 						>
 							KEY TRANSACTION PROCEDURES & TERMS OF DELIVERY
@@ -43,7 +43,7 @@ const LinksSlider = ({ index }: Props) => {
 					</div>
 					<div className='slider-item' onClick={scrollTo100vh}>
 						<NavLink
-							to='/faq/crude_oil_and_petroleum_products'
+							to='/knowledge_base/crude_oil_and_petroleum_products'
 							className={({ isActive }) => (isActive ? 'active' : '')}
 						>
 							crude oil & petroleum products
@@ -51,7 +51,7 @@ const LinksSlider = ({ index }: Props) => {
 					</div>
 					<div className='slider-item' onClick={scrollTo100vh}>
 						<NavLink
-							to='/faq/petroleum_refining_processes'
+							to='/knowledge_base/petroleum_refining_processes'
 							className={({ isActive }) => (isActive ? 'active' : '')}
 						>
 							PETROLEUM REFINING PROCESSES
@@ -59,7 +59,7 @@ const LinksSlider = ({ index }: Props) => {
 					</div>
 					<div className='slider-item' onClick={scrollTo100vh}>
 						<NavLink
-							to='/faq/types_of_tankers'
+							to='/knowledge_base/types_of_tankers'
 							className={({ isActive }) => (isActive ? 'active' : '')}
 						>
 							TYPES OF MODERN OIL TANKERS
@@ -67,7 +67,7 @@ const LinksSlider = ({ index }: Props) => {
 					</div>
 					<div className='slider-item' onClick={scrollTo100vh}>
 						<NavLink
-							to='/faq/dictionary'
+							to='/knowledge_base/dictionary'
 							className={({ isActive }) => (isActive ? 'active' : '')}
 						>
 							dictionary

@@ -14,8 +14,8 @@ const FaqPage = (props: Props) => {
 	const navigate = useNavigate();
 
 	useEffect(() => {
-		if (location.pathname === '/faq') {
-			navigate('/faq/dictionary');
+		if (location.pathname === '/knowledge_base') {
+			navigate('/knowledge_base/dictionary');
 		}
 	}, [location.pathname, navigate]);
 
@@ -38,7 +38,7 @@ const FaqPage = (props: Props) => {
 					content='FOGROSA - a leading group of petroleum companies committed to ensuring reliable fuel deliveries to the farthest corners of the globe.'
 				/>
 			</Helmet>
-			<PageTitle image='faq-bg-img.jpg' title='FAQ' />
+			<PageTitle image='faq-bg-img.jpg' title='knowledge base' />
 			<LinksSlider index={0} />
 		</div>
 	);

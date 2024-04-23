@@ -12,7 +12,7 @@ const CrudeOilPage = (props: Props) => {
 		<div className='faq-page crude-oil-page'>
 			<PageTitle
 				image='faq-bg-img.jpg'
-				title='FAQ'
+				title='knowledge base'
 				subtitle='crude oil & petroleum products'
 			/>
 			<LinksSlider index={1} />
