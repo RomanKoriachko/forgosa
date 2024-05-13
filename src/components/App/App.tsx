@@ -1,14 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Header } from '../Header';
 import { Footer } from '../Footer';
 import { Outlet } from 'react-router-dom';
 import { ScrollToTop } from '../../common';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import DisclaimerComponent from '../Main/components/DisclaimerComponent/DisclaimerComponent';
 
 import './App.scss';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 function App() {
+	const [disclaimerState, setDisclaimerState] = useState<boolean>(false);
+
+	function closeDisclaimer() {
+		setDisclaimerState(false);
+		localStorage.setItem('disclaimer', 'accepted');
+	}
+
+	useEffect(() => {
+		const disclaimerLocalState = localStorage.getItem('disclaimer');
+		if (disclaimerLocalState !== 'accepted') {
+			setTimeout(() => setDisclaimerState(true), 3000);
+			localStorage.setItem('disclaimer', 'true');
+		}
+	}, []);
+
 	return (
 		<HelmetProvider>
 			<div className='App'>
@@ -31,6 +47,9 @@ function App() {
 				</Helmet>
 				<ScrollToTop />
 				<Header />
+				{disclaimerState ? (
+					<DisclaimerComponent closeDisclaimer={closeDisclaimer} />
+				) : undefined}
 				<Outlet />
 				<Footer />
 			</div>
